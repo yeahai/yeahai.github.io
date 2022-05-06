@@ -2,33 +2,48 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://yeahai.github.io/categories/</loc>
+    <loc>http://yeahai.github.io/categories/</loc>
+    <lastmod>2022-05-06T10:12:33+08:00</lastmod>
+  </url><url>
+    <loc>http://yeahai.github.io/categories/category/</loc>
+    <lastmod>2022-05-06T10:12:33+08:00</lastmod>
+  </url><url>
+    <loc>http://yeahai.github.io/</loc>
+    <lastmod>2022-05-06T10:12:33+08:00</lastmod>
+  </url><url>
+    <loc>http://yeahai.github.io/post/infoco/</loc>
+    <lastmod>2022-05-06T10:12:33+08:00</lastmod>
+  </url><url>
+    <loc>http://yeahai.github.io/tags/information-collection/</loc>
+    <lastmod>2022-05-06T10:12:33+08:00</lastmod>
+  </url><url>
+    <loc>http://yeahai.github.io/post/</loc>
+    <lastmod>2022-05-06T10:12:33+08:00</lastmod>
+  </url><url>
+    <loc>http://yeahai.github.io/tags/python/</loc>
+    <lastmod>2022-05-06T10:12:33+08:00</lastmod>
+  </url><url>
+    <loc>http://yeahai.github.io/categories/subcategory/</loc>
+    <lastmod>2022-05-06T10:12:33+08:00</lastmod>
+  </url><url>
+    <loc>http://yeahai.github.io/tags/</loc>
+    <lastmod>2022-05-06T10:12:33+08:00</lastmod>
+  </url><url>
+    <loc>http://yeahai.github.io/categories/cyber/</loc>
     <lastmod>2022-04-01T10:06:28+08:00</lastmod>
   </url><url>
-    <loc>https://yeahai.github.io/categories/cyber/</loc>
+    <loc>http://yeahai.github.io/post/dc1%E5%A4%8D%E7%8E%B0/</loc>
     <lastmod>2022-04-01T10:06:28+08:00</lastmod>
   </url><url>
-    <loc>https://yeahai.github.io/post/dc1%E5%A4%8D%E7%8E%B0/</loc>
+    <loc>http://yeahai.github.io/tags/penetration-testing/</loc>
     <lastmod>2022-04-01T10:06:28+08:00</lastmod>
   </url><url>
-    <loc>https://yeahai.github.io/</loc>
+    <loc>http://yeahai.github.io/categories/study/</loc>
     <lastmod>2022-04-01T10:06:28+08:00</lastmod>
   </url><url>
-    <loc>https://yeahai.github.io/tags/penetration-testing/</loc>
+    <loc>http://yeahai.github.io/tags/vulnhub/</loc>
     <lastmod>2022-04-01T10:06:28+08:00</lastmod>
   </url><url>
-    <loc>https://yeahai.github.io/post/</loc>
-    <lastmod>2022-04-01T10:06:28+08:00</lastmod>
-  </url><url>
-    <loc>https://yeahai.github.io/categories/study/</loc>
-    <lastmod>2022-04-01T10:06:28+08:00</lastmod>
-  </url><url>
-    <loc>https://yeahai.github.io/tags/</loc>
-    <lastmod>2022-04-01T10:06:28+08:00</lastmod>
-  </url><url>
-    <loc>https://yeahai.github.io/tags/vulnhub/</loc>
-    <lastmod>2022-04-01T10:06:28+08:00</lastmod>
-  </url><url>
-    <loc>https://yeahai.github.io/archives/</loc>
+    <loc>http://yeahai.github.io/archives/</loc>
   </url>
 </urlset>
