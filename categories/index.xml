@@ -2,46 +2,46 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Hugo tranquilpeak theme</title>
-    <link>https://github.com/yeahai/yeahai.github.io.git/categories/</link>
+    <link>https://yeahai.github.io/categories/</link>
     <description>Recent content in Categories on Hugo tranquilpeak theme</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <managingEditor>mmz112377yh@gmail.com (Yeahii)</managingEditor>
     <webMaster>mmz112377yh@gmail.com (Yeahii)</webMaster>
-    <lastBuildDate>Fri, 10 Jun 2022 12:14:12 +0800</lastBuildDate><atom:link href="https://github.com/yeahai/yeahai.github.io.git/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 10 Jun 2022 12:14:12 +0800</lastBuildDate><atom:link href="https://yeahai.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>category</title>
-      <link>https://github.com/yeahai/yeahai.github.io.git/categories/category/</link>
+      <link>https://yeahai.github.io/categories/category/</link>
       <pubDate>Fri, 10 Jun 2022 12:14:12 +0800</pubDate>
       <author>mmz112377yh@gmail.com (Yeahii)</author>
-      <guid>https://github.com/yeahai/yeahai.github.io.git/categories/category/</guid>
+      <guid>https://yeahai.github.io/categories/category/</guid>
       <description></description>
     </item>
     
     <item>
       <title>subcategory</title>
-      <link>https://github.com/yeahai/yeahai.github.io.git/categories/subcategory/</link>
+      <link>https://yeahai.github.io/categories/subcategory/</link>
       <pubDate>Fri, 10 Jun 2022 12:14:12 +0800</pubDate>
       <author>mmz112377yh@gmail.com (Yeahii)</author>
-      <guid>https://github.com/yeahai/yeahai.github.io.git/categories/subcategory/</guid>
+      <guid>https://yeahai.github.io/categories/subcategory/</guid>
       <description></description>
     </item>
     
     <item>
       <title>cyber</title>
-      <link>https://github.com/yeahai/yeahai.github.io.git/categories/cyber/</link>
+      <link>https://yeahai.github.io/categories/cyber/</link>
       <pubDate>Fri, 01 Apr 2022 10:06:28 +0800</pubDate>
       <author>mmz112377yh@gmail.com (Yeahii)</author>
-      <guid>https://github.com/yeahai/yeahai.github.io.git/categories/cyber/</guid>
+      <guid>https://yeahai.github.io/categories/cyber/</guid>
       <description></description>
     </item>
     
     <item>
       <title>study</title>
-      <link>https://github.com/yeahai/yeahai.github.io.git/categories/study/</link>
+      <link>https://yeahai.github.io/categories/study/</link>
       <pubDate>Fri, 01 Apr 2022 10:06:28 +0800</pubDate>
       <author>mmz112377yh@gmail.com (Yeahii)</author>
-      <guid>https://github.com/yeahai/yeahai.github.io.git/categories/study/</guid>
+      <guid>https://yeahai.github.io/categories/study/</guid>
       <description></description>
     </item>
     
