@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>category on Hugo tranquilpeak theme</title>
+    <link>http://yeahai.github.io/categories/category/</link>
+    <description>Recent content in category on Hugo tranquilpeak theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>mmz112377yh@gmail.com (Yeahii)</managingEditor>
+    <webMaster>mmz112377yh@gmail.com (Yeahii)</webMaster>
+    <lastBuildDate>Fri, 06 May 2022 10:12:33 +0800</lastBuildDate><atom:link href="http://yeahai.github.io/categories/category/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>InfoCo</title>
+      <link>http://yeahai.github.io/post/infoco/</link>
+      <pubDate>Fri, 06 May 2022 10:12:33 +0800</pubDate>
+      <author>mmz112377yh@gmail.com (Yeahii)</author>
+      <guid>http://yeahai.github.io/post/infoco/</guid>
+      <description>&lt;h1 id=&#34;我的第一个小项目-信息收集整理&#34;&gt;我的第一个小项目 信息收集整理&lt;/h1&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
