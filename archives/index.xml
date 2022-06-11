@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Archives on Hugo tranquilpeak theme</title>
-    <link>http://yeahai.github.io/archives/</link>
+    <link>https://github.com/yeahai/yeahai.github.io.git/archives/</link>
     <description>Recent content in Archives on Hugo tranquilpeak theme</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <managingEditor>mmz112377yh@gmail.com (Yeahii)</managingEditor>
-    <webMaster>mmz112377yh@gmail.com (Yeahii)</webMaster><atom:link href="http://yeahai.github.io/archives/index.xml" rel="self" type="application/rss+xml" />
+    <webMaster>mmz112377yh@gmail.com (Yeahii)</webMaster><atom:link href="https://github.com/yeahai/yeahai.github.io.git/archives/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

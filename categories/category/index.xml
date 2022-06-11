@@ -2,19 +2,50 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>category on Hugo tranquilpeak theme</title>
-    <link>http://yeahai.github.io/categories/category/</link>
+    <link>https://github.com/yeahai/yeahai.github.io.git/categories/category/</link>
     <description>Recent content in category on Hugo tranquilpeak theme</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <managingEditor>mmz112377yh@gmail.com (Yeahii)</managingEditor>
     <webMaster>mmz112377yh@gmail.com (Yeahii)</webMaster>
-    <lastBuildDate>Fri, 06 May 2022 10:12:33 +0800</lastBuildDate><atom:link href="http://yeahai.github.io/categories/category/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 10 Jun 2022 12:14:12 +0800</lastBuildDate><atom:link href="https://github.com/yeahai/yeahai.github.io.git/categories/category/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>熊海CMS</title>
+      <link>https://github.com/yeahai/yeahai.github.io.git/post/xhcms/</link>
+      <pubDate>Fri, 10 Jun 2022 12:14:12 +0800</pubDate>
+      <author>mmz112377yh@gmail.com (Yeahii)</author>
+      <guid>https://github.com/yeahai/yeahai.github.io.git/post/xhcms/</guid>
+      <description>&lt;h1 id=&#34;熊海cms代码审计&#34;&gt;熊海CMS代码审计&lt;/h1&gt;</description>
+    </item>
+    
+    <item>
+      <title>IIC</title>
+      <link>https://github.com/yeahai/yeahai.github.io.git/post/iic/</link>
+      <pubDate>Fri, 03 Jun 2022 19:38:03 +0800</pubDate>
+      <author>mmz112377yh@gmail.com (Yeahii)</author>
+      <guid>https://github.com/yeahai/yeahai.github.io.git/post/iic/</guid>
+      <description>&lt;h1 id=&#34;内网信息收集----win&#34;&gt;内网信息收集 &amp;ndash; Win&lt;/h1&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+&lt;p&gt;本次文章是记录&amp;laquo;内网安全攻防&amp;raquo;这本书的学习&lt;/p&gt;
+&lt;p&gt;在内网渗透测试中,有很多设备和防护软件,例如Bit9、ArcSight、Mandiant等。它们通过收集目标内网拓扑结构，找出内网中最薄弱的环节。信息收集的深度，直接关系到内网渗透测试的成败&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Fastjson</title>
+      <link>https://github.com/yeahai/yeahai.github.io.git/post/fastjson/</link>
+      <pubDate>Wed, 25 May 2022 16:46:57 +0800</pubDate>
+      <author>mmz112377yh@gmail.com (Yeahii)</author>
+      <guid>https://github.com/yeahai/yeahai.github.io.git/post/fastjson/</guid>
+      <description>&lt;p&gt;#Fastjson 漏洞复现&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>InfoCo</title>
-      <link>http://yeahai.github.io/post/infoco/</link>
+      <link>https://github.com/yeahai/yeahai.github.io.git/post/infoco/</link>
       <pubDate>Fri, 06 May 2022 10:12:33 +0800</pubDate>
       <author>mmz112377yh@gmail.com (Yeahii)</author>
-      <guid>http://yeahai.github.io/post/infoco/</guid>
+      <guid>https://github.com/yeahai/yeahai.github.io.git/post/infoco/</guid>
       <description>&lt;h1 id=&#34;我的第一个小项目-信息收集整理&#34;&gt;我的第一个小项目 信息收集整理&lt;/h1&gt;</description>
     </item>
     

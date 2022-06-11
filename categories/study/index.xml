@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>study on Hugo tranquilpeak theme</title>
-    <link>http://yeahai.github.io/categories/study/</link>
+    <link>https://github.com/yeahai/yeahai.github.io.git/categories/study/</link>
     <description>Recent content in study on Hugo tranquilpeak theme</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <managingEditor>mmz112377yh@gmail.com (Yeahii)</managingEditor>
     <webMaster>mmz112377yh@gmail.com (Yeahii)</webMaster>
-    <lastBuildDate>Fri, 01 Apr 2022 10:06:28 +0800</lastBuildDate><atom:link href="http://yeahai.github.io/categories/study/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 01 Apr 2022 10:06:28 +0800</lastBuildDate><atom:link href="https://github.com/yeahai/yeahai.github.io.git/categories/study/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>DC1</title>
-      <link>http://yeahai.github.io/post/dc1%E5%A4%8D%E7%8E%B0/</link>
+      <link>https://github.com/yeahai/yeahai.github.io.git/post/dc1%E5%A4%8D%E7%8E%B0/</link>
       <pubDate>Fri, 01 Apr 2022 10:06:28 +0800</pubDate>
       <author>mmz112377yh@gmail.com (Yeahii)</author>
-      <guid>http://yeahai.github.io/post/dc1%E5%A4%8D%E7%8E%B0/</guid>
+      <guid>https://github.com/yeahai/yeahai.github.io.git/post/dc1%E5%A4%8D%E7%8E%B0/</guid>
       <description>&lt;h1 id=&#34;dc-1靶机复现&#34;&gt;DC-1靶机复现&lt;/h1&gt;
 &lt;p&gt;靶机下载地址:https:/www.five86.com/&lt;/p&gt;</description>
     </item>

