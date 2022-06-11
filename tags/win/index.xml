@@ -15,11 +15,7 @@
       <pubDate>Fri, 03 Jun 2022 19:38:03 +0800</pubDate>
       <author>mmz112377yh@gmail.com (Yeahii)</author>
       <guid>https://yeahai.github.io/post/iic/</guid>
-      <description>&lt;h1 id=&#34;内网信息收集----win&#34;&gt;内网信息收集 &amp;ndash; Win&lt;/h1&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
-&lt;p&gt;本次文章是记录&amp;laquo;内网安全攻防&amp;raquo;这本书的学习&lt;/p&gt;
-&lt;p&gt;在内网渗透测试中,有很多设备和防护软件,例如Bit9、ArcSight、Mandiant等。它们通过收集目标内网拓扑结构，找出内网中最薄弱的环节。信息收集的深度，直接关系到内网渗透测试的成败&lt;/p&gt;</description>
+      <description>&lt;p&gt;内网的信息收集,与Web的资产收集侧重有些差别,本文主要是记录一些内网信息收集方法的记录.&lt;/p&gt;</description>
     </item>
     
   </channel>
