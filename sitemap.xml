@@ -2,28 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://yeahai.github.io/categories/</loc>
+    <lastmod>2022-06-12T16:51:48+08:00</lastmod>
+  </url><url>
+    <loc>https://yeahai.github.io/categories/category/</loc>
+    <lastmod>2022-06-12T16:51:48+08:00</lastmod>
+  </url><url>
+    <loc>https://yeahai.github.io/tags/go/</loc>
+    <lastmod>2022-06-12T16:51:48+08:00</lastmod>
+  </url><url>
+    <loc>https://yeahai.github.io/</loc>
+    <lastmod>2022-06-12T16:51:48+08:00</lastmod>
+  </url><url>
+    <loc>https://yeahai.github.io/post/</loc>
+    <lastmod>2022-06-12T16:51:48+08:00</lastmod>
+  </url><url>
+    <loc>https://yeahai.github.io/tags/rust/</loc>
+    <lastmod>2022-06-12T16:51:48+08:00</lastmod>
+  </url><url>
+    <loc>https://yeahai.github.io/post/rs_go_install_problem/</loc>
+    <lastmod>2022-06-12T16:51:48+08:00</lastmod>
+  </url><url>
+    <loc>https://yeahai.github.io/categories/subcategory/</loc>
+    <lastmod>2022-06-12T16:51:48+08:00</lastmod>
+  </url><url>
+    <loc>https://yeahai.github.io/tags/</loc>
+    <lastmod>2022-06-12T16:51:48+08:00</lastmod>
+  </url><url>
     <loc>https://yeahai.github.io/tags/audit/</loc>
     <lastmod>2022-06-10T12:14:12+08:00</lastmod>
   </url><url>
-    <loc>https://yeahai.github.io/categories/</loc>
-    <lastmod>2022-06-10T12:14:12+08:00</lastmod>
-  </url><url>
-    <loc>https://yeahai.github.io/categories/category/</loc>
-    <lastmod>2022-06-10T12:14:12+08:00</lastmod>
-  </url><url>
-    <loc>https://yeahai.github.io/</loc>
-    <lastmod>2022-06-10T12:14:12+08:00</lastmod>
-  </url><url>
     <loc>https://yeahai.github.io/tags/php/</loc>
-    <lastmod>2022-06-10T12:14:12+08:00</lastmod>
-  </url><url>
-    <loc>https://yeahai.github.io/post/</loc>
-    <lastmod>2022-06-10T12:14:12+08:00</lastmod>
-  </url><url>
-    <loc>https://yeahai.github.io/categories/subcategory/</loc>
-    <lastmod>2022-06-10T12:14:12+08:00</lastmod>
-  </url><url>
-    <loc>https://yeahai.github.io/tags/</loc>
     <lastmod>2022-06-10T12:14:12+08:00</lastmod>
   </url><url>
     <loc>https://yeahai.github.io/post/xhcms/</loc>

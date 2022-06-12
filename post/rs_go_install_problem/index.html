@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    
+    <script type="application/ld+json">
+
+{  
+  "@context":"https://schema.org",
+  "@type":"Website",
+  "@id":"https:\/\/yeahai.github.io\/",
+  "author": {
+    "@type": "Person",
+    "name": "Yeahii",
+    
+    "image": "https://cdn1.iconfinder.com/data/icons/ninja-things-1/1772/ninja-simple-512.png"
+    
+  },
+  "name":"Hugo tranquilpeak theme",
+  "description":"\u003cp\u003e本文旨在解决Rust、Go下载很慢的问题，经常下载失败,记录Linux和Win下安装Rust、Go的问题\u003c\/p\u003e",
+  "url":"https:\/\/yeahai.github.io\/post\/rs_go_install_problem\/",
+  "keywords":"[Install]"
+}
+
+</script>
+
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Hugo 0.96.0 with theme Tranquilpeak 0.5.3-BETA">
+<meta name="author" content="Yeahii">
+<meta name="keywords" content="Install">
+<meta name="description" content="本文旨在解决Rust、Go下载很慢的问题，经常下载失败,记录Linux和Win下安装Rust、Go的问题">
+
+
+<meta property="og:description" content="本文旨在解决Rust、Go下载很慢的问题，经常下载失败,记录Linux和Win下安装Rust、Go的问题">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Rust、Go、Git国内下载慢的Problem">
+<meta name="twitter:title" content="Rust、Go、Git国内下载慢的Problem">
+<meta property="og:url" content="https://yeahai.github.io/post/rs_go_install_problem/">
+<meta property="twitter:url" content="https://yeahai.github.io/post/rs_go_install_problem/">
+<meta property="og:site_name" content="Hugo tranquilpeak theme">
+<meta property="og:description" content="本文旨在解决Rust、Go下载很慢的问题，经常下载失败,记录Linux和Win下安装Rust、Go的问题">
+<meta name="twitter:description" content="本文旨在解决Rust、Go下载很慢的问题，经常下载失败,记录Linux和Win下安装Rust、Go的问题">
+<meta property="og:locale" content="en-us">
+
+  
+    <meta property="article:published_time" content="2022-06-12T16:51:48">
+  
+  
+    <meta property="article:modified_time" content="2022-06-12T16:51:48">
+  
+  
+  
+    
+      <meta property="article:section" content="category">
+    
+      <meta property="article:section" content="subcategory">
+    
+  
+  
+    
+      <meta property="article:tag" content="Rust">
+    
+      <meta property="article:tag" content="Go">
+    
+  
+
+
+<meta name="twitter:card" content="summary">
+
+
+
+
+
+
+
+  <meta property="og:image" content="https://cdn1.iconfinder.com/data/icons/ninja-things-1/1772/ninja-simple-512.png">
+  <meta property="twitter:image" content="https://cdn1.iconfinder.com/data/icons/ninja-things-1/1772/ninja-simple-512.png">
+
+
+
+
+
+  <meta property="og:image" content="https://yeahai.github.io/image/file/quan.jpg">
+  <meta property="twitter:image" content="https://yeahai.github.io/image/file/quan.jpg">
+
+
+    <title>Rust、Go、Git国内下载慢的Problem</title>
+
+    <link rel="icon" href="https://yeahai.github.io/favicon.png">
+    
+
+    
+
+    <link rel="canonical" href="https://yeahai.github.io/post/rs_go_install_problem/">
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    
+    
+    <link rel="stylesheet" href="https://yeahai.github.io/css/style-h6ccsoet3mzkbb0wngshlfbaweimexgqcxj0h5hu4h82olsdzz6wmqdkajm.min.css" />
+    
+    
+
+    
+      
+    
+    
+  </head>
+
+  <body>
+    <div id="blog">
+      <header id="header" data-behavior="4">
+  <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
+  <div class="header-title">
+    <a class="header-title-link" href="https://yeahai.github.io/" aria-label="Go to homepage">Hugo tranquilpeak theme</a>
+  </div>
+  
+    
+      <a class="header-right-picture "
+         href="https://yeahai.github.io/#about" aria-label="Open the link: /#about">
+    
+    
+    
+      
+        <img class="header-picture" src="https://cdn1.iconfinder.com/data/icons/ninja-things-1/1772/ninja-simple-512.png" alt="Author&#39;s picture" />
+      
+    
+    </a>
+  
+</header>
+
+      <nav id="sidebar" data-behavior="4">
+  <div class="sidebar-container">
+    
+      <div class="sidebar-profile">
+        <a href="https://yeahai.github.io/#about" aria-label="Read more about the author">
+          <img class="sidebar-profile-picture" src="https://cdn1.iconfinder.com/data/icons/ninja-things-1/1772/ninja-simple-512.png" alt="Author&#39;s picture" />
+        </a>
+        <h4 class="sidebar-profile-name">Yeahii</h4>
+        
+          <h5 class="sidebar-profile-bio">I want to learning everything.</h5>
+        
+      </div>
+    
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://yeahai.github.io/" title="Home">
+    
+      <i class="sidebar-button-icon fas fa-lg fa-home" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">Home</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://yeahai.github.io/categories" title="Categories">
+    
+      <i class="sidebar-button-icon fas fa-lg fa-bookmark" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">Categories</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://yeahai.github.io/tags" title="Tags">
+    
+      <i class="sidebar-button-icon fas fa-lg fa-tags" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">Tags</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://yeahai.github.io/archives" title="Archives">
+    
+      <i class="sidebar-button-icon fas fa-lg fa-archive" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">Archives</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://yeahai.github.io/#about" title="About">
+    
+      <i class="sidebar-button-icon fas fa-lg fa-question" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">About</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://github.com/yeahai" target="_blank" rel="noopener" title="GitHub">
+    
+      <i class="sidebar-button-icon fab fa-lg fa-github" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">GitHub</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://yeahai.github.io/www.google.com" title="Stack Overflow">
+    
+      <i class="sidebar-button-icon fab fa-lg fa-stack-overflow" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">Stack Overflow</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://yeahai.github.io/index.xml" title="RSS">
+    
+      <i class="sidebar-button-icon fas fa-lg fa-rss" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">RSS</span>
+    </a>
+  </li>
+
+
+    </ul>
+  </div>
+</nav>
+
+      
+
+      <div id="main" data-behavior="4"
+        class="
+               hasCoverMetaIn
+               ">
+        <article class="post" id="top">
+          
+          
+            <div class="post-header main-content-wrap text-left">
+  
+    <h1 class="post-title">
+      Rust、Go、Git国内下载慢的Problem
+    </h1>
+  
+  
+  <div class="postShorten-meta post-meta">
+    
+      <time datetime="2022-06-12T16:51:48&#43;08:00">
+        
+  June 12, 2022
+
+      </time>
+    
+    
+  
+  
+    <span>in</span>
+    
+      <a class="category-link" href="https://yeahai.github.io/categories/category">category</a>, 
+    
+      <a class="category-link" href="https://yeahai.github.io/categories/subcategory">subcategory</a>
+    
+  
+
+  </div>
+
+</div>
+          
+          <div class="post-content markdown">
+            <div class="main-content-wrap">
+              <p>本文旨在解决Rust、Go下载很慢的问题，经常下载失败,记录Linux和Win下安装Rust、Go的问题</p>
+<h1 id="git">Git</h1>
+<p>Git Clone慢</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>Git Config 配置:
+</span></span><span style="display:flex;"><span>git config <span style="color:#f92672">--</span><span style="color:#66d9ef">global</span> url<span style="color:#f92672">.</span><span style="color:#e6db74">&#34;https://gitclone.com/&#34;</span><span style="color:#f92672">.</span>insteadOf https:<span style="color:#f92672">//</span>
+</span></span><span style="display:flex;"><span>git clone https:<span style="color:#f92672">//</span>github<span style="color:#f92672">.</span>com<span style="color:#f92672">/</span>tendermint<span style="color:#f92672">/</span>tendermint<span style="color:#f92672">.</span>git
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>使用cgit
+</span></span><span style="display:flex;"><span>cgit clone https:<span style="color:#f92672">//</span>github<span style="color:#f92672">.</span>com<span style="color:#f92672">/</span>tendermint<span style="color:#f92672">/</span>tendermint<span style="color:#f92672">.</span>git
+</span></span></code></pre></div><p>Git 代理配置</p>
+<p>全局代理(不推荐)</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># 使用http代理</span>
+</span></span><span style="display:flex;"><span>git config <span style="color:#f92672">--</span><span style="color:#66d9ef">global</span> http<span style="color:#f92672">.</span>proxy http:<span style="color:#f92672">//</span><span style="color:#ae81ff">127.0.0.1</span>:<span style="color:#ae81ff">58591</span>
+</span></span><span style="display:flex;"><span>git config <span style="color:#f92672">--</span><span style="color:#66d9ef">global</span> https<span style="color:#f92672">.</span>proxy http:<span style="color:#f92672">//</span><span style="color:#ae81ff">127.0.0.1</span>:<span style="color:#ae81ff">58591</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 使用socks5代理</span>
+</span></span><span style="display:flex;"><span>git config <span style="color:#f92672">--</span><span style="color:#66d9ef">global</span> http<span style="color:#f92672">.</span>proxy socks5:<span style="color:#f92672">//</span><span style="color:#ae81ff">127.0.0.1</span>:<span style="color:#ae81ff">58591</span>
+</span></span><span style="display:flex;"><span>git config <span style="color:#f92672">--</span><span style="color:#66d9ef">global</span> https<span style="color:#f92672">.</span>proxy socks5:<span style="color:#f92672">//</span><span style="color:#ae81ff">127.0.0.1</span>:<span style="color:#ae81ff">58591</span>
+</span></span></code></pre></div><p>只对Github代理(推荐)</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># socks5</span>
+</span></span><span style="display:flex;"><span>git config <span style="color:#f92672">--</span><span style="color:#66d9ef">global</span> http<span style="color:#f92672">.</span>https:<span style="color:#f92672">//</span>github<span style="color:#f92672">.</span>com<span style="color:#f92672">.</span>proxy socks5:<span style="color:#f92672">//</span><span style="color:#ae81ff">127.0.0.1</span>:<span style="color:#ae81ff">58591</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># http </span>
+</span></span><span style="display:flex;"><span>git config <span style="color:#f92672">--</span><span style="color:#66d9ef">global</span> http<span style="color:#f92672">.</span>https:<span style="color:#f92672">//</span>github<span style="color:#f92672">.</span>com<span style="color:#f92672">.</span>proxy http:<span style="color:#f92672">//</span><span style="color:#ae81ff">127.0.0.1</span>:<span style="color:#ae81ff">58591</span>
+</span></span></code></pre></div><p>取消代理</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>git config <span style="color:#f92672">--</span><span style="color:#66d9ef">global</span> <span style="color:#f92672">--</span>unset http<span style="color:#f92672">.</span>proxy git config <span style="color:#f92672">--</span><span style="color:#66d9ef">global</span> <span style="color:#f92672">--</span>unset https<span style="color:#f92672">.</span>proxy
+</span></span></code></pre></div><h1 id="rust">Rust</h1>
+<h2 id="win">Win</h2>
+<p>设置临时代理</p>
+<ol>
+<li>在当前 rust-init.exe 路径下打开powershell</li>
+<li>设置临时代理</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">$</span>ENV:RUSTUP_DIST_SERVER<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;https://mirrors.ustc.edu.cn/rust-static&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">$</span>ENV:RUSTUP_UPDATE_ROOT<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;https://mirrors.ustc.edu.cn/rust-static/rustup&#39;</span>
+</span></span></code></pre></div><ol start="3">
+<li>在powershell下执行安装软件 `.\rustup-ini.exe</li>
+</ol>
+<h2 id="linux">Linux</h2>
+<p>设置临时代理</p>
+<ol>
+<li>加入中国科技大学网络镜像代理</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">$</span>ENV:RUSTUP_DIST_SERVER<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;https://mirrors.ustc.edu.cn/rust-static&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">$</span>ENV:RUSTUP_UPDATE_ROOT<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;https://mirrors.ustc.edu.cn/rust-static/rustup&#39;</span>
+</span></span></code></pre></div><p><strong>注意</strong>以上命令，仅仅在本次终端生效，切换终端，仍然需要在执行一次
+2. 执行脚本命令，完成Rust安装</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>curl https:<span style="color:#f92672">//</span>sh<span style="color:#f92672">.</span>rustup<span style="color:#f92672">.</span>rs <span style="color:#f92672">-</span>sSf <span style="color:#f92672">|</span> sh
+</span></span><span style="display:flex;"><span>安装成功后<span style="color:#960050;background-color:#1e0010">，</span>会提示<span style="color:#960050;background-color:#1e0010">：</span>Rust <span style="color:#f92672">is</span> installed now <span style="color:#f92672">.</span>Great<span style="color:#960050;background-color:#1e0010">!</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">3.</span> 输入 rust <span style="color:#f92672">-</span>V 或者 rustup <span style="color:#f92672">-</span>V 
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">4.</span> 配置包管理镜像代理
+</span></span><span style="display:flex;"><span>在<span style="color:#960050;background-color:#1e0010">$</span>HOME<span style="color:#f92672">/.</span>cargo目录下创建一个名为config的文本文件<span style="color:#960050;background-color:#1e0010">，</span>其内容为<span style="color:#960050;background-color:#1e0010">：</span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">```</span>bash
+</span></span><span style="display:flex;"><span>[source<span style="color:#f92672">.</span>crates<span style="color:#f92672">-</span>io]
+</span></span><span style="display:flex;"><span>registry <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;https://github.com/rust-lang/crates.io-index&#34;</span>
+</span></span><span style="display:flex;"><span>replace<span style="color:#f92672">-</span><span style="color:#66d9ef">with</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;ustc&#39;</span>
+</span></span><span style="display:flex;"><span>[source<span style="color:#f92672">.</span>ustc]
+</span></span><span style="display:flex;"><span>registry <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;git://mirrors.ustc.edu.cn/crates.io-index&#34;</span>
+</span></span></code></pre></div><ol start="5">
+<li>安装RSL，RLS（Rust Language Server）</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">//</span> 喜欢nightly版本的可以尝试最新版rustup 下载<span style="color:#960050;background-color:#1e0010">，</span>一般我选择稳定版
+</span></span><span style="display:flex;"><span>rustup self update
+</span></span><span style="display:flex;"><span>rustup component add rls rust<span style="color:#f92672">-</span>analysis rust<span style="color:#f92672">-</span>src
+</span></span></code></pre></div><ol start="6">
+<li>安装编译Gcc工具链</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>sudo apt<span style="color:#f92672">-</span>get install build<span style="color:#f92672">-</span>essential
+</span></span></code></pre></div><ol start="7">
+<li>安装WASM(Web开发）</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>rustup target add wasm32<span style="color:#f92672">-</span>unknown<span style="color:#f92672">-</span>unknown
+</span></span><span style="display:flex;"><span>cargo install wasm<span style="color:#f92672">-</span>gc
+</span></span><span style="display:flex;"><span>rustup update
+</span></span></code></pre></div><ol start="8">
+<li>racer 自动补全插件，可选，一般用Clion或者Vscode,vim,Emacs编写</li>
+</ol>
+<p><code>cargo install racer</code></p>
+<ol start="9">
+<li>验证安装成功
+rustc &ndash;version
+出信息则成功</li>
+</ol>
+<h1 id="go">Go</h1>
+<ol>
+<li>下载安装包</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># 大陆</span>
+</span></span><span style="display:flex;"><span>wget https:<span style="color:#f92672">//</span>studygolang<span style="color:#f92672">.</span>com<span style="color:#f92672">/</span>dl<span style="color:#f92672">/</span>golang<span style="color:#f92672">/</span>go1<span style="color:#ae81ff">.16.5</span><span style="color:#f92672">.</span>linux<span style="color:#f92672">-</span>amd64<span style="color:#f92672">.</span>tar<span style="color:#f92672">.</span>gz
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 非大陆</span>
+</span></span><span style="display:flex;"><span>wget https:<span style="color:#f92672">//</span>golang<span style="color:#f92672">.</span>org<span style="color:#f92672">/</span>dl<span style="color:#f92672">/</span>go1<span style="color:#ae81ff">.16.5</span><span style="color:#f92672">.</span>linux<span style="color:#f92672">-</span>amd64<span style="color:#f92672">.</span>tar<span style="color:#f92672">.</span>gz
+</span></span><span style="display:flex;"><span>tar zxf go1<span style="color:#ae81ff">.16.5</span><span style="color:#f92672">.</span>linux<span style="color:#f92672">-</span>amd64<span style="color:#f92672">.</span>tar<span style="color:#f92672">.</span>gz <span style="color:#f92672">-</span>C  <span style="color:#f92672">/</span>usr<span style="color:#f92672">/</span>local
+</span></span></code></pre></div><ol start="2">
+<li>配置环境</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>vim <span style="color:#f92672">~/.</span>bashrc
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 末尾追加如下内容</span>
+</span></span><span style="display:flex;"><span>export GOROOT<span style="color:#f92672">=/</span>usr<span style="color:#f92672">/</span>local<span style="color:#f92672">/</span>go
+</span></span><span style="display:flex;"><span>export GOPATH<span style="color:#f92672">=</span><span style="color:#960050;background-color:#1e0010">$</span>PATH:<span style="color:#960050;background-color:#1e0010">$</span>GOROOT<span style="color:#f92672">/</span>bin
+</span></span><span style="display:flex;"><span>export PATH<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;$PATH:$GOROOT/bin&#34;</span>
+</span></span><span style="display:flex;"><span>go env <span style="color:#f92672">-</span>w GOPROXY<span style="color:#f92672">=</span>https:<span style="color:#f92672">//</span>goproxy<span style="color:#f92672">.</span>cn
+</span></span></code></pre></div><ol start="3">
+<li>启用环境</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>source <span style="color:#f92672">~/.</span>bashrc
+</span></span><span style="display:flex;"><span>go version
+</span></span></code></pre></div>
+              
+
+
+            </div>
+          </div>
+          <div id="post-footer" class="post-footer main-content-wrap">
+            
+              
+                
+                
+                  <div class="post-footer-tags">
+                    <span class="text-color-light text-small">TAGGED IN</span><br/>
+                    
+  <a class="tag tag--primary tag--small" href="https://yeahai.github.io/tags/rust/">Rust</a>
+
+  <a class="tag tag--primary tag--small" href="https://yeahai.github.io/tags/go/">Go</a>
+
+                  </div>
+                
+              
+            
+            
+<div class="post-actions-wrap">
+  <nav >
+    <ul class="post-actions post-action-nav">
+      
+        <li class="post-action">
+          
+            <a class="post-action-btn btn btn--disabled">
+          
+              <i class="fa fa-angle-left"></i>
+              <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
+            </a>
+        </li>
+        <li class="post-action">
+          
+            <a class="post-action-btn btn btn--default tooltip--top" href="https://yeahai.github.io/post/xhcms/" data-tooltip="熊海CMS" aria-label="PREVIOUS: 熊海CMS">
+          
+              <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
+              <i class="fa fa-angle-right"></i>
+            </a>
+        </li>
+      
+    </ul>
+  </nav>
+<ul class="post-actions post-action-share" >
+  
+    <li class="post-action hide-lg hide-md hide-sm">
+      <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions" aria-label="Share this post">
+        <i class="fa fa-share-alt" aria-hidden="true"></i>
+      </a>
+    </li>
+    
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://yeahai.github.io/post/rs_go_install_problem/" title="Share on Facebook" aria-label="Share on Facebook">
+          <i class="fab fa-facebook-square" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://yeahai.github.io/post/rs_go_install_problem/" title="Share on Twitter" aria-label="Share on Twitter">
+          <i class="fab fa-twitter" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://www.linkedin.com/sharing/share-offsite/?url=https://yeahai.github.io/post/rs_go_install_problem/" title="Share on Linkedin" aria-label="Share on Linkedin">
+          <i class="fab fa-linkedin" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+  
+  
+    <li class="post-action">
+      <a class="post-action-btn btn btn--default" href="#disqus_thread" aria-label="Leave a comment">
+        <i class="far fa-comment"></i>
+      </a>
+    </li>
+  
+  <li class="post-action">
+    
+      <a class="post-action-btn btn btn--default" href="#top" aria-label="Back to top">
+      <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    
+    </a>
+  </li>
+</ul>
+</div>
+
+
+            
+  
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </div>
+    <script type="text/javascript">
+      var disqus_config = function() {
+        this.page.url = 'https:\/\/yeahai.github.io\/post\/rs_go_install_problem\/';
+        
+          this.page.identifier = '\/post\/rs_go_install_problem\/'
+        
+      };
+      (function() {
+        
+        
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+          document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+          return;
+        }
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        var disqus_shortname = 'hugo-tranquilpeak-theme';
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+    </script>
+  
+
+
+          </div>
+        </article>
+        <footer id="footer" class="main-content-wrap">
+  <span class="copyrights">
+    &copy; 2022 Yeahii. All Rights Reserved
+  </span>
+</footer>
+
+      </div>
+      <div id="bottom-bar" class="post-bottom-bar" data-behavior="4">
+        
+<div class="post-actions-wrap">
+  <nav >
+    <ul class="post-actions post-action-nav">
+      
+        <li class="post-action">
+          
+            <a class="post-action-btn btn btn--disabled">
+          
+              <i class="fa fa-angle-left"></i>
+              <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
+            </a>
+        </li>
+        <li class="post-action">
+          
+            <a class="post-action-btn btn btn--default tooltip--top" href="https://yeahai.github.io/post/xhcms/" data-tooltip="熊海CMS" aria-label="PREVIOUS: 熊海CMS">
+          
+              <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
+              <i class="fa fa-angle-right"></i>
+            </a>
+        </li>
+      
+    </ul>
+  </nav>
+<ul class="post-actions post-action-share" >
+  
+    <li class="post-action hide-lg hide-md hide-sm">
+      <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions" aria-label="Share this post">
+        <i class="fa fa-share-alt" aria-hidden="true"></i>
+      </a>
+    </li>
+    
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://yeahai.github.io/post/rs_go_install_problem/" title="Share on Facebook" aria-label="Share on Facebook">
+          <i class="fab fa-facebook-square" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://yeahai.github.io/post/rs_go_install_problem/" title="Share on Twitter" aria-label="Share on Twitter">
+          <i class="fab fa-twitter" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://www.linkedin.com/sharing/share-offsite/?url=https://yeahai.github.io/post/rs_go_install_problem/" title="Share on Linkedin" aria-label="Share on Linkedin">
+          <i class="fab fa-linkedin" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+  
+  
+    <li class="post-action">
+      <a class="post-action-btn btn btn--default" href="#disqus_thread" aria-label="Leave a comment">
+        <i class="far fa-comment"></i>
+      </a>
+    </li>
+  
+  <li class="post-action">
+    
+      <a class="post-action-btn btn btn--default" href="#top" aria-label="Back to top">
+      <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    
+    </a>
+  </li>
+</ul>
+</div>
+
+
+      </div>
+      
+<div id="share-options-bar" class="share-options-bar" data-behavior="4">
+  <i id="btn-close-shareoptions" class="fa fa-times"></i>
+  <ul class="share-options">
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fyeahai.github.io%2Fpost%2Frs_go_install_problem%2F" aria-label="Share on Facebook">
+          <i class="fab fa-facebook-square" aria-hidden="true"></i><span>Share on Facebook</span>
+        </a>
+      </li>
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fyeahai.github.io%2Fpost%2Frs_go_install_problem%2F" aria-label="Share on Twitter">
+          <i class="fab fa-twitter" aria-hidden="true"></i><span>Share on Twitter</span>
+        </a>
+      </li>
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fyeahai.github.io%2Fpost%2Frs_go_install_problem%2F" aria-label="Share on Linkedin">
+          <i class="fab fa-linkedin" aria-hidden="true"></i><span>Share on Linkedin</span>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+<div id="share-options-mask" class="share-options-mask"></div>
+
+
+    </div>
+    
+    <div id="about">
+  <div id="about-card">
+    <div id="about-btn-close">
+      <i class="fa fa-times"></i>
+    </div>
+    
+      <img id="about-card-picture" src="https://cdn1.iconfinder.com/data/icons/ninja-things-1/1772/ninja-simple-512.png" alt="Author&#39;s picture" />
+    
+    <h4 id="about-card-name">Yeahii</h4>
+    
+      <div id="about-card-bio">I want to learning everything.</div>
+    
+    
+      <div id="about-card-job">
+        <i class="fa fa-briefcase"></i>
+        <br/>
+        Null
+      </div>
+    
+    
+      <div id="about-card-location">
+        <i class="fa fa-map-marker-alt"></i>
+        <br/>
+        China
+      </div>
+    
+  </div>
+</div>
+
+    
+
+    
+  
+    
+      <div id="cover" style="background-image:url('https://yeahai.github.io/images/cover.jpg');"></div>
+    
+  
+
+
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/highlight.min.js" integrity="sha512-z+/WWfyD5tccCukM4VvONpEtLmbAm5LDu7eKiyMQJ9m7OfPEDL7gENyDRL3Yfe8XAuGsS2fS4xSMnl6d30kqGQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+<script src="https://yeahai.github.io/js/script-yqzy9wdlzix4lbbwdnzvwx3egsne77earqmn73v9uno8aupuph8wfguccut.min.js"></script>
+
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-gE8KAQyFIzV1C9+GZ8TKJHZS2s+n7EjNtC+IMRn1l5+WYJTHOODUM6JSjZhFhqXmc7bG8Av6XXpckA4tYhflnw==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/apache.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-EWROca+bote+7Oaaar1F6y74iZj1r1F9rm/ly7o+/FwJopbBaWtsFDmaKoZDd3QiGU2pGacBirHJNivmGLYrow==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/go.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-GDVzAn0wpx1yVtQsRWmFc6PhJiLBPdUic+h4GWgljBh904O3JU10fk9EKNpVyIoPqkFn54rgL2QBG4BmUTMpiQ==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/http.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-UgZlma8NzkrDb/NWgmLIcTrH7i/CSnLLDRFqCSNF5NGPpjKmzyM25qcoXGOup8+cDakKyaiTDd7N4dyH4YT+IA==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/less.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-lot9koe73sfXIrUvIPM/UEhuMciN56RPyBdOyZgfO53P2lkWyyXN7J+njcxIIBRV+nVDQeiWtiXg+bLAJZDTfg==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/nginx.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-Zd3e7XxHP00TD0Imr0PIfeM0fl0v95kMWuhyAS3Wn1UTSXTkz0OhtRgBAr4JlmADRgiXr4x7lpeUdqaGN8xIog==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/puppet.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-qtqDO052iXMSP+5d/aE/jMtL9vIIGvONgTJziC2K/ZIB1yEGa55WVxGE9/08rSQ62EoDifS9SWVGZ7ihSLhzMA==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/scss.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-1NmkjnEDnwwwcu28KoQF8vs3oaPFokQHbmbtwGhFfeDsQZtVFI8zW2aE9O8yMYdpdyKV/5blE4pSWw4Z/Sv97w==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/stylus.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-B2wSfruPjr8EJL6IIzQr1eAuDwrsfIfccNf/LCEdxELCgC/S/ZMt/Uvk80aD79m7IqOqW+Sw8nbkvha20yZpzg==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/swift.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-28oDiQZGKUVN6wQ7PSLPNipOcmkCALXKwOi7bnkyFf8QiMZQxG9EQoy/iiNx6Zxj2cG2SbVa4dXKigQhu7GiFw==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/yaml.min.js"></script>
+  
+
+
+<script>
+$(document).ready(function() {
+  hljs.configure({ classPrefix: '', useBR: false });
+  $('pre.code-highlight > code, pre > code').each(function(i, block) {
+    if (!$(this).hasClass('codeblock')) {
+      $(this).addClass('codeblock');
+    }
+    hljs.highlightBlock(block);
+  });
+});
+</script>
+
+
+
+
+    
+  </body>
+</html>
+

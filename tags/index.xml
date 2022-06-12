@@ -8,7 +8,25 @@
     <language>en-us</language>
     <managingEditor>mmz112377yh@gmail.com (Yeahii)</managingEditor>
     <webMaster>mmz112377yh@gmail.com (Yeahii)</webMaster>
-    <lastBuildDate>Fri, 10 Jun 2022 12:14:12 +0800</lastBuildDate><atom:link href="https://yeahai.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 12 Jun 2022 16:51:48 +0800</lastBuildDate><atom:link href="https://yeahai.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Go</title>
+      <link>https://yeahai.github.io/tags/go/</link>
+      <pubDate>Sun, 12 Jun 2022 16:51:48 +0800</pubDate>
+      <author>mmz112377yh@gmail.com (Yeahii)</author>
+      <guid>https://yeahai.github.io/tags/go/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Rust</title>
+      <link>https://yeahai.github.io/tags/rust/</link>
+      <pubDate>Sun, 12 Jun 2022 16:51:48 +0800</pubDate>
+      <author>mmz112377yh@gmail.com (Yeahii)</author>
+      <guid>https://yeahai.github.io/tags/rust/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>audit</title>
       <link>https://yeahai.github.io/tags/audit/</link>
