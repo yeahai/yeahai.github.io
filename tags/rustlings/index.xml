@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>rustlings on Hugo tranquilpeak theme</title>
+    <link>https://yeahai.github.io/tags/rustlings/</link>
+    <description>Recent content in rustlings on Hugo tranquilpeak theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>mmz112377yh@gmail.com (Yeahii)</managingEditor>
+    <webMaster>mmz112377yh@gmail.com (Yeahii)</webMaster>
+    <lastBuildDate>Wed, 13 Jul 2022 16:35:59 +0800</lastBuildDate><atom:link href="https://yeahai.github.io/tags/rustlings/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Rustlings Summary</title>
+      <link>https://yeahai.github.io/post/rustlings_for_yeahai/</link>
+      <pubDate>Wed, 13 Jul 2022 16:35:59 +0800</pubDate>
+      <author>mmz112377yh@gmail.com (Yeahii)</author>
+      <guid>https://yeahai.github.io/post/rustlings_for_yeahai/</guid>
+      <description>&lt;p&gt;本文记录练习rustlings的学习,当前rustlings版本为(4.8.0).&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

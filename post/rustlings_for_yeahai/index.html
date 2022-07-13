@@ -1,0 +1,3760 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    
+    <script type="application/ld+json">
+
+{  
+  "@context":"https://schema.org",
+  "@type":"Website",
+  "@id":"https:\/\/yeahai.github.io\/",
+  "author": {
+    "@type": "Person",
+    "name": "Yeahii",
+    
+    "image": "https://cdn1.iconfinder.com/data/icons/ninja-things-1/1772/ninja-simple-512.png"
+    
+  },
+  "name":"Hugo tranquilpeak theme",
+  "description":"\u003cp\u003e本文记录练习rustlings的学习,当前rustlings版本为(4.8.0).\u003c\/p\u003e",
+  "url":"https:\/\/yeahai.github.io\/post\/rustlings_for_yeahai\/",
+  "keywords":"[rust]"
+}
+
+</script>
+
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Hugo 0.96.0 with theme Tranquilpeak 0.5.3-BETA">
+<meta name="author" content="Yeahii">
+<meta name="keywords" content="rust">
+<meta name="description" content="本文记录练习rustlings的学习,当前rustlings版本为(4.8.0).">
+
+
+<meta property="og:description" content="本文记录练习rustlings的学习,当前rustlings版本为(4.8.0).">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Rustlings Summary">
+<meta name="twitter:title" content="Rustlings Summary">
+<meta property="og:url" content="https://yeahai.github.io/post/rustlings_for_yeahai/">
+<meta property="twitter:url" content="https://yeahai.github.io/post/rustlings_for_yeahai/">
+<meta property="og:site_name" content="Hugo tranquilpeak theme">
+<meta property="og:description" content="本文记录练习rustlings的学习,当前rustlings版本为(4.8.0).">
+<meta name="twitter:description" content="本文记录练习rustlings的学习,当前rustlings版本为(4.8.0).">
+<meta property="og:locale" content="en-us">
+
+  
+    <meta property="article:published_time" content="2022-07-13T16:35:59">
+  
+  
+    <meta property="article:modified_time" content="2022-07-13T16:35:59">
+  
+  
+  
+    
+      <meta property="article:section" content="category">
+    
+      <meta property="article:section" content="subcategory">
+    
+  
+  
+    
+      <meta property="article:tag" content="rustlings">
+    
+      <meta property="article:tag" content="rust">
+    
+  
+
+
+<meta name="twitter:card" content="summary">
+
+
+
+
+
+
+
+  <meta property="og:image" content="https://cdn1.iconfinder.com/data/icons/ninja-things-1/1772/ninja-simple-512.png">
+  <meta property="twitter:image" content="https://cdn1.iconfinder.com/data/icons/ninja-things-1/1772/ninja-simple-512.png">
+
+
+
+
+
+  <meta property="og:image" content="https://yeahai.github.io/image/file/hehe.jpg">
+  <meta property="twitter:image" content="https://yeahai.github.io/image/file/hehe.jpg">
+
+
+    <title>Rustlings Summary</title>
+
+    <link rel="icon" href="https://yeahai.github.io/favicon.png">
+    
+
+    
+
+    <link rel="canonical" href="https://yeahai.github.io/post/rustlings_for_yeahai/">
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    
+    
+    <link rel="stylesheet" href="https://yeahai.github.io/css/style-h6ccsoet3mzkbb0wngshlfbaweimexgqcxj0h5hu4h82olsdzz6wmqdkajm.min.css" />
+    
+    
+
+    
+      
+    
+    
+  </head>
+
+  <body>
+    <div id="blog">
+      <header id="header" data-behavior="4">
+  <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
+  <div class="header-title">
+    <a class="header-title-link" href="https://yeahai.github.io/" aria-label="Go to homepage">Hugo tranquilpeak theme</a>
+  </div>
+  
+    
+      <a class="header-right-picture "
+         href="https://yeahai.github.io/#about" aria-label="Open the link: /#about">
+    
+    
+    
+      
+        <img class="header-picture" src="https://cdn1.iconfinder.com/data/icons/ninja-things-1/1772/ninja-simple-512.png" alt="Author&#39;s picture" />
+      
+    
+    </a>
+  
+</header>
+
+      <nav id="sidebar" data-behavior="4">
+  <div class="sidebar-container">
+    
+      <div class="sidebar-profile">
+        <a href="https://yeahai.github.io/#about" aria-label="Read more about the author">
+          <img class="sidebar-profile-picture" src="https://cdn1.iconfinder.com/data/icons/ninja-things-1/1772/ninja-simple-512.png" alt="Author&#39;s picture" />
+        </a>
+        <h4 class="sidebar-profile-name">Yeahii</h4>
+        
+          <h5 class="sidebar-profile-bio">I want to learning everything.</h5>
+        
+      </div>
+    
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://yeahai.github.io/" title="Home">
+    
+      <i class="sidebar-button-icon fas fa-lg fa-home" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">Home</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://yeahai.github.io/categories" title="Categories">
+    
+      <i class="sidebar-button-icon fas fa-lg fa-bookmark" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">Categories</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://yeahai.github.io/tags" title="Tags">
+    
+      <i class="sidebar-button-icon fas fa-lg fa-tags" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">Tags</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://yeahai.github.io/archives" title="Archives">
+    
+      <i class="sidebar-button-icon fas fa-lg fa-archive" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">Archives</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://yeahai.github.io/#about" title="About">
+    
+      <i class="sidebar-button-icon fas fa-lg fa-question" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">About</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://github.com/yeahai" target="_blank" rel="noopener" title="GitHub">
+    
+      <i class="sidebar-button-icon fab fa-lg fa-github" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">GitHub</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://yeahai.github.io/www.google.com" title="Stack Overflow">
+    
+      <i class="sidebar-button-icon fab fa-lg fa-stack-overflow" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">Stack Overflow</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://yeahai.github.io/index.xml" title="RSS">
+    
+      <i class="sidebar-button-icon fas fa-lg fa-rss" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">RSS</span>
+    </a>
+  </li>
+
+
+    </ul>
+  </div>
+</nav>
+
+      
+
+      <div id="main" data-behavior="4"
+        class="
+               hasCoverMetaIn
+               ">
+        <article class="post" id="top">
+          
+          
+            <div class="post-header main-content-wrap text-left">
+  
+    <h1 class="post-title">
+      Rustlings Summary
+    </h1>
+  
+  
+  <div class="postShorten-meta post-meta">
+    
+      <time datetime="2022-07-13T16:35:59&#43;08:00">
+        
+  July 13, 2022
+
+      </time>
+    
+    
+  
+  
+    <span>in</span>
+    
+      <a class="category-link" href="https://yeahai.github.io/categories/category">category</a>, 
+    
+      <a class="category-link" href="https://yeahai.github.io/categories/subcategory">subcategory</a>
+    
+  
+
+  </div>
+
+</div>
+          
+          <div class="post-content markdown">
+            <div class="main-content-wrap">
+              <p>本文记录练习rustlings的学习,当前rustlings版本为(4.8.0).</p>
+<h1 id="rustlings练习">Rustlings练习</h1>
+<h2 id="intro1">intro1</h2>
+<p>移除// I AM NOT DONE，自动编译下一关</p>
+<h2 id="intro2">intro2</h2>
+<pre tabindex="0"><code>⚠️  Compiling of exercises/intro/intro2.rs failed! Please try again. Here&#39;s the output:
+error: 1 positional argument in format string, but no arguments were given
+ --&gt; exercises/intro/intro2.rs:8:21
+  |
+8 |     println!(&#34;Hello {}!&#34;);
+  |                     ^^
+
+error: aborting due to previous error
+</code></pre><p>这是{}匹配不到参数，因为没有参数,添加参数,或者{}删除</p>
+<pre tabindex="0"><code>fn main() {
+    println!(&#34;Hello {}!&#34;,&#34;World&#34;);
+}
+</code></pre><h2 id="variables1">variables1</h2>
+<p>赋值要用let 跟js的var let差不多意思</p>
+<pre tabindex="0"><code>fn main() {
+    let x = 5; 
+    println!(&#34;x has the value {}&#34;, x);
+}
+</code></pre><h2 id="variables2">variables2</h2>
+<p>给定参数,类型可以给,也可以不给,自动推导</p>
+<pre tabindex="0"><code>fn main() {
+    let x = 10;
+    if x == 10 {
+        println!(&#34;Ten!&#34;);
+    } else {
+        println!(&#34;Not ten!&#34;);
+    }
+}
+</code></pre><h2 id="variables3">variables3</h2>
+<p>let 定义的参数为不可变参数,不可变参数的意思是只能赋值一次,
+加上mut 后变成可变参数,参数可以二次赋值</p>
+<pre tabindex="0"><code>fn main() {
+    let mut x = 3;
+    println!(&#34;Number {}&#34;, x);
+    x = 5; // don&#39;t change this line
+    println!(&#34;Number {}&#34;, x);
+}
+</code></pre><h2 id="variables4">variables4</h2>
+<p>给x赋值</p>
+<pre tabindex="0"><code>fn main() {
+    let x: i32;
+    x = 100;
+    println!(&#34;Number {}&#34;, x);
+}
+</code></pre><h2 id="variables5">variables5</h2>
+<p>复用变量名,开始的类型是str,下面变成了int
+在下面的变量加上let可以复用变量名</p>
+<pre tabindex="0"><code>fn main() {
+    let number = &#34;T-H-R-E-E&#34;; // don&#39;t change this line
+    println!(&#34;Spell a Number : {}&#34;, number);
+    let number = 3;
+    println!(&#34;Number plus two is : {}&#34;, number + 2);
+}
+</code></pre><h2 id="variables6">variables6</h2>
+<p>常量这里没有参数类型提示报错</p>
+<pre tabindex="0"><code>const NUMBER :i32 = 3;
+fn main() {
+    println!(&#34;Number {}&#34;, NUMBER);
+}
+</code></pre><h2 id="functions1">functions1</h2>
+<p>报错提示,找不到call_me方法
+补充一个call_me方法</p>
+<pre tabindex="0"><code>fn call_me(){
+
+}
+fn main() {
+    call_me();
+}
+</code></pre><h2 id="functions2">functions2</h2>
+<p>函数的形参要补充参数类型</p>
+<pre tabindex="0"><code>fn main() {
+    call_me(3);
+}
+
+fn call_me(num:i32) {
+    for i in 0..num {
+        println!(&#34;Ring! Call number {}&#34;, i + 1);
+    }
+}
+</code></pre><h2 id="functions3">functions3</h2>
+<p>调用有参函数时,必须传递参数</p>
+<pre tabindex="0"><code>fn main() {
+    call_me(4);
+}
+
+fn call_me(num: u32) {
+    for i in 0..num {
+        println!(&#34;Ring! Call number {}&#34;, i + 1);
+    }
+}
+</code></pre><h2 id="funciton4">funciton4</h2>
+<p>if中 price-10是一个返回表达式,即不加;表示就是return,计算完后返回值,要添加一个返回值类型在 形参括号后面-&gt;类型</p>
+<pre tabindex="0"><code>fn main() {
+    let original_price = 51;
+    println!(&#34;Your sale price is {}&#34;, sale_price(original_price));
+}
+
+fn sale_price(price: i32) -&gt; i32{
+    if is_even(price) {
+        price - 10
+    } else {
+        price - 3
+    }
+}
+
+fn is_even(num: i32) -&gt; bool {
+    num % 2 == 0
+}
+</code></pre><h2 id="functions5">functions5</h2>
+<p>可以在函数  返回值处添加return 或者 不加;</p>
+<pre tabindex="0"><code>fn main() {
+    let answer = square(3);
+    println!(&#34;The answer is {}&#34;, answer);
+}
+
+fn square(num: i32) -&gt; i32 {
+    num * num
+}
+</code></pre><h2 id="if1">if1</h2>
+<p>Complete this function to return the bigger number! 
+返回更大的一个数</p>
+<pre tabindex="0"><code>pub fn bigger(a: i32, b: i32) -&gt; i32 {
+    // Complete this function to return the bigger number!
+    // Do not use:
+    // - another function call
+    // - additional variables
+    // Execute `rustlings hint if1` for hints
+    if a &gt; b {
+        a
+    }else{
+        b
+    }
+}
+</code></pre><h2 id="if2">if2</h2>
+<p>传入fizz_if_foo参数的值,判断传入的是不是下面三个值中的一个,是则返回断言的第二个参数,让断言判断他们是不是相等</p>
+<pre tabindex="0"><code>pub fn fizz_if_foo(fizzish: &amp;str) -&gt; &amp;str {
+    if fizzish == &#34;fizz&#34; {
+        &#34;foo&#34;
+    } else if fizzish == &#34;fuzz&#34; {
+        &#34;bar&#34;
+    } else {
+        &#34;baz&#34;
+    }
+}
+</code></pre><h2 id="move_semantics1">move_semantics1</h2>
+<p>提示错误下方，vec1要进行一次push,而且调用fill_vec他让一个mut vec 接收 vec，这就让vec变成了mut，所以vec1要加上mut可变</p>
+<pre tabindex="0"><code>fn main() {
+    let vec0 = Vec::new();
+
+    let mut vec1 = fill_vec(vec0);
+
+    println!(&#34;{} has length {} content `{:?}`&#34;, &#34;vec1&#34;, vec1.len(), vec1);
+
+    vec1.push(88);
+
+    println!(&#34;{} has length {} content `{:?}`&#34;, &#34;vec1&#34;, vec1.len(), vec1);
+}
+
+fn fill_vec(vec: Vec&lt;i32&gt;) -&gt; Vec&lt;i32&gt; {
+    let mut vec = vec;
+
+    vec.push(22);
+    vec.push(44);
+    vec.push(66);
+
+    vec
+}
+</code></pre><h2 id="move_semantics2">move_semantics2</h2>
+<p>个人理解：这个感觉就是把vec0的引用给了vec2并且给完后使用to_vec把&amp;vec变成了vec类型，然后相当于复制了一个vec0，然后把复制出来的vec2给vec1就变成了move_semantics1中的改变，vec0还是可以被输出，vec2则被move后删除了</p>
+<pre tabindex="0"><code>fn main() {
+    let vec0 = Vec::new();
+    let vec2 = (&amp;vec0).to_vec(); //add 
+    let mut vec1 = fill_vec(vec2);
+
+    // Do not change the following line!
+    println!(&#34;{} has length {} content `{:?}`&#34;, &#34;vec0&#34;, vec0.len(), vec0);
+
+    vec1.push(88);
+
+    println!(&#34;{} has length {} content `{:?}`&#34;, &#34;vec1&#34;, vec1.len(), vec1);
+}
+
+fn fill_vec(vec: Vec&lt;i32&gt;) -&gt; Vec&lt;i32&gt; {
+    let mut vec = vec;// 当这块不加上to_vec()时，这里的接收参数就是&amp;Vec&lt;i32&gt;,加上之后,变长了Vec&lt;i32&gt;类型
+
+    vec.push(22);
+    vec.push(44);
+    vec.push(66);
+
+    vec
+}
+</code></pre><p>个人理解：这个<code>fill_vec</code>接受参数是Vec<!-- raw HTML omitted -->，但是传入vec0后 所有权转移，vec0会被删除，那么，print(vec0这行)打印不出来,所以传入参数要变成引用,然后那么<code>fill_vec</code>的形参类型要变成引用类型.但还有两个问题,1.如果是引用类型,那么它push不进去值,因为传入的不是&amp;mut,2.返回值也是Vec<!-- raw HTML omitted -->,所以,传入形参后,使用<code>to_vec()</code>方法让他变成Vec类型</p>
+<pre tabindex="0"><code>fn main() {
+    let vec0 = Vec::new();
+
+    let mut vec1 = fill_vec(&amp;vec0);//xiu // 这里可以修改为&amp;mut 
+
+    // Do not change the following line!
+    println!(&#34;{} has length {} content `{:?}`&#34;, &#34;vec0&#34;, vec0.len(), vec0);
+
+    vec1.push(88);
+
+    println!(&#34;{} has length {} content `{:?}`&#34;, &#34;vec1&#34;, vec1.len(), vec1);
+}
+
+fn fill_vec(vec: &amp;Vec&lt;i32&gt;) -&gt; Vec&lt;i32&gt; { //xiu // 这里也可以修改为&amp;mut,
+    let mut vec = vec.to_vec();// 当这块不加上to_vec()时，这里的接收参数就是&amp;Vec&lt;i32&gt;,加上之后,变长了Vec&lt;i32&gt;类型
+
+    vec.push(22);
+    vec.push(44);
+    vec.push(66);
+
+    vec
+}
+</code></pre><h2 id="move_semantics3">move_semantics3</h2>
+<p>因为这里不需要打印vec0,那么可以直接传入vec0,然后接收的参数时,使用mut vec接受,让形参变成可变vec,然后可以push新增参数</p>
+<pre tabindex="0"><code>fn fill_vec(mut vec: Vec&lt;i32&gt;) -&gt; Vec&lt;i32&gt; {}
+</code></pre><h2 id="move_semantics4">move_semantics4</h2>
+<p>注释中提到不需要vec0了,且在调用的方法中创建vec,</p>
+<pre tabindex="0"><code>fn main() {
+
+    let mut vec1 = fill_vec();
+
+    println!(&#34;{} has length {} content `{:?}`&#34;, &#34;vec1&#34;, vec1.len(), vec1);
+
+    vec1.push(88);
+
+    println!(&#34;{} has length {} content `{:?}`&#34;, &#34;vec1&#34;, vec1.len(), vec1);
+}
+
+// `fill_vec()` no longer takes `vec: Vec&lt;i32&gt;` as argument
+fn fill_vec() -&gt; Vec&lt;i32&gt; {
+    let vec = Vec::new();
+    let mut vec = vec;
+
+    vec.push(22);
+    vec.push(44);
+    vec.push(66);
+
+    vec
+}
+</code></pre><h2 id="move_semantics5">move_semantics5</h2>
+<p>注释提到只能移动,那么可以把z的赋值和y的运算换一个位置;为什么这样就可以,这是因为在可变引用中,编译器拒绝同时为两个可变引用工作,因为第一个改了值,第二个也改值,造成竞争,可以有时无法给引用同时刷新最新数据.
+所以,让第一个y可以引用工作完,就可以创建第二个可变引用,或者如果不考虑限制可以添加花括号划分作用域
+参考:https://doc.rust-lang.org/book/ch04-02-references-and-borrowing.html</p>
+<pre tabindex="0"><code>fn main() {
+    let mut x = 100;
+    let y = &amp;mut x;
+    *y += 100;
+    let z = &amp;mut x;
+    *z += 1000;
+    assert_eq!(x, 1200);
+}
+
+在任何给定时间，都可以有一个可变引用或任意数量的不可变引用。
+引用必须始终有效。
+</code></pre><h2 id="move_semantics6">move_semantics6</h2>
+<p>这里修改前，get_char传入data数据，那么它也把所有权转入函数，然后在函数执行完成之后，所有权被释放掉，那么下面的第二个函数就使用不了，现在就需要把<code>get_char</code>转成引用,然后函数形参也要转成引用,再给<code>string_uppercase</code>传入所有权参数,函数执行完毕,参数也被释放.</p>
+<pre tabindex="0"><code>修改前：
+fn main() {
+    let data = &#34;Rust is great!&#34;.to_string();
+
+    get_char(data);
+
+    string_uppercase(&amp;data);
+}
+
+// Should not take ownership
+fn get_char(data: String) -&gt; char {
+    data.chars().last().unwrap()
+}
+
+// Should take ownership
+fn string_uppercase(mut data: &amp;String) {
+    data = &amp;data.to_uppercase();
+
+    println!(&#34;{}&#34;, data);
+}
+
+
+修改后：
+fn main() {
+    let data = &#34;Rust is great!&#34;.to_string();
+
+    get_char(&amp;data);
+
+    string_uppercase(data);
+}
+
+// Should not take ownership
+fn get_char(data: &amp;String) -&gt; char {
+    data.chars().last().unwrap()
+}
+
+// Should take ownership
+fn string_uppercase(mut data: String) {
+    data = data.to_uppercase();
+
+    println!(&#34;{}&#34;, data);
+}
+</code></pre><h2 id="primitive_types1">primitive_types1</h2>
+<p>缺少变量</p>
+<pre tabindex="0"><code>fn main() {
+    // Booleans (`bool`)
+
+    let is_morning = true;
+    if is_morning {
+        println!(&#34;Good morning!&#34;);
+    }
+
+    let is_evening = true;// Finish the rest of this line like the example! Or make it be false!
+    if is_evening {
+        println!(&#34;Good evening!&#34;);
+    }
+}
+</code></pre><h2 id="primitive_types2">primitive_types2</h2>
+<p>修改 your_character改成你喜欢的字符,数字和特殊字符</p>
+<pre tabindex="0"><code>fn main() {
+    // Characters (`char`)
+
+    let my_first_initial = &#39;C&#39;;
+    if my_first_initial.is_alphabetic() {
+        println!(&#34;Alphabetical!&#34;);
+    } else if my_first_initial.is_numeric() {
+        println!(&#34;Numerical!&#34;);
+    } else {
+        println!(&#34;Neither alphabetic nor numeric!&#34;);
+    }
+
+    let your_character = &#39;@&#39;; // Finish this line like the example! What&#39;s your favorite character?
+    // Try a letter, try a number, try a special character, try a character
+    // from a different language than your own, try an emoji!
+    if your_character.is_alphabetic() {
+        println!(&#34;Alphabetical!&#34;);
+    } else if your_character.is_numeric() {
+        println!(&#34;Numerical!&#34;);
+    } else {
+        println!(&#34;Neither alphabetic nor numeric!&#34;);
+    }
+}
+</code></pre><h2 id="primitive_types3">primitive_types3</h2>
+<p>初始化一个至少一百个元素的数组</p>
+<pre tabindex="0"><code>fn main() {
+    let a = [50,100];
+
+    if a.len() &gt;= 100 {
+        println!(&#34;Wow, that&#39;s a big array!&#34;);
+    } else {
+        println!(&#34;Meh, I eat arrays like that for breakfast.&#34;);
+    }
+}
+</code></pre><h2 id="primitive_types4">primitive_types4</h2>
+<p>跟python的切片一样,只不过中间使用..,而且要使用引用,不然会报错,报错提示要加引用</p>
+<pre tabindex="0"><code>fn slice_out_of_array() {
+    let a = [1, 2, 3, 4, 5];
+
+    let nice_slice = &amp;a[1..4];
+
+    assert_eq!([2, 3, 4], nice_slice)
+}
+</code></pre><h2 id="primitive_types5">primitive_types5</h2>
+<p>根据注释提示,和println两个参数,只要cat接收要两个参数,且是name和age,注释说是元组类型,可以尝试(参数,参数)</p>
+<pre tabindex="0"><code>// primitive_types5.rs
+// Destructure the `cat` tuple so that the println will work.
+// Execute `rustlings hint primitive_types5` for hints!
+
+// I AM NOT DONE
+
+fn main() {
+    let cat = (&#34;Furry McFurson&#34;, 3.5);
+    let (name,age)/* your pattern here */ = cat;
+
+    println!(&#34;{} is {} years old.&#34;, name, age);
+}
+</code></pre><h2 id="primitive_types6">primitive_types6</h2>
+<p>根据代码,要2和tuple中的元素相等,那么尝试赋值给second,我一开始用的是数字的形式number[1],提示要用.号来调用tuple类型,number.1</p>
+<pre tabindex="0"><code>// primitive_types6.rs
+// Use a tuple index to access the second element of `numbers`.
+// You can put the expression for the second element where ??? is so that the test passes.
+// Execute `rustlings hint primitive_types6` for hints!
+
+
+#[test]
+fn indexing_tuple() {
+    let numbers = (1, 2, 3);
+    // Replace below ??? with the tuple indexing syntax.
+    let second = numbers.1;
+
+    assert_eq!(2, second,
+        &#34;This is not the 2nd number in the tuple!&#34;)
+}
+</code></pre><h2 id="structs1">structs1</h2>
+<p>补充Struct结构体，然后创建实例，这里实例中参数赋值用：，String类型参数需要使用String::from来赋值.
+然后就是Tuple Struct,在这个类型中,参数没有名字,只有类型 ,传值的时候只有值</p>
+<pre tabindex="0"><code>// structs1.rs
+// Address all the TODOs to make the tests pass!
+
+
+struct ColorClassicStruct {
+    // TODO: Something goes here
+    name:String,
+    hex:String,
+}
+
+struct ColorTupleStruct(String,String/* TODO: Something goes here */);
+
+#[derive(Debug)]
+struct UnitStruct;
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn classic_c_structs() {
+        // TODO: Instantiate a classic c struct!
+         let green = ColorClassicStruct{
+             name : String::from(&#34;green&#34;),
+             hex : String::from(&#34;#00FF00&#34;),
+         };
+
+        assert_eq!(green.name, &#34;green&#34;);
+        assert_eq!(green.hex, &#34;#00FF00&#34;);
+    }
+
+    #[test]
+    fn tuple_structs() {
+        // TODO: Instantiate a tuple struct!
+         let green = (&#34;green&#34;,&#34;#00FF00&#34;);
+
+        assert_eq!(green.0, &#34;green&#34;);
+        assert_eq!(green.1, &#34;#00FF00&#34;);
+    }
+
+    #[test]
+    fn unit_structs() {
+        // TODO: Instantiate a unit struct!
+         let unit_struct = UnitStruct;
+        let message = format!(&#34;{:?}s are fun!&#34;, unit_struct);
+
+        assert_eq!(message, &#34;UnitStructs are fun!&#34;);
+    }
+}
+</code></pre><h2 id="struct2">struct2</h2>
+<p>这题是让给<code>your_order</code>赋值,看到下面比较的断言,有两个跟<code>order_template</code>不一样,那么可以将两个不一样的参数先赋值,其他和<code>order_template</code>一样的参数可以使用更新语法,<code>..order_template</code></p>
+<pre tabindex="0"><code>// structs2.rs
+// Address all the TODOs to make the tests pass!
+
+
+#[derive(Debug)]
+struct Order {
+    name: String,
+    year: u32,
+    made_by_phone: bool,
+    made_by_mobile: bool,
+    made_by_email: bool,
+    item_number: u32,
+    count: u32,
+}
+
+fn create_order_template() -&gt; Order {
+    Order {
+        name: String::from(&#34;Bob&#34;),
+        year: 2019,
+        made_by_phone: false,
+        made_by_mobile: false,
+        made_by_email: true,
+        item_number: 123,
+        count: 0,
+    }
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn your_order() {
+        let order_template = create_order_template();
+        // TODO: Create your own order using the update syntax and template above!
+         let your_order = Order{
+             name : String::from(&#34;Hacker in Rust&#34;),
+             count : 1,
+             ..order_template
+         };
+        assert_eq!(your_order.name, &#34;Hacker in Rust&#34;);
+        assert_eq!(your_order.year, order_template.year);
+        assert_eq!(your_order.made_by_phone, order_template.made_by_phone);
+        assert_eq!(your_order.made_by_mobile, order_template.made_by_mobile);
+        assert_eq!(your_order.made_by_email, order_template.made_by_email);
+        assert_eq!(your_order.item_number, order_template.item_number);
+        assert_eq!(your_order.count, 1);
+    }
+}
+</code></pre><h2 id="struct3">struct3</h2>
+<p>这题 首先提示 weight &lt; 0 那么要报错,提示panic,找到panic!宏,
+然后下面is_international发送方不能是接收方,判断条件在下面
+最后是价格,每千克 3 的价格</p>
+<p>个人理解:
+Rust中的impl 和 Java中的implements不一样,前者实现的方法是自定义的,后者必须实现接口的方法可以自定义方法,
+感觉Rust中的impl和Struct结合起来就是类,Struct定义类型,impl是类的方法,
+impl trait for 类,就要实现trait中的方法,相当于java中的接口
+而java是在一个类中完成两个方法</p>
+<pre tabindex="0"><code>// structs3.rs
+// Structs contain data, but can also have logic. In this exercise we have
+// defined the Package struct and we want to test some logic attached to it.
+// Make the code compile and the tests pass!
+// If you have issues execute `rustlings hint structs3`
+
+
+#[derive(Debug)]
+struct Package {
+    sender_country: String,
+    recipient_country: String,
+    weight_in_grams: i32,
+}
+
+impl Package {
+    fn new(sender_country: String, recipient_country: String, weight_in_grams: i32) -&gt; Package {
+        if weight_in_grams &lt;= 0 {
+            // panic statement goes here...
+            panic!(&#34;weight_in_grams &lt;= 0&#34;);
+        } else {
+            Package {
+                sender_country,
+                recipient_country,
+                weight_in_grams,
+            }
+        }
+    }
+
+    fn is_international(&amp;self) -&gt; bool {
+        // Something goes here...
+        self.sender_country != self.recipient_country
+
+    }
+
+    fn get_fees(&amp;self, cents_per_gram: i32) -&gt; i32 {
+        // Something goes here...
+        self.weight_in_grams * cents_per_gram
+
+    }
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    #[should_panic]
+    fn fail_creating_weightless_package() {
+        let sender_country = String::from(&#34;Spain&#34;);
+        let recipient_country = String::from(&#34;Austria&#34;);
+
+        Package::new(sender_country, recipient_country, -2210);
+    }
+
+    #[test]
+    fn create_international_package() {
+        let sender_country = String::from(&#34;Spain&#34;);
+        let recipient_country = String::from(&#34;Russia&#34;);
+
+        let package = Package::new(sender_country, recipient_country, 1200);
+
+        assert!(package.is_international());
+    }
+
+    #[test]
+    fn create_local_package() {
+        let sender_country = String::from(&#34;Canada&#34;);
+        let recipient_country = sender_country.clone();
+
+        let package = Package::new(sender_country, recipient_country, 1200);
+
+        assert!(!package.is_international());
+    }
+
+    #[test]
+    fn calculate_transport_fees() {
+        let sender_country = String::from(&#34;Spain&#34;);
+        let recipient_country = String::from(&#34;Spain&#34;);
+
+        let cents_per_gram = 3;
+
+        let package = Package::new(sender_country, recipient_country, 1500);
+
+        assert_eq!(package.get_fees(cents_per_gram), 4500);
+    }
+}
+</code></pre><h2 id="enums1">enums1</h2>
+<p>枚举类创建</p>
+<pre tabindex="0"><code>// enums1.rs
+// Make me compile! Execute `rustlings hint enums1` for hints!
+
+// I AM NOT DONE
+
+#[derive(Debug)]
+enum Message {
+    // TODO: define a few types of messages as used below
+    Quit,
+    Echo,
+    Move,
+    ChangeColor,
+}
+
+fn main() {
+    println!(&#34;{:?}&#34;, Message::Quit);
+    println!(&#34;{:?}&#34;, Message::Echo);
+    println!(&#34;{:?}&#34;, Message::Move);
+    println!(&#34;{:?}&#34;, Message::ChangeColor);
+}
+</code></pre><h2 id="enums2">enums2</h2>
+<p>根据下面调用的类型来定义枚举类型,</p>
+<pre tabindex="0"><code>#[derive(Debug)]
+enum Message {
+    // TODO: define the different variants used below
+    Quit,
+    Echo(String),
+    Move{x:i32,y:i32},
+    ChangeColor(i32,i32,i32),
+
+}
+
+impl Message {
+    fn call(&amp;self) {
+        println!(&#34;{:?}&#34;, &amp;self);
+    }
+}
+
+fn main() {
+    let messages = [
+        Message::Move { x: 10, y: 30 },
+        Message::Echo(String::from(&#34;hello world&#34;)),
+        Message::ChangeColor(200, 255, 255),
+        Message::Quit,
+    ];
+
+    for message in &amp;messages {
+        message.call();
+    }
+}
+</code></pre><h2 id="enums3">enums3</h2>
+<p>这题跟之前的版本有所差别,多了一个Point,之前移动Move是直接定义Move{x,y},这里直接用Point代替,
+然后,要写一个process的方法,用爱来匹配不同信息
+第一个ChangeColor,本来参数我想使用State中的Color,但是传参时说是tuple,用不了,只能使用tuple,第二个Move参数时Point,匹配到Move 就去调用<code>move_position</code>参数就是Move中的Point参数
+Quit和Echo就是基本调用方法,注意,这里Echo match中Echo中的参数是名称String 不是类型,类型编译器自动推导.</p>
+<pre tabindex="0"><code>enum Message {
+    // TODO: implement the message variant types based on their usage below
+    Quit,
+    ChangeColor((u8,u8,u8)),
+    Move(Point),
+    Echo(String),
+
+}
+
+struct Point {
+    x: u8,
+    y: u8,
+}
+
+struct State {
+    color: (u8, u8, u8),
+    position: Point,
+    quit: bool,
+}
+
+impl State {
+    fn change_color(&amp;mut self, color: (u8, u8, u8)) {
+        self.color = color;
+    }
+
+    fn quit(&amp;mut self) {
+        self.quit = true;
+    }
+
+    fn echo(&amp;self, s: String) {
+        println!(&#34;{}&#34;, s);
+    }
+
+    fn move_position(&amp;mut self, p: Point) {
+        self.position = p;
+    }
+
+    fn process(&amp;mut self, message: Message) {
+        // TODO: create a match expression to process the different message variants
+        match message {
+            Message::ChangeColor((r,g,b)) =&gt; self.change_color((r,g,b)),
+            Message::Move (Point) =&gt; self.move_position(Point),
+            Message::Echo(String) =&gt; self.echo(String),
+            Message::Quit=&gt;self.quit(),
+        };
+    }
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn test_match_message_call() {
+        let mut state = State {
+            quit: false,
+            position: Point { x: 0, y: 0 },
+            color: (0, 0, 0),
+        };
+        state.process(Message::ChangeColor((255, 0, 255)));
+        state.process(Message::Echo(String::from(&#34;hello world&#34;)));
+        state.process(Message::Move(Point { x: 10, y: 15 }));
+        state.process(Message::Quit);
+
+        assert_eq!(state.color, (255, 0, 255));
+        assert_eq!(state.position.x, 10);
+        assert_eq!(state.position.y, 15);
+        assert_eq!(state.quit, true);
+    }
+}
+</code></pre><h2 id="modules1">modules1</h2>
+<p>在Rust中也有Private 和 Public,默认情况下不加Pub就是Private</p>
+<pre tabindex="0"><code>mod sausage_factory {
+    // Don&#39;t let anybody outside of this module see this!
+    fn get_secret_recipe() -&gt; String {
+        String::from(&#34;Ginger&#34;)
+    }
+
+    pub fn make_sausage() {
+        get_secret_recipe();
+        println!(&#34;sausage!&#34;);
+    }
+}
+
+fn main() {
+    sausage_factory::make_sausage();
+}
+</code></pre><h2 id="modules2">modules2</h2>
+<p>error 提示别名未定义,然后看到main函数中的调用找到别名,定义后提示Private,提示不能使用,use前也加上pub</p>
+<pre tabindex="0"><code>   use self::fruits::PEAR as ???
+   |                               ^ expected identifie
+   
+     delicious_snacks::fruit,
+   |                           ^^^^^ private constant import
+</code></pre><pre tabindex="0"><code>// modules2.rs
+// You can bring module paths into scopes and provide new names for them with the
+// &#39;use&#39; and &#39;as&#39; keywords. Fix these &#39;use&#39; statements to make the code compile.
+// Make me compile! Execute `rustlings hint modules2` for hints :)
+
+// I AM NOT DONE
+
+mod delicious_snacks {
+
+    // TODO: Fix these use statements
+    pub use self::fruits::PEAR as fruit ;
+    pub use self::veggies::CUCUMBER as veggie;
+
+    mod fruits {
+        pub const PEAR: &amp;&#39;static str = &#34;Pear&#34;;
+        pub const APPLE: &amp;&#39;static str = &#34;Apple&#34;;
+    }
+
+    mod veggies {
+        pub const CUCUMBER: &amp;&#39;static str = &#34;Cucumber&#34;;
+        pub const CARROT: &amp;&#39;static str = &#34;Carrot&#34;;
+    }
+}
+
+fn main() {
+    println!(
+        &#34;favorite snacks: {} and {}&#34;,
+        delicious_snacks::fruit,
+        delicious_snacks::veggie
+    );
+}
+</code></pre><h2 id="modules3">modules3</h2>
+<p>根据提示调入需要的modules</p>
+<pre tabindex="0"><code>// modules3.rs
+// You can use the &#39;use&#39; keyword to bring module paths from modules from anywhere
+// and especially from the Rust standard library into your scope.
+// Bring SystemTime and UNIX_EPOCH
+// from the std::time module. Bonus style points if you can do it with one line!
+// Make me compile! Execute `rustlings hint modules3` for hints :)
+
+// I AM NOT DONE
+
+// TODO: Complete this use statement
+use std::time::UNIX_EPOCH;
+use std::time::SystemTime;
+
+fn main() {
+    match SystemTime::now().duration_since(UNIX_EPOCH) {
+        Ok(n) =&gt; println!(&#34;1970-01-01 00:00:00 UTC was {} seconds ago!&#34;, n.as_secs()),
+        Err(_) =&gt; panic!(&#34;SystemTime before UNIX EPOCH!&#34;),
+    }
+}
+</code></pre><h2 id="collectionsvec1">collections/vec1</h2>
+<p>根据提示,用vec!宏创建一个跟a等值的数组</p>
+<pre tabindex="0"><code>// vec1.rs
+// Your task is to create a `Vec` which holds the exact same elements
+// as in the array `a`.
+// Make me compile and pass the test!
+// Execute the command `rustlings hint vec1` if you need hints.
+
+// I AM NOT DONE
+
+fn array_and_vec() -&gt; ([i32; 4], Vec&lt;i32&gt;) {
+    let a = [10, 20, 30, 40]; // a plain array
+    let v = vec![10,20,30,40];// TODO: declare your vector here with the macro for vectors
+
+    (a, v)
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn test_array_and_vec_similarity() {
+        let (a, v) = array_and_vec();
+        assert_eq!(a, v[..]);
+    }
+}
+</code></pre><h2 id="vec2">vec2</h2>
+<p>根据提示这里for循环中要求 ×2, 通过* 来解引用
+参考:https://www.jianshu.com/p/3335753520ad
+collect : <a href="https://doc.rust-lang.org/nightly/std/iter/trait.Iterator.html#method.collect">https://doc.rust-lang.org/nightly/std/iter/trait.Iterator.html#method.collect</a></p>
+<pre tabindex="0"><code>// vec2.rs
+// A Vec of even numbers is given. Your task is to complete the loop
+// so that each number in the Vec is multiplied by 2.
+//
+// Make me pass the test!
+//
+// Execute the command `rustlings hint vec2` if you need
+// hints.
+
+
+fn vec_loop(mut v: Vec&lt;i32&gt;) -&gt; Vec&lt;i32&gt; {
+    for i in v.iter_mut() {
+        // TODO: Fill this up so that each element in the Vec `v` is
+        // multiplied by 2.
+        *i = *i * 2;
+    }
+
+    // At this point, `v` should be equal to [4, 8, 12, 16, 20].
+    v
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn test_vec_loop() {
+        let v: Vec&lt;i32&gt; = (1..).filter(|x| x % 2 == 0).take(5).collect();
+        let ans = vec_loop(v.clone());
+
+        assert_eq!(ans, v.iter().map(|x| x * 2).collect::&lt;Vec&lt;i32&gt;&gt;());
+    }
+}
+</code></pre><h2 id="hashmap1">HashMap1</h2>
+<p>这里就是创建一个hashmap,然后向里面添加更多的值</p>
+<pre tabindex="0"><code>// hashmap1.rs
+// A basket of fruits in the form of a hash map needs to be defined.
+// The key represents the name of the fruit and the value represents
+// how many of that particular fruit is in the basket. You have to put
+// at least three different types of fruits (e.g apple, banana, mango)
+// in the basket and the total count of all the fruits should be at
+// least five.
+//
+// Make me compile and pass the tests!
+//
+// Execute the command `rustlings hint hashmap1` if you need
+// hints.
+
+// I AM NOT DONE
+
+use std::collections::HashMap;
+
+fn fruit_basket() -&gt; HashMap&lt;String, u32&gt; {
+    let mut basket = HashMap::new();// TODO: declare your hash map here.
+
+    // Two bananas are already given for you :)
+    basket.insert(String::from(&#34;banana&#34;), 2);
+
+    // TODO: Put more fruits in your basket here.
+    basket.insert(String::from(&#34;apple&#34;),4);
+    basket.insert(String::from(&#34;pear&#34;),5);
+    basket.insert(String::from(&#34;grape&#34;),4);
+    basket.insert(String::from(&#34;tomato&#34;),4);
+
+    basket
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn at_least_three_types_of_fruits() {
+        let basket = fruit_basket();
+        assert!(basket.len() &gt;= 3);
+    }
+
+    #[test]
+    fn at_least_five_fruits() {
+        let basket = fruit_basket();
+        assert!(basket.values().sum::&lt;u32&gt;() &gt;= 5);
+    }
+}
+</code></pre><h2 id="hashmap2">HashMap2</h2>
+<p>这题注释中说到,已经给出Apple,Mango,Lychee这些水果,不能再次插入这些水果到HashMap,所以插入剩下的水果就可以了. 我试了下用Match和直接写插入都可以.</p>
+<pre tabindex="0"><code>// hashmap2.rs
+
+// A basket of fruits in the form of a hash map is given. The key
+// represents the name of the fruit and the value represents how many
+// of that particular fruit is in the basket. You have to put *MORE
+// THAN 11* fruits in the basket. Three types of fruits - Apple (4),
+// Mango (2) and Lychee (5) are already given in the basket. You are
+// not allowed to insert any more of these fruits!
+//
+// Make me pass the tests!
+//
+// Execute the command `rustlings hint hashmap2` if you need
+// hints.
+
+// I AM NOT DONE
+
+use std::collections::HashMap;
+
+#[derive(Hash, PartialEq, Eq)]
+enum Fruit {
+    Apple,
+    Banana,
+    Mango,
+    Lychee,
+    Pineapple,
+}
+
+fn fruit_basket(basket: &amp;mut HashMap&lt;Fruit, u32&gt;) {
+    let fruit_kinds = vec![
+        Fruit::Apple,
+        Fruit::Banana,
+        Fruit::Mango,
+        Fruit::Lychee,
+        Fruit::Pineapple,
+    ];
+
+    for fruit in fruit_kinds {
+        // TODO: Put new fruits if not already present. Note that you
+        // are not allowed to put any type of fruit that&#39;s already
+        // present!
+        match fruit {
+            Fruit::Banana =&gt; basket.insert(Fruit::Banana,6),
+            Fruit::Pineapple =&gt; basket.insert(Fruit::Pineapple,7),
+            _ =&gt;None,
+        };
+    }
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    fn get_fruit_basket() -&gt; HashMap&lt;Fruit, u32&gt; {
+        let mut basket = HashMap::&lt;Fruit, u32&gt;::new();
+        basket.insert(Fruit::Apple, 4);
+        basket.insert(Fruit::Mango, 2);
+        basket.insert(Fruit::Lychee, 5);
+
+        basket
+    }
+
+    #[test]
+    fn test_given_fruits_are_not_modified() {
+        let mut basket = get_fruit_basket();
+        fruit_basket(&amp;mut basket);
+        assert_eq!(*basket.get(&amp;Fruit::Apple).unwrap(), 4);
+        assert_eq!(*basket.get(&amp;Fruit::Mango).unwrap(), 2);
+        assert_eq!(*basket.get(&amp;Fruit::Lychee).unwrap(), 5);
+    }
+
+    #[test]
+    fn at_least_five_types_of_fruits() {
+        let mut basket = get_fruit_basket();
+        fruit_basket(&amp;mut basket);
+        let count_fruit_kinds = basket.len();
+        assert!(count_fruit_kinds &gt;= 5);
+    }
+
+    #[test]
+    fn greater_than_eleven_fruits() {
+        let mut basket = get_fruit_basket();
+        fruit_basket(&amp;mut basket);
+        let count = basket.values().sum::&lt;u32&gt;();
+        assert!(count &gt; 11);
+    }
+}
+</code></pre><h2 id="string1">String1</h2>
+<p>要求返回值是String,但是发现是&amp;strleix,直接使用to_string方法转换成string</p>
+<pre tabindex="0"><code>// strings1.rs
+// Make me compile without changing the function signature!
+// Execute `rustlings hint strings1` for hints ;)
+
+
+fn main() {
+    let answer = current_favorite_color();
+    println!(&#34;My current favorite color is {}&#34;, answer);
+}
+
+fn current_favorite_color() -&gt; String {
+    &#34;blue&#34;.to_string()
+}
+</code></pre><h2 id="string2">String2</h2>
+<p>两个方法
+在word处,直接加&amp;,或者使用&amp;word.to_string()[..] 来转换成切片类型</p>
+<pre tabindex="0"><code>// strings2.rs
+// Make me compile without changing the function signature!
+// Execute `rustlings hint strings2` for hints :)
+
+// I AM NOT DONE
+
+fn main() {
+    let word = String::from(&#34;green&#34;); // Try not changing this line :)
+    if is_a_color_word(&amp;word.to_string()[..]) {
+        println!(&#34;That is a color word I know!&#34;);
+    } else {
+        println!(&#34;That is not a color word I know.&#34;);
+    }
+}
+
+fn is_a_color_word(attempt: &amp;str) -&gt; bool {
+    attempt == &#34;green&#34; || attempt == &#34;blue&#34; || attempt == &#34;red&#34;
+}
+</code></pre><h2 id="quiz2">quiz2</h2>
+<p>这里就是看各个函数的返回值是string 还是&amp;str
+我这里有个小问题就是trim()这个函数好像没导入，但是测试过了</p>
+<pre tabindex="0"><code>// quiz2.rs
+// This is a quiz for the following sections:
+// - Strings
+
+// Ok, here are a bunch of values-- some are `String`s, some are `&amp;str`s. Your
+// task is to call one of these two functions on each value depending on what
+// you think each value is. That is, add either `string_slice` or `string`
+// before the parentheses on each line. If you&#39;re right, it will compile!
+
+// I AM NOT DONE
+
+
+fn string_slice(arg: &amp;str) {
+    println!(&#34;{}&#34;, arg);
+}
+fn string(arg: String) {
+    println!(&#34;{}&#34;, arg);
+}
+
+fn main() {
+    string_slice(&#34;blue&#34;);
+    string(&#34;red&#34;.to_string());
+    string(String::from(&#34;hi&#34;));
+    string(&#34;rust is fun!&#34;.to_owned());//返回string
+    string_slice(&#34;nice weather&#34;.into());//这个都可以
+    string(format!(&#34;Interpolation {}&#34;, &#34;Station&#34;));
+    string_slice(&amp;String::from(&#34;abc&#34;)[0..1]);
+    string_slice(&#34;  hello there &#34;.trim());
+    string(&#34;Happy Monday!&#34;.to_string().replace(&#34;Mon&#34;, &#34;Tues&#34;));//to_string后replace，返回是string
+    string(&#34;mY sHiFt KeY iS sTiCkY&#34;.to_lowercase());//to_lowercase()是返回string
+}
+</code></pre><h2 id="error1">error1</h2>
+<p>Option枚举和Result枚举,一个是Some,None;一个是Result,是Ok,Err;
+下面的调用里面是Ok和Err,那么需要改返回值类型为Result&lt;String,String&gt;,然后下面是断言判断相等,那么就是Err的报错要和下面断言中的报错一致.</p>
+<pre tabindex="0"><code>// errors1.rs
+// This function refuses to generate text to be printed on a nametag if
+// you pass it an empty string. It&#39;d be nicer if it explained what the problem
+// was, instead of just sometimes returning `None`. Thankfully, Rust has a similar
+// construct to `Option` that can be used to express error conditions. Let&#39;s use it!
+// Execute `rustlings hint errors1` for hints!
+
+
+pub fn generate_nametag_text(name: String) -&gt; Result&lt;String,String&gt; {
+    if name.len() &gt; 0 {
+        Ok(format!(&#34;Hi! My name is {}&#34;, name))
+    } else {
+        // Empty names aren&#39;t allowed.
+        Err(&#34;`name` was empty; it must be nonempty.&#34;.into())
+    }
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn generates_nametag_text_for_a_nonempty_name() {
+        assert_eq!(
+            generate_nametag_text(&#34;Beyoncé&#34;.into()),
+            Ok(&#34;Hi! My name is Beyoncé&#34;.into())
+        );
+    }
+
+    #[test]
+    fn explains_why_generating_nametag_text_fails() {
+        assert_eq!(
+            generate_nametag_text(&#34;&#34;.into()),
+            // Don&#39;t change this line
+            Err(&#34;`name` was empty; it must be nonempty.&#34;.into())
+        );
+    }
+}
+</code></pre><h2 id="error2">error2</h2>
+<p>?号操作符只能被用于返回值类型是Result or Option (or another type that implements try)
+对于Error类型错误转换为ParseIntError的理想还没理解Std::convert::From</p>
+<pre tabindex="0"><code>// errors2.rs
+// Say we&#39;re writing a game where you can buy items with tokens. All items cost
+// 5 tokens, and whenever you purchase items there is a processing fee of 1
+// token. A player of the game will type in how many items they want to buy,
+// and the `total_cost` function will calculate the total number of tokens.
+// Since the player typed in the quantity, though, we get it as a string-- and
+// they might have typed anything, not just numbers!
+
+// Right now, this function isn&#39;t handling the error case at all (and isn&#39;t
+// handling the success case properly either). What we want to do is:
+// if we call the `parse` function on a string that is not a number, that
+// function will return a `ParseIntError`, and in that case, we want to
+// immediately return that error from our function and not try to multiply
+// and add.
+
+// There are at least two ways to implement this that are both correct-- but
+// one is a lot shorter! Execute `rustlings hint errors2` for hints to both ways.
+
+// I AM NOT DONE
+
+use std::num::ParseIntError;
+pub fn total_cost(item_quantity: &amp;str) -&gt; Result&lt;i32, ParseIntError&gt; {
+    let processing_fee = 1;
+    let cost_per_item = 5;
+    // let qty = item_quantity.parse::&lt;i32&gt;()?;
+    let qty = match item_quantity.parse::&lt;i32&gt;() {
+        Ok(qty) =&gt; qty,
+        Err(e) =&gt; return Err(e),
+    };
+
+    Ok(qty * cost_per_item + processing_fee)
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn item_quantity_is_a_valid_number() {
+        assert_eq!(total_cost(&#34;34&#34;), Ok(171));
+    }
+
+    #[test]
+    fn item_quantity_is_an_invalid_number() {
+        assert_eq!(
+            total_cost(&#34;beep boop&#34;).unwrap_err().to_string(),
+            &#34;invalid digit found in string&#34;
+        );
+    }
+}
+</code></pre><h2 id="error3">error3</h2>
+<p><code>cannot use the '?' operator in a function that returns '()'</code>
+提示这里不能使用？因为这个函数的返回值类型不是Result，Option，及其他实现了try的返回值，可以直接把？改成unwrap(),但是这样是不安全的，仅仅一个类型错误直接把程序终止了，那么可以考虑把main类的返回值变成Result，但是在main上有所限制，可以设置为Result&lt;(),ParseIntError&gt; 最后在返回一个Ok(())
+参考：</p>
+<ol>
+<li><a href="https://doc.rust-lang.org/book/ch09-02-recoverable-errors-with-result.html#where-the--operator-can-be-used">https://doc.rust-lang.org/book/ch09-02-recoverable-errors-with-result.html#where-the--operator-can-be-used</a></li>
+<li><a href="https://blog.qrzbing.cn/post/2022-rustlings/#errors1">https://blog.qrzbing.cn/post/2022-rustlings/#errors1</a></li>
+<li><a href="https://www.bilibili.com/video/BV1hp4y1k7SV?p=41&amp;vd_source=b90151df3cf3f7619080b4a435bc384f">https://www.bilibili.com/video/BV1hp4y1k7SV?p=41&amp;vd_source=b90151df3cf3f7619080b4a435bc384f</a></li>
+</ol>
+<pre tabindex="0"><code>// errors3.rs
+// This is a program that is trying to use a completed version of the
+// `total_cost` function from the previous exercise. It&#39;s not working though!
+// Why not? What should we do to fix it?
+// Execute `rustlings hint errors3` for hints!
+
+// I AM NOT DONE
+
+use std::num::ParseIntError;
+
+fn main() -&gt;Result&lt;(),ParseIntError&gt; {
+    let mut tokens = 100;
+    let pretend_user_input = &#34;8&#34;;
+
+    // let cost = total_cost(pretend_user_input).unwrap();
+    let cost = total_cost(pretend_user_input)?;
+
+    if cost &gt; tokens {
+        println!(&#34;You can&#39;t afford that many!&#34;);
+    } else {
+        tokens -= cost;
+        println!(&#34;You now have {} tokens.&#34;, tokens);
+    }
+    Ok(())
+}
+
+pub fn total_cost(item_quantity: &amp;str) -&gt; Result&lt;i32, ParseIntError&gt; {
+    let processing_fee = 1;
+    let cost_per_item = 5;
+    let qty = item_quantity.parse::&lt;i32&gt;()?;
+
+    Ok(qty * cost_per_item + processing_fee)
+}
+</code></pre><h2 id="error4">error4</h2>
+<p>错误提示 left != right,上方的new方法没判断传入的值是为0还是负数</p>
+<pre tabindex="0"><code>// errors4.rs
+// Make this test pass! Execute `rustlings hint errors4` for hints :)
+
+// I AM NOT DONE
+
+#[derive(PartialEq, Debug)]
+struct PositiveNonzeroInteger(u64);
+
+#[derive(PartialEq, Debug)]
+enum CreationError {
+    Negative,
+    Zero,
+}
+
+impl PositiveNonzeroInteger {
+    fn new(value: i64) -&gt; Result&lt;PositiveNonzeroInteger, CreationError&gt; {
+        match value {
+            x if x &lt; 0 =&gt; Err(CreationError::Negative),
+            x if x == 0 =&gt; Err(CreationError::Zero),
+            _=&gt;Ok(PositiveNonzeroInteger(value as u64))
+        }
+    }
+}
+
+#[test]
+fn test_creation() {
+    assert!(PositiveNonzeroInteger::new(10).is_ok());
+    assert_eq!(
+        Err(CreationError::Negative),
+        PositiveNonzeroInteger::new(-10)
+    );
+    assert_eq!(Err(CreationError::Zero), PositiveNonzeroInteger::new(0));
+}
+</code></pre><h2 id="error5">error5</h2>
+<p>参考:</p>
+<ol>
+<li><a href="https://blog.qrzbing.cn/post/2022-rustlings/#errors5">https://blog.qrzbing.cn/post/2022-rustlings/#errors5</a></li>
+<li><a href="https://doc.rust-lang.org/book/ch17-02-trait-objects.html#using-trait-objects-that-allow-for-values-of-different-types">https://doc.rust-lang.org/book/ch17-02-trait-objects.html#using-trait-objects-that-allow-for-values-of-different-types</a></li>
+</ol>
+<p>main的返回值是Result&lt;(),ParseIntError&gt;,而PositiveNonzeroInteger::new(x)的返回值是Result&lt;PositiveNonzeroInteger,CreationError&gt;. hint</p>
+<pre tabindex="0"><code>[!hint]
+
+main 中会产生两种错误类型（ParseIntError 和 CreationError），它们都通过 ? 传递。我们怎样在 main 中声明同时允许两种错误返回的情况呢？ 还是参考 Where The ? Operator Can Be Used，在底层实现中，? 对错误值调用 From::from 将其转换成一个装箱（boxed）的 trait 对象，也就是 Box&lt;dyn error::Error&gt;，它是多态的，意味着很多不同类型的错误可以从同一个函数返回。所有的错误行为都是一样的，因为它们都实现了 error::Error trait（特征）。
+</code></pre><pre tabindex="0"><code>// errors5.rs
+
+// This program uses a completed version of the code from errors4.
+// It won&#39;t compile right now! Why?
+// Execute `rustlings hint errors5` for hints!
+
+// I AM NOT DONE
+
+use std::error;
+use std::fmt;
+use std::num::ParseIntError;
+
+// TODO: update the return type of `main()` to make this compile.
+fn main() -&gt; Result&lt;(), Box&lt;dyn error::Error&gt;&gt; {
+    let pretend_user_input = &#34;42&#34;;
+    let x: i64 = pretend_user_input.parse()?;
+    println!(&#34;output={:?}&#34;, PositiveNonzeroInteger::new(x)?);
+    Ok(())
+}
+
+// Don&#39;t change anything below this line.
+
+#[derive(PartialEq, Debug)]
+struct PositiveNonzeroInteger(u64);
+
+#[derive(PartialEq, Debug)]
+enum CreationError {
+    Negative,
+    Zero,
+}
+
+impl PositiveNonzeroInteger {
+    fn new(value: i64) -&gt; Result&lt;PositiveNonzeroInteger, CreationError&gt; {
+        match value {
+            x if x &lt; 0 =&gt; Err(CreationError::Negative),
+            x if x == 0 =&gt; Err(CreationError::Zero),
+            x =&gt; Ok(PositiveNonzeroInteger(x as u64))
+        }
+    }
+}
+</code></pre><h2 id="errors6">errors6</h2>
+<p>这题很懵，我直接放参考链接了
+<a href="https://github.com/rcore-os/rCore-Tutorial/issues/146">参考1</a>
+<a href="https://blog.qrzbing.cn/post/2022-rustlings/#errors6">参考2</a></p>
+<pre tabindex="0"><code>// errors6.rs
+
+// Using catch-all error types like `Box&lt;dyn error::Error&gt;` isn&#39;t recommended
+// for library code, where callers might want to make decisions based on the
+// error content, instead of printing it out or propagating it further. Here,
+// we define a custom error type to make it possible for callers to decide
+// what to do next when our function returns an error.
+
+// Make these tests pass! Execute `rustlings hint errors6` for hints :)
+
+
+use std::num::ParseIntError;
+
+// This is a custom error type that we will be using in `parse_pos_nonzero()`.
+#[derive(PartialEq, Debug)]
+enum ParsePosNonzeroError {
+    Creation(CreationError),
+    ParseInt(ParseIntError)
+}
+
+impl ParsePosNonzeroError {
+    // TODO: add another error conversion function here.
+    fn from_creation(e:CreationError) -&gt; ParsePosNonzeroError {
+        match e {
+            CreationError::Negative =&gt;ParsePosNonzeroError::Creation(CreationError::Negative),
+            CreationError::Zero =&gt; ParsePosNonzeroError::Creation(CreationError::Zero),
+        }
+    }
+    fn from_parse(e:ParseIntError) -&gt; ParsePosNonzeroError{
+        match e {
+            e =&gt; ParsePosNonzeroError::ParseInt(e)
+        }
+    }
+
+}
+
+fn parse_pos_nonzero(s: &amp;str)
+    -&gt; Result&lt;PositiveNonzeroInteger, ParsePosNonzeroError&gt;
+{
+    // TODO: change this to return an appropriate error instead of panicking
+    // when `parse()` returns an error.
+    let x  = s.parse::&lt;i64&gt;()
+        .map_err(ParsePosNonzeroError::from_parse)?;
+    PositiveNonzeroInteger::new(x).map_err(ParsePosNonzeroError::from_creation)
+
+    // let x = s.parse::&lt;i64&gt;();
+    // let x = match x {
+    //     Ok(x) =&gt; x,
+    //     Err(e) =&gt; return Err(ParsePosNonzeroError::ParseInt(e)),
+    // };
+}
+
+// Don&#39;t change anything below this line.
+
+#[derive(PartialEq, Debug)]
+struct PositiveNonzeroInteger(u64);
+
+#[derive(PartialEq, Debug)]
+enum CreationError {
+    Negative,
+    Zero,
+}
+
+impl PositiveNonzeroInteger {
+    fn new(value: i64) -&gt; Result&lt;PositiveNonzeroInteger, CreationError&gt; {
+        match value {
+            x if x &lt; 0 =&gt; Err(CreationError::Negative),
+            x if x == 0 =&gt; Err(CreationError::Zero),
+            x =&gt; Ok(PositiveNonzeroInteger(x as u64))
+        }
+    }
+}
+
+#[cfg(test)]
+mod test {
+    use super::*;
+
+    #[test]
+    fn test_parse_error() {
+        // We can&#39;t construct a ParseIntError, so we have to pattern match.
+        assert!(matches!(
+            parse_pos_nonzero(&#34;not a number&#34;),
+            Err(ParsePosNonzeroError::ParseInt(_))
+        ));
+    }
+
+    #[test]
+    fn test_negative() {
+        assert_eq!(
+            parse_pos_nonzero(&#34;-555&#34;),
+            Err(ParsePosNonzeroError::Creation(CreationError::Negative))
+        );
+    }
+
+    #[test]
+    fn test_zero() {
+        assert_eq!(
+            parse_pos_nonzero(&#34;0&#34;),
+            Err(ParsePosNonzeroError::Creation(CreationError::Zero))
+        );
+    }
+
+    #[test]
+    fn test_positive() {
+        let x = PositiveNonzeroInteger::new(42);
+        assert!(x.is_ok());
+        assert_eq!(parse_pos_nonzero(&#34;42&#34;), Ok(x.unwrap()));
+    }
+}
+</code></pre><h2 id="generics1">generics1</h2>
+<p>根据下面push的值来选择to_string,或者修改Vec的参数类型</p>
+<pre tabindex="0"><code>// This shopping list program isn&#39;t compiling!
+// Use your knowledge of generics to fix it.
+
+// Execute `rustlings hint generics1` for hints!
+
+
+fn main() {
+    let mut shopping_list: Vec&lt;&amp;str&gt; = Vec::new();
+    shopping_list.push(&#34;milk&#34;);
+}
+</code></pre><h2 id="generics2">generics2</h2>
+<p>这题考虑的是泛型，因为一个方法使用了两种参数类型
+<a href="https://doc.rust-lang.org/stable/book/ch10-01-syntax.html#in-method-definitions">参考定义泛型</a></p>
+<pre tabindex="0"><code>// This powerful wrapper provides the ability to store a positive integer value.
+// Rewrite it using generics so that it supports wrapping ANY type.
+
+// Execute `rustlings hint generics2` for hints!
+
+
+struct Wrapper&lt;T&gt; {
+    value: T,
+}
+
+impl&lt;T&gt; Wrapper&lt;T&gt; {
+    pub fn new(value: T) -&gt; Self {
+        Wrapper { value }
+    }
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn store_u32_in_wrapper() {
+        assert_eq!(Wrapper::new(42).value, 42);
+    }
+
+    #[test]
+    fn store_str_in_wrapper() {
+        assert_eq!(Wrapper::new(&#34;Foo&#34;).value, &#34;Foo&#34;);
+    }
+}
+</code></pre><h2 id="generics3">generics3</h2>
+<p>这题就是对于泛型的掌握,及泛型中不可能满足所有的类型输出,需要使用Display
+<a href="https://doc.rust-lang.org/stable/book/ch10-02-traits.html#fixing-the-largest-function-with-trait-bounds">参考 Fixing the largest Function with Trait Bounds</a>
+<a href="https://egghead.io/lessons/rust-rustlings-generics3-constraining-generics-using-traits">视频讲解(英文)</a></p>
+<pre tabindex="0"><code>// An imaginary magical school has a new report card generation system written in Rust!
+// Currently the system only supports creating report cards where the student&#39;s grade
+// is represented numerically (e.g. 1.0 -&gt; 5.5).
+// However, the school also issues alphabetical grades (A+ -&gt; F-) and needs
+// to be able to print both types of report card!
+
+// Make the necessary code changes in the struct ReportCard and the impl block
+// to support alphabetical report cards. Change the Grade in the second test to &#34;A+&#34;
+// to show that your changes allow alphabetical grades.
+
+// Execute &#39;rustlings hint generics3&#39; for hints!
+
+// I AM NOT DONE
+
+pub struct ReportCard&lt;T&gt; {
+    pub grade: T,
+    pub student_name: String,
+    pub student_age: u8,
+}
+
+impl&lt;T : std::fmt::Display&gt; ReportCard&lt;T&gt; {
+    pub fn print(&amp;self) -&gt; String {
+        format!(&#34;{} ({}) - achieved a grade of {}&#34;,
+            &amp;self.student_name, &amp;self.student_age, &amp;self.grade)
+    }
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn generate_numeric_report_card() {
+        let report_card = ReportCard {
+            grade: 2.1,
+            student_name: &#34;Tom Wriggle&#34;.to_string(),
+            student_age: 12,
+        };
+        assert_eq!(
+            report_card.print(),
+            &#34;Tom Wriggle (12) - achieved a grade of 2.1&#34;
+        );
+    }
+
+    #[test]
+    fn generate_alphabetic_report_card() {
+        // TODO: Make sure to change the grade here after you finish the exercise.
+        let report_card = ReportCard {
+            grade: &#34;A+&#34;,
+            student_name: &#34;Gary Plotter&#34;.to_string(),
+            student_age: 11,
+        };
+        assert_eq!(
+            report_card.print(),
+            &#34;Gary Plotter (11) - achieved a grade of A+&#34;
+        );
+    }
+}
+</code></pre><h2 id="options1">options1</h2>
+<p>根据错误提示加上Some,然后发现下面<code>number_to_add</code>报错,看到说未初始化,说明numbers数组要初始化参数且<code>参数也必须Some()</code>,这里不支持Some(-1)负数,提示- cannot apply unary operator -</p>
+<pre tabindex="0"><code>// option1.rs
+// Make me compile! Execute `rustlings hint option1` for hints
+
+// I AM NOT DONE
+
+// you can modify anything EXCEPT for this function&#39;s signature
+fn print_number(maybe_number: Option&lt;u16&gt;) {
+    println!(&#34;printing: {}&#34;, maybe_number.unwrap());
+}
+
+fn main() {
+    print_number(Some(13));
+    print_number(Some(99));
+
+    let mut numbers: [Option&lt;u16&gt;; 5]= [Some(0);5];
+    for iter in 0..5 {
+        let number_to_add: u16 = {
+            ((iter * 1235) + 2) / (4 * 16)
+        };
+
+        numbers[iter as usize] = Some(number_to_add);
+    }
+}
+</code></pre><h2 id="options2">options2</h2>
+<p>这题考 if let / while let 可以搜下例子 
+如果是如果可以推断类型可以看出vector pop 会加一次option,本身也是option所以要SOme两次
+<a href="https://doc.rust-lang.org/stable/book/ch06-03-if-let.html#concise-control-flow-with-if-let">参考if let</a>
+<a href="https://doc.rust-lang.org/rust-by-example/flow_control/while_let.html">参考while let</a></p>
+<pre tabindex="0"><code>// option2.rs
+// Make me compile! Execute `rustlings hint option2` for hints
+
+// I AM NOT DONE
+
+fn main() {
+    let optional_word = Some(String::from(&#34;rustlings&#34;));
+    // TODO: Make this an if let statement whose value is &#34;Some&#34; type
+    if let Some(word) =  optional_word {
+        println!(&#34;The word is: {}&#34;, word);
+    } else {
+        println!(&#34;The optional word doesn&#39;t contain anything&#34;);
+    }
+
+    let mut optional_integers_vec: Vec&lt;Option&lt;i8&gt;&gt; = Vec::new();
+    for x in 1..10 {
+        optional_integers_vec.push(Some(x));
+    }
+
+    // TODO: make this a while let statement - remember that vector.pop also adds another layer of Option&lt;T&gt;
+    // You can stack `Option&lt;T&gt;`&#39;s into while let and if let
+    while let Some(Some(integer)) = optional_integers_vec.pop() {
+        println!(&#34;current value: {}&#34;, integer);
+    }
+}
+</code></pre><h2 id="options3">options3</h2>
+<p>看到报错提示y已经被move了,所以没有y了,rust编译器提示我们要使用ref给SOme(p)
+Some(ref p)</p>
+<p>&amp; 和 ref区别</p>
+<ul>
+<li>&amp; 表示 pattern 需要一个对对象的引用。因此，&amp; 是上述 pattern 的一部分，&amp;Foo 与 Foo 匹配的对象不同。</li>
+<li>ref 表示想要引用一个未打包（unpacked）的值。它不被匹配（It is not matched against）：Foo(ref foo) 和 Foo(foo) 匹配相同的对象。
+<a href="https://www.jianshu.com/p/ac519d8c5ec9">参考讲解</a></li>
+</ul>
+<pre tabindex="0"><code>// option3.rs
+// Make me compile! Execute `rustlings hint option3` for hints
+
+
+struct Point {
+    x: i32,
+    y: i32,
+}
+
+fn main() {
+    let y: Option&lt;Point&gt; = Some(Point { x: 100, y: 200 });
+
+    match y {
+        Some(ref p) =&gt; println!(&#34;Co-ordinates are {},{} &#34;, p.x, p.y),
+        _ =&gt; println!(&#34;no match&#34;),
+    }
+    y; // Fix without deleting this line.
+}
+</code></pre><h2 id="traits1">traits1</h2>
+<p>这题是trait实现
+<a href="">讲解参考</a></p>
+<pre tabindex="0"><code>// traits1.rs
+// Time to implement some traits!
+//
+// Your task is to implement the trait
+// `AppendBar&#39; for the type `String&#39;.
+//
+// The trait AppendBar has only one function,
+// which appends &#34;Bar&#34; to any object
+// implementing this trait.
+
+
+trait AppendBar {
+    fn append_bar(self) -&gt; Self;
+}
+
+impl AppendBar for String {
+    //Add your code here
+    fn append_bar(self) -&gt; Self {
+        let mut x = self.clone();
+        x.push_str(&#34;Bar&#34;);
+        x
+    }
+}
+
+fn main() {
+    let s = String::from(&#34;Foo&#34;);
+    let s = s.append_bar();
+    println!(&#34;s: {}&#34;, s);
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn is_foo_bar() {
+        assert_eq!(String::from(&#34;Foo&#34;).append_bar(), String::from(&#34;FooBar&#34;));
+    }
+
+    #[test]
+    fn is_bar_bar() {
+        assert_eq!(
+            String::from(&#34;&#34;).append_bar().append_bar(),
+            String::from(&#34;BarBar&#34;)
+        );
+    }
+}
+</code></pre><h2 id="traits2">traits2</h2>
+<p>跟上面的题差不多,impl一个AppendBar for vec
+impl trait for 类,就要实现trait中的方法,相当于java中的接口</p>
+<ul>
+<li>可以在某个类型上实现trait的前提条件是:
+-这个类型或这个trait实在本地crate中定义的</li>
+<li>无法为外部类型来实现外部的trait:
+-这个限制是程序属性的一部分(也就是一致性)
+-更具体地说是孤儿规则:之所以这样命名是因为父类型不存在
+-此规则确保其他人的代码不能破坏你的代码,反之亦然
+-如果没有这个规则,两个crate可以为同一类型实现同一个trati,Rust就不知道实现哪个了</li>
+</ul>
+<pre tabindex="0"><code>// traits2.rs
+//
+// Your task is to implement the trait
+// `AppendBar&#39; for a vector of strings.
+//
+// To implement this trait, consider for
+// a moment what it means to &#39;append &#34;Bar&#34;&#39;
+// to a vector of strings.
+//
+// No boiler plate code this time,
+// you can do this!
+
+
+trait AppendBar {
+    fn append_bar(self) -&gt; Self;
+}
+
+//TODO: Add your code here
+impl AppendBar for Vec&lt;String&gt;{
+    fn append_bar(self) -&gt; Self {
+        let mut x = self.clone();
+        x.push(&#34;Bar&#34;.to_string());
+        x
+    }
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn is_vec_pop_eq_bar() {
+        let mut foo = vec![String::from(&#34;Foo&#34;)].append_bar();
+        assert_eq!(foo.pop().unwrap(), String::from(&#34;Bar&#34;));
+        assert_eq!(foo.pop().unwrap(), String::from(&#34;Foo&#34;));
+    }
+}
+</code></pre><h2 id="tests1">tests1</h2>
+<p>assert!()宏的使用</p>
+<pre tabindex="0"><code>// tests1.rs
+// Tests are important to ensure that your code does what you think it should do.
+// Tests can be run on this file with the following command:
+// rustlings run tests1
+
+// This test has a problem with it -- make the test compile! Make the test
+// pass! Make the test fail! Execute `rustlings hint tests1` for hints :)
+
+
+#[cfg(test)]
+mod tests {
+    #[test]
+    fn you_can_assert() {
+        assert!(true);
+    }
+}
+</code></pre><h2 id="tests2">tests2</h2>
+<p>assert_eq!() 里面两个参数,且两个参数要相等</p>
+<pre tabindex="0"><code>// tests2.rs
+// This test has a problem with it -- make the test compile! Make the test
+// pass! Make the test fail! Execute `rustlings hint tests2` for hints :)
+
+// I AM NOT DONE
+
+#[cfg(test)]
+mod tests {
+    #[test]
+    fn you_can_assert_eq() {
+        assert_eq!(1,1);
+    }
+}
+</code></pre><h2 id="tests3">tests3</h2>
+<p>这题考察可以在assert!()宏中使用!运算符,判断为真才行</p>
+<pre tabindex="0"><code>// tests3.rs
+// This test isn&#39;t testing our function -- make it do that in such a way that
+// the test passes. Then write a second test that tests whether we get the result
+// we expect to get when we call `is_even(5)`.
+// Execute `rustlings hint tests3` for hints :)
+
+
+pub fn is_even(num: i32) -&gt; bool {
+    num % 2 == 0
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn is_true_when_even() {
+        assert!(is_even(4));
+    }
+
+    #[test]
+    fn is_false_when_odd() {
+        assert!(!is_even(5));
+    }
+}
+</code></pre><h2 id="quiz3">quiz3</h2>
+<pre tabindex="0"><code>// quiz3.rs
+// This is a quiz for the following sections:
+// - Tests
+
+// This quiz isn&#39;t testing our function -- make it do that in such a way that
+// the test passes. Then write a second test that tests that we get the result
+// we expect to get when we call `times_two` with a negative number.
+// No hints, you can do this :)
+
+
+pub fn times_two(num: i32) -&gt; i32 {
+    num * 2
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn returns_twice_of_positive_numbers() {
+        assert_eq!(times_two(4), 8);
+    }
+
+    #[test]
+    fn returns_twice_of_negative_numbers() {
+        // TODO replace unimplemented!() with an assert for `times_two(-4)`
+        assert_eq!(times_two(-4),-8);
+        // unimplemented!()
+    }
+}
+</code></pre><h2 id="standard_library_types">standard_library_types</h2>
+<p>根据报错提示修改enum类型使Cons&lt;i32,Box<!-- raw HTML omitted -->&gt;
+然后空List是nil,不空,就创建Cons&lt;i32,Box<!-- raw HTML omitted -->&gt;</p>
+<pre tabindex="0"><code>// box1.rs
+//
+// At compile time, Rust needs to know how much space a type takes up. This becomes problematic
+// for recursive types, where a value can have as part of itself another value of the same type.
+// To get around the issue, we can use a `Box` - a smart pointer used to store data on the heap,
+// which also allows us to wrap a recursive type.
+//
+// The recursive type we&#39;re implementing in this exercise is the `cons list` - a data structure
+// frequently found in functional programming languages. Each item in a cons list contains two
+// elements: the value of the current item and the next item. The last item is a value called `Nil`.
+//
+// Step 1: use a `Box` in the enum definition to make the code compile
+// Step 2: create both empty and non-empty cons lists by replacing `unimplemented!()`
+//
+// Note: the tests should not be changed
+//
+// Execute `rustlings hint box1` for hints :)
+
+
+#[derive(PartialEq, Debug)]
+pub enum List {
+    Cons(i32, Box&lt;List&gt;),
+    Nil,
+}
+
+fn main() {
+    println!(&#34;This is an empty cons list: {:?}&#34;, create_empty_list());
+    println!(
+        &#34;This is a non-empty cons list: {:?}&#34;,
+        create_non_empty_list()
+    );
+}
+
+pub fn create_empty_list() -&gt; List {
+    return List::Nil;
+    unimplemented!()
+}
+
+pub fn create_non_empty_list() -&gt; List {
+    return List::Cons(0,Box::new(List::Nil));
+    unimplemented!()
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn test_create_empty_list() {
+        assert_eq!(List::Nil, create_empty_list())
+    }
+
+    #[test]
+    fn test_create_non_empty_list() {
+        assert_ne!(create_empty_list(), create_non_empty_list())
+    }
+}
+</code></pre><h2 id="arc1">arc1</h2>
+<p>不能copy numbers,使用Arc来引用numbers</p>
+<pre tabindex="0"><code>// arc1.rs
+// In this exercise, we are given a Vec of u32 called &#34;numbers&#34; with values ranging
+// from 0 to 99 -- [ 0, 1, 2, ..., 98, 99 ]
+// We would like to use this set of numbers within 8 different threads simultaneously.
+// Each thread is going to get the sum of every eighth value, with an offset.
+// The first thread (offset 0), will sum 0, 8, 16, ...
+// The second thread (offset 1), will sum 1, 9, 17, ...
+// The third thread (offset 2), will sum 2, 10, 18, ...
+// ...
+// The eighth thread (offset 7), will sum 7, 15, 23, ...
+
+// Because we are using threads, our values need to be thread-safe.  Therefore,
+// we are using Arc.  We need to make a change in each of the two TODOs.
+
+
+// Make this code compile by filling in a value for `shared_numbers` where the
+// first TODO comment is, and create an initial binding for `child_numbers`
+// where the second TODO comment is. Try not to create any copies of the `numbers` Vec!
+// Execute `rustlings hint arc1` for hints :)
+
+
+#![forbid(unused_imports)] // Do not change this, (or the next) line.
+use std::sync::Arc;
+use std::thread;
+
+fn main() {
+    let numbers: Vec&lt;_&gt; = (0..100u32).collect();
+    let shared_numbers = Arc::new(numbers);// TODO
+    let mut joinhandles = Vec::new();
+
+    for offset in 0..8 {
+        let child_numbers = shared_numbers.clone();// TODO
+        joinhandles.push(thread::spawn(move || {
+            let sum: u32 = child_numbers.iter().filter(|n| *n % 8 == offset).sum();
+            println!(&#34;Sum of offset {} is {}&#34;, offset, sum);
+        }));
+    }
+    for handle in joinhandles.into_iter() {
+        handle.join().unwrap();
+    }
+}
+</code></pre><h2 id="iterators1">iterators1</h2>
+<p>使用<code>.iter()</code>处理序列<code>.next()</code>进行下一个选取,<code>iter()</code>最后一个是<code>None</code></p>
+<pre tabindex="0"><code>// iterators1.rs
+//
+//  Make me compile by filling in the `???`s
+//
+// When performing operations on elements within a collection, iterators are essential.
+// This module helps you get familiar with the structure of using an iterator and
+// how to go through elements within an iterable collection.
+//
+// Execute `rustlings hint iterators1` for hints :D
+
+
+fn main () {
+    let my_fav_fruits = vec![&#34;banana&#34;, &#34;custard apple&#34;, &#34;avocado&#34;, &#34;peach&#34;, &#34;raspberry&#34;];
+
+    let mut my_iterable_fav_fruits = my_fav_fruits.iter();   // TODO: Step 1
+
+    assert_eq!(my_iterable_fav_fruits.next(), Some(&amp;&#34;banana&#34;));
+    assert_eq!(my_iterable_fav_fruits.next(), Some(&amp;&#34;custard apple&#34;));     // TODO: Step 2
+    assert_eq!(my_iterable_fav_fruits.next(), Some(&amp;&#34;avocado&#34;));
+    assert_eq!(my_iterable_fav_fruits.next(), Some(&amp;&#34;peach&#34;));     // TODO: Step 3
+    assert_eq!(my_iterable_fav_fruits.next(), Some(&amp;&#34;raspberry&#34;));
+    assert_eq!(my_iterable_fav_fruits.next(), None);     // TODO: Step 4
+
+}
+</code></pre><h2 id="iterators2">iterators2</h2>
+<p>step1:对于 iters，如果我们消费了一个，那么再次使用的时候不会使用第一个了。
+step2:参考collect
+step3:参考collect as的例子</p>
+<p><a href="https://doc.rust-lang.org/std/iter/trait.Iterator.html#method.collect">collect例子</a></p>
+<pre tabindex="0"><code>// iterators2.rs
+// In this exercise, you&#39;ll learn some of the unique advantages that iterators
+// can offer. Follow the steps to complete the exercise.
+// As always, there are hints if you execute `rustlings hint iterators2`!
+
+
+// Step 1.
+// Complete the `capitalize_first` function.
+// &#34;hello&#34; -&gt; &#34;Hello&#34;
+pub fn capitalize_first(input: &amp;str) -&gt; String {
+    let mut c = input.chars();
+    match c.next() {
+        None =&gt; String::new(),
+        Some(first) =&gt; first.to_uppercase().to_string() + c.as_str(),
+    }
+}
+
+// Step 2.
+// Apply the `capitalize_first` function to a slice of string slices.
+// Return a vector of strings.
+// [&#34;hello&#34;, &#34;world&#34;] -&gt; [&#34;Hello&#34;, &#34;World&#34;]
+pub fn capitalize_words_vector(words: &amp;[&amp;str]) -&gt; Vec&lt;String&gt; {
+    words.iter().map(|&amp;x| capitalize_first(x)).collect()
+}
+
+// Step 3.
+// Apply the `capitalize_first` function again to a slice of string slices.
+// Return a single string.
+// [&#34;hello&#34;, &#34; &#34;, &#34;world&#34;] -&gt; &#34;Hello World&#34;
+pub fn capitalize_words_string(words: &amp;[&amp;str]) -&gt; String {
+    words.iter().map(|&amp;x| capitalize_first(x) as String).collect()
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn test_success() {
+        assert_eq!(capitalize_first(&#34;hello&#34;), &#34;Hello&#34;);
+    }
+
+    #[test]
+    fn test_empty() {
+        assert_eq!(capitalize_first(&#34;&#34;), &#34;&#34;);
+    }
+
+    #[test]
+    fn test_iterate_string_vec() {
+        let words = vec![&#34;hello&#34;, &#34;world&#34;];
+        assert_eq!(capitalize_words_vector(&amp;words), [&#34;Hello&#34;, &#34;World&#34;]);
+    }
+
+    #[test]
+    fn test_iterate_into_string() {
+        let words = vec![&#34;hello&#34;, &#34; &#34;, &#34;world&#34;];
+        assert_eq!(capitalize_words_string(&amp;words), &#34;Hello World&#34;);
+    }
+}
+</code></pre><h2 id="iterators3">iterators3</h2>
+<p>参考链接:https://lazyren.github.io/studylog/rustlings-standard-library-types.html</p>
+<p>一. 这个就是判断除法出不出问题,除不尽,除,
+二. 根据提示返回值进行填写返回值,可以使用上个iter2的方法用collect()返回值
+三. 方法同上,不同在于返回值类型</p>
+<pre tabindex="0"><code>// iterators3.rs
+// This is a bigger exercise than most of the others! You can do it!
+// Here is your mission, should you choose to accept it:
+// 1. Complete the divide function to get the first four tests to pass.
+// 2. Get the remaining tests to pass by completing the result_with_list and
+//    list_of_results functions.
+// Execute `rustlings hint iterators3` to get some hints!
+
+// I AM NOT DONE
+
+#[derive(Debug, PartialEq, Eq)]
+pub enum DivisionError {
+    NotDivisible(NotDivisibleError),
+    DivideByZero,
+}
+
+#[derive(Debug, PartialEq, Eq)]
+pub struct NotDivisibleError {
+    dividend: i32,
+    divisor: i32,
+}
+
+// Calculate `a` divided by `b` if `a` is evenly divisible by `b`.
+// Otherwise, return a suitable error.
+pub fn divide(a: i32, b: i32) -&gt; Result&lt;i32, DivisionError&gt; {
+    if b == 0 {
+        Err(DivisionError::DivideByZero)
+    } else if a % b !=0 {
+        Err(DivisionError::NotDivisible(NotDivisibleError{
+            dividend: a,
+            divisor: b,
+        }))
+    } else {
+        Ok(a / b)
+    }
+}
+
+// Complete the function and return a value of the correct type so the test passes.
+// Desired output: Ok([1, 11, 1426, 3])
+fn result_with_list() -&gt; Result&lt;Vec&lt;i32&gt;,DivisionError&gt; {
+    let numbers = vec![27, 297, 38502, 81];
+    let division_results = numbers.into_iter().map(|n| divide(n, 27));
+    division_results.collect()
+}
+
+// Complete the function and return a value of the correct type so the test passes.
+// Desired output: [Ok(1), Ok(11), Ok(1426), Ok(3)]
+fn list_of_results() -&gt; Vec&lt;Result&lt;i32,DivisionError&gt;&gt; {
+    let numbers = vec![27, 297, 38502, 81];
+    let division_results = numbers.into_iter().map(|n| divide(n, 27));
+    division_results.collect()
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn test_success() {
+        assert_eq!(divide(81, 9), Ok(9));
+    }
+
+    #[test]
+    fn test_not_divisible() {
+        assert_eq!(
+            divide(81, 6),
+            Err(DivisionError::NotDivisible(NotDivisibleError {
+                dividend: 81,
+                divisor: 6
+            }))
+        );
+    }
+
+    #[test]
+    fn test_divide_by_0() {
+        assert_eq!(divide(81, 0), Err(DivisionError::DivideByZero));
+    }
+
+    #[test]
+    fn test_divide_0_by_something() {
+        assert_eq!(divide(0, 81), Ok(0));
+    }
+
+    #[test]
+    fn test_result_with_list() {
+        assert_eq!(format!(&#34;{:?}&#34;, result_with_list()), &#34;Ok([1, 11, 1426, 3])&#34;);
+    }
+
+    #[test]
+    fn test_list_of_results() {
+        assert_eq!(
+            format!(&#34;{:?}&#34;, list_of_results()),
+            &#34;[Ok(1), Ok(11), Ok(1426), Ok(3)]&#34;
+        );
+    }
+}
+</code></pre><h2 id="iterator4">iterator4</h2>
+<p>这个不让使用循环,return 和其他变量,那么寻找API,有个product(),和fold使用闭包</p>
+<pre tabindex="0"><code>// iterators4.rs
+
+
+pub fn factorial(num: u64) -&gt; u64 {
+    // Complete this function to return the factorial of num
+    // Do not use:
+    // - return
+    // Try not to use:
+    // - imperative style loops (for, while)
+    // - additional variables
+    // For an extra challenge, don&#39;t use:
+    // - recursion
+    // Execute `rustlings hint iterators4` for hints.
+    (1..num+1).product()
+    // (1..num+1).fold(1,|sum,v| sum*v)
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn factorial_of_1() {
+        assert_eq!(1, factorial(1));
+    }
+    #[test]
+    fn factorial_of_2() {
+        assert_eq!(2, factorial(2));
+    }
+
+    #[test]
+    fn factorial_of_4() {
+        assert_eq!(24, factorial(4));
+    }
+}
+</code></pre><h2 id="iterators5">iterators5</h2>
+<p>参考:https://doc.rust-lang.org/std/iter/trait.Iterator.html#
+第一个是遍历map的iter并对满足要求的值进行计数,用filetr过滤器来过滤不满足的,count技术</p>
+<p>第二个是vec中包裹着map,用iter()遍历vec,然后用map()在来遍历map,取值过滤</p>
+<pre tabindex="0"><code>// iterators5.rs
+// Let&#39;s define a simple model to track Rustlings exercise progress. Progress
+// will be modelled using a hash map. The name of the exercise is the key and
+// the progress is the value. Two counting functions were created to count the
+// number of exercises with a given progress. These counting functions use
+// imperative style for loops. Recreate this counting functionality using
+// iterators. Only the two iterator methods (count_iterator and
+// count_collection_iterator) need to be modified.
+// Execute `rustlings hint iterators5` for hints.
+//
+// Make the code compile and the tests pass.
+
+// I AM NOT DONE
+
+use std::collections::HashMap;
+
+#[derive(Clone, Copy, PartialEq, Eq)]
+enum Progress {
+    None,
+    Some,
+    Complete,
+}
+
+fn count_for(map: &amp;HashMap&lt;String, Progress&gt;, value: Progress) -&gt; usize {
+    let mut count = 0;
+    for val in map.values() {
+        if val == &amp;value {
+            count += 1;
+        }
+    }
+    count
+}
+
+fn count_iterator(map: &amp;HashMap&lt;String, Progress&gt;, value: Progress) -&gt; usize {
+    // map is a hashmap with String keys and Progress values.
+    // map = { &#34;variables1&#34;: Complete, &#34;from_str&#34;: None, ... }
+    map.values().filter(|x| *x == &amp;value).count()
+}
+
+fn count_collection_for(collection: &amp;[HashMap&lt;String, Progress&gt;], value: Progress) -&gt; usize {
+    let mut count = 0;
+    for map in collection {
+        for val in map.values() {
+            if val == &amp;value {
+                count += 1;
+            }
+        }
+    }
+    count
+}
+
+fn count_collection_iterator(collection: &amp;[HashMap&lt;String, Progress&gt;], value: Progress) -&gt; usize {
+    // collection is a slice of hashmaps.
+    // collection = [{ &#34;variables1&#34;: Complete, &#34;from_str&#34;: None, ... },
+    //     { &#34;variables2&#34;: Complete, ... }, ... ]
+    collection
+        .iter()
+        .map(|vals| vals.values().filter(|val| *val==&amp;value).count())
+        .sum()
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn count_complete() {
+        let map = get_map();
+        assert_eq!(3, count_iterator(&amp;map, Progress::Complete));
+    }
+
+    #[test]
+    fn count_equals_for() {
+        let map = get_map();
+        assert_eq!(
+            count_for(&amp;map, Progress::Complete),
+            count_iterator(&amp;map, Progress::Complete)
+        );
+    }
+
+    #[test]
+    fn count_collection_complete() {
+        let collection = get_vec_map();
+        assert_eq!(
+            6,
+            count_collection_iterator(&amp;collection, Progress::Complete)
+        );
+    }
+
+    #[test]
+    fn count_collection_equals_for() {
+        let collection = get_vec_map();
+        assert_eq!(
+            count_collection_for(&amp;collection, Progress::Complete),
+            count_collection_iterator(&amp;collection, Progress::Complete)
+        );
+    }
+
+    fn get_map() -&gt; HashMap&lt;String, Progress&gt; {
+        use Progress::*;
+
+        let mut map = HashMap::new();
+        map.insert(String::from(&#34;variables1&#34;), Complete);
+        map.insert(String::from(&#34;functions1&#34;), Complete);
+        map.insert(String::from(&#34;hashmap1&#34;), Complete);
+        map.insert(String::from(&#34;arc1&#34;), Some);
+        map.insert(String::from(&#34;as_ref_mut&#34;), None);
+        map.insert(String::from(&#34;from_str&#34;), None);
+
+        map
+    }
+
+    fn get_vec_map() -&gt; Vec&lt;HashMap&lt;String, Progress&gt;&gt; {
+        use Progress::*;
+
+        let map = get_map();
+
+        let mut other = HashMap::new();
+        other.insert(String::from(&#34;variables2&#34;), Complete);
+        other.insert(String::from(&#34;functions2&#34;), Complete);
+        other.insert(String::from(&#34;if1&#34;), Complete);
+        other.insert(String::from(&#34;from_into&#34;), None);
+        other.insert(String::from(&#34;try_from_into&#34;), None);
+
+        vec![map, other]
+    }
+}
+</code></pre><h2 id="thread1">Thread1</h2>
+<p>hint , 参考<a href="https://kaisery.github.io/trpl-zh-cn/ch16-03-shared-state.html#%E4%BA%92%E6%96%A5%E5%99%A8%E4%B8%80%E6%AC%A1%E5%8F%AA%E5%85%81%E8%AE%B8%E4%B8%80%E4%B8%AA%E7%BA%BF%E7%A8%8B%E8%AE%BF%E9%97%AE%E6%95%B0%E6%8D%AE">共享并发</a></p>
+<pre tabindex="0"><code>Arc 是原子引用计数指针，允许对不可变数据进行安全的，共享的访问。但是我们希望修改 jobs_completed 的数量，因此我们需要使用一次仅允许在一个线程中改变值的类型.
+</code></pre><p>参考:https://lazyren.github.io/studylog/rustlings-threads.html</p>
+<pre tabindex="0"><code>// threads1.rs
+// Make this compile! Execute `rustlings hint threads1` for hints :)
+// The idea is the thread spawned on line 22 is completing jobs while the main thread is
+// monitoring progress until 10 jobs are completed. Because of the difference between the
+// spawned threads&#39; sleep time, and the waiting threads sleep time, when you see 6 lines
+// of &#34;waiting...&#34; and the program ends without timing out when running,
+// you&#39;ve got it :)
+
+// I AM NOT DONE
+
+use std::sync::{Arc, Mutex};
+use std::thread;
+use std::time::Duration;
+
+struct JobStatus {
+    jobs_completed: u32,
+}
+
+fn main() {
+    let status = Arc::new(Mutex::new(JobStatus {  jobs_completed: 0 }));
+    let status_shared = status.clone();
+    thread::spawn(move || {
+        for _ in 0..10 {
+            thread::sleep(Duration::from_millis(250));
+            let mut job_status = status_shared.lock().unwrap();
+            job_status.jobs_completed += 1;
+        }
+    });
+    while status.lock().unwrap().jobs_completed &lt; 10 {
+        println!(&#34;waiting... &#34;);
+        thread::sleep(Duration::from_millis(500));
+    }
+}
+</code></pre><h2 id="macros1">macros1</h2>
+<pre tabindex="0"><code>// macros1.rs
+// Make me compile! Execute `rustlings hint macros1` for hints :)
+
+#[warn(unused_macros)]
+macro_rules! my_macro {
+    () =&gt; {
+        println!(&#34;Check out my macro!&#34;);
+    };
+}
+
+fn main() {
+    my_macro!();
+}
+</code></pre><h2 id="macros2">macros2</h2>
+<p>宏和函数的最后一个重要的区别是：在一个文件里调用宏 之前 必须定义它，或将其引入作用域，而函数则可以在任何地方定义和调用。</p>
+<pre tabindex="0"><code>// macros2.rs
+// Make me compile! Execute `rustlings hint macros2` for hints :)
+
+// I AM NOT DONE
+#[warn(unused_macros)]
+macro_rules! my_macro {
+    () =&gt; {
+        println!(&#34;Check out my macro!&#34;);
+    };
+}
+fn main() {
+    my_macro!();
+}
+</code></pre><h2 id="macros3">macros3</h2>
+<p>参考:https://doc.rust-lang.org/reference/macros-by-example.html#macros-by-example</p>
+<p>#[macro_use]的作用</p>
+<ul>
+<li>首先，它可以用于使模块的宏范围在模块关闭时不会结束，方法是将其应用于模块：</li>
+<li>其次，它可用于从另一个 crate 导入宏，方法是将其附加到 crate 根模块中出现的 extern crate 声明。</li>
+</ul>
+<pre tabindex="0"><code>// macros3.rs
+// Make me compile, without taking the macro out of the module!
+// Execute `rustlings hint macros3` for hints :)
+
+// I AM NOT DONE
+#[warn(unused_macros)]
+#[macro_use]
+mod macros {
+    macro_rules! my_macro {
+        () =&gt; {
+            println!(&#34;Check out my macro!&#34;);
+        };
+    }
+}
+
+
+fn main() {
+    my_macro!();
+}
+</code></pre><h2 id="macros4">macros4</h2>
+<p>参考:https://blog.qrzbing.cn/post/2022-rustlings/#macros4
+添加一个分号区分两个有参无参定义的宏?</p>
+<pre tabindex="0"><code>// macros4.rs
+// Make me compile! Execute `rustlings hint macros4` for hints :)
+
+// I AM NOT DONE
+
+macro_rules! my_macro {
+    () =&gt; {
+        println!(&#34;Check out my macro!&#34;);
+    };
+    ($val:expr) =&gt; {
+        println!(&#34;Look at this other macro: {}&#34;, $val);
+    }
+}
+
+fn main() {
+    my_macro!();
+    my_macro!(7777);
+}
+</code></pre><h2 id="quiz4">quiz4</h2>
+<p>编写一个宏,可以参考上一题模板</p>
+<pre tabindex="0"><code>// quiz4.rs
+// This quiz covers the sections:
+// - Modules
+// - Macros
+
+// Write a macro that passes the quiz! No hints this time, you can do it!
+
+// I AM NOT DONE
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    macro_rules! my_macro {
+        ($val:expr) =&gt; {
+            String::from(&#34;Hello &#34;) + $val
+        };
+    }
+
+
+    #[test]
+    fn test_my_macro_world() {
+        assert_eq!(my_macro!(&#34;world!&#34;), &#34;Hello world!&#34;);
+    }
+
+    #[test]
+    fn test_my_macro_goodbye() {
+        assert_eq!(my_macro!(&#34;goodbye!&#34;), &#34;Hello goodbye!&#34;);
+    }
+}
+</code></pre><h2 id="clippy1">clippy1</h2>
+<p>报错然后有个help给了一个网址,上面提示到赋值一个pi可以用std::f32::consts::PI</p>
+<pre tabindex="0"><code>// clippy1.rs
+// The Clippy tool is a collection of lints to analyze your code
+// so you can catch common mistakes and improve your Rust code.
+//
+// For these exercises the code will fail to compile when there are clippy warnings
+// check clippy&#39;s suggestions from the output to solve the exercise.
+// Execute `rustlings hint clippy1` for hints :)
+
+use std::f32;
+
+fn main() {
+    let pi = std::f32::consts::PI;
+    let radius = 5.00f32;
+
+    let area = pi * f32::powi(radius, 2);
+
+    println!(
+        &#34;The area of a circle with radius {:.2} is {:.5}!&#34;,
+        radius, area
+    )
+}
+</code></pre><h2 id="clippy2">clippy2</h2>
+<p>错误提示给了答案
+在这里，clippy 认为对 Option 结构 for 循环没有用 if let 的可读性好。参考 <a href="https://rust-lang.github.io/rust-clippy/master/index.html#for_loops_over_fallibles">https://rust-lang.github.io/rust-clippy/master/index.html#for_loops_over_fallibles</a>，clippy 会检查是否对 Option 或 Result 值进行了循环</p>
+<pre tabindex="0"><code>// clippy2.rs
+// Make me compile! Execute `rustlings hint clippy2` for hints :)
+
+
+fn main() {
+    let mut res = 42;
+    let option = Some(12);
+    if let Some(x) = option {
+        res += x;
+    }
+    println!(&#34;{}&#34;, res);
+}
+</code></pre><h2 id="using_as">using_as</h2>
+<p>可以使用as强制类型转换,直接把values.lenN()转换成f64类型</p>
+<pre tabindex="0"><code>// Type casting in Rust is done via the usage of the `as` operator.
+// Please note that the `as` operator is not only used when type casting.
+// It also helps with renaming imports.
+//
+// The goal is to make sure that the division does not fail to compile
+// and returns the proper type.
+
+
+fn average(values: &amp;[f64]) -&gt; f64 {
+    let total = values.iter().sum::&lt;f64&gt;();
+    total / values.len() as f64
+}
+
+fn main() {
+    let values = [3.5, 0.3, 13.0, 11.7];
+    println!(&#34;{}&#34;, average(&amp;values));
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn returns_proper_type_and_value() {
+        assert_eq!(average(&amp;[3.5, 0.3, 13.0, 11.7]), 7.125);
+    }
+}
+</code></pre><h2 id="from_into">from_into</h2>
+<p>实现他给的要求 parse报错可能是因为接收参数时,类型不确定</p>
+<pre tabindex="0"><code>// The From trait is used for value-to-value conversions.
+// If From is implemented correctly for a type, the Into trait should work conversely.
+// You can read more about it at https://doc.rust-lang.org/std/convert/trait.From.html
+#[derive(Debug)]
+struct Person {
+    name: String,
+    age: usize,
+}
+
+// We implement the Default trait to use it as a fallback
+// when the provided string is not convertible into a Person object
+impl Default for Person {
+    fn default() -&gt; Person {
+        Person {
+            name: String::from(&#34;John&#34;),
+            age: 30,
+        }
+    }
+}
+
+// Your task is to complete this implementation
+// in order for the line `let p = Person::from(&#34;Mark,20&#34;)` to compile
+// Please note that you&#39;ll need to parse the age component into a `usize`
+// with something like `&#34;4&#34;.parse::&lt;usize&gt;()`. The outcome of this needs to
+// be handled appropriately.
+//
+// Steps:
+// 1. If the length of the provided string is 0, then return the default of Person
+// 2. Split the given string on the commas present in it
+// 3. Extract the first element from the split operation and use it as the name
+// 4. If the name is empty, then return the default of Person
+// 5. Extract the other element from the split operation and parse it into a `usize` as the age
+// If while parsing the age, something goes wrong, then return the default of Person
+// Otherwise, then return an instantiated Person object with the results
+
+
+impl From&lt;&amp;str&gt; for Person {
+    fn from(s: &amp;str) -&gt; Person {
+        if s.len() == 0 {
+            Person::default()
+        }else {
+            let sp:Vec&lt;&amp;str&gt; = s.split(&#34;,&#34;).collect();
+            if sp.len() != 2 || sp[0].len() &lt;=0 {
+                Person::default()
+            }else {
+                let age = sp[1].parse::&lt;usize&gt;() ;
+                Person {
+                    name: sp[0].to_string(),
+                    age: match age {
+                        Ok(age) =&gt; age,
+                        _=&gt;return Person::default(),
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+fn main() {
+    // Use the `from` function
+    let p1 = Person::from(&#34;Mark,20&#34;);
+    // Since From is implemented for Person, we should be able to use Into
+    let p2: Person = &#34;Gerald,70&#34;.into();
+    println!(&#34;{:?}&#34;, p1);
+    println!(&#34;{:?}&#34;, p2);
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+    #[test]
+    fn test_default() {
+        // Test that the default person is 30 year old John
+        let dp = Person::default();
+        assert_eq!(dp.name, &#34;John&#34;);
+        assert_eq!(dp.age, 30);
+    }
+    #[test]
+    fn test_bad_convert() {
+        // Test that John is returned when bad string is provided
+        let p = Person::from(&#34;&#34;);
+        assert_eq!(p.name, &#34;John&#34;);
+        assert_eq!(p.age, 30);
+    }
+    #[test]
+    fn test_good_convert() {
+        // Test that &#34;Mark,20&#34; works
+        let p = Person::from(&#34;Mark,20&#34;);
+        assert_eq!(p.name, &#34;Mark&#34;);
+        assert_eq!(p.age, 20);
+    }
+    #[test]
+    fn test_bad_age() {
+        // Test that &#34;Mark,twenty&#34; will return the default person due to an error in parsing age
+        let p = Person::from(&#34;Mark,twenty&#34;);
+        assert_eq!(p.name, &#34;John&#34;);
+        assert_eq!(p.age, 30);
+    }
+
+    #[test]
+    fn test_missing_comma_and_age() {
+        let p: Person = Person::from(&#34;Mark&#34;);
+        assert_eq!(p.name, &#34;John&#34;);
+        assert_eq!(p.age, 30);
+    }
+
+    #[test]
+    fn test_missing_age() {
+        let p: Person = Person::from(&#34;Mark,&#34;);
+        assert_eq!(p.name, &#34;John&#34;);
+        assert_eq!(p.age, 30);
+    }
+
+    #[test]
+    fn test_missing_name() {
+        let p: Person = Person::from(&#34;,1&#34;);
+        assert_eq!(p.name, &#34;John&#34;);
+        assert_eq!(p.age, 30);
+    }
+
+    #[test]
+    fn test_missing_name_and_age() {
+        let p: Person = Person::from(&#34;,&#34;);
+        assert_eq!(p.name, &#34;John&#34;);
+        assert_eq!(p.age, 30);
+    }
+
+    #[test]
+    fn test_missing_name_and_invalid_age() {
+        let p: Person = Person::from(&#34;,one&#34;);
+        assert_eq!(p.name, &#34;John&#34;);
+        assert_eq!(p.age, 30);
+    }
+
+    #[test]
+    fn test_trailing_comma() {
+        let p: Person = Person::from(&#34;Mike,32,&#34;);
+        assert_eq!(p.name, &#34;John&#34;);
+        assert_eq!(p.age, 30);
+    }
+
+    #[test]
+    fn test_trailing_comma_and_some_string() {
+        let p: Person = Person::from(&#34;Mike,32,man&#34;);
+        assert_eq!(p.name, &#34;John&#34;);
+        assert_eq!(p.age, 30);
+    }
+}
+</code></pre><h2 id="from_str">from_str</h2>
+<p>用上题他版本 map_err我没解决
+参考:https://lazyren.github.io/studylog/rustlings-conversions.html</p>
+<pre tabindex="0"><code>// from_str.rs
+// This is similar to from_into.rs, but this time we&#39;ll implement `FromStr`
+// and return errors instead of falling back to a default value.
+// Additionally, upon implementing FromStr, you can use the `parse` method
+// on strings to generate an object of the implementor type.
+// You can read more about it at https://doc.rust-lang.org/std/str/trait.FromStr.html
+use std::num::ParseIntError;
+use std::str::FromStr;
+
+#[derive(Debug, PartialEq)]
+struct Person {
+    name: String,
+    age: usize,
+}
+
+// We will use this error type for the `FromStr` implementation.
+#[derive(Debug, PartialEq)]
+enum ParsePersonError {
+    // Empty input string
+    Empty,
+    // Incorrect number of fields
+    BadLen,
+    // Empty name field
+    NoName,
+    // Wrapped error from parse::&lt;usize&gt;()
+    ParseInt(ParseIntError),
+}
+
+// I AM NOT DONE
+
+// Steps:
+// 1. If the length of the provided string is 0, an error should be returned
+// 2. Split the given string on the commas present in it
+// 3. Only 2 elements should be returned from the split, otherwise return an error
+// 4. Extract the first element from the split operation and use it as the name
+// 5. Extract the other element from the split operation and parse it into a `usize` as the age
+//    with something like `&#34;4&#34;.parse::&lt;usize&gt;()`
+// 6. If while extracting the name and the age something goes wrong, an error should be returned
+// If everything goes well, then return a Result of a Person object
+
+impl FromStr for Person {
+    type Err = ParsePersonError;
+    fn from_str(s: &amp;str) -&gt; Result&lt;Person, Self::Err&gt; {
+        if s.is_empty() {
+            return Err(ParsePersonError::Empty);
+        }
+
+        let splitted_item = s.split(&#39;,&#39;).collect::&lt;Vec&lt;&amp;str&gt;&gt;();
+        let (name, age) = match &amp;splitted_item[..] {
+            [name, age] =&gt; (
+                name.to_string(),
+                age.parse().map_err(ParsePersonError::ParseInt)?,
+            ),
+            _ =&gt; return Err(ParsePersonError::BadLen),
+        };
+
+        if name.is_empty() {
+            return Err(ParsePersonError::NoName);
+        }
+
+        Ok(Person {
+            name: name.into(),
+            age,
+        })
+    }
+}
+fn main() {
+    let p = &#34;Mark,20&#34;.parse::&lt;Person&gt;().unwrap();
+    println!(&#34;{:?}&#34;, p);
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn empty_input() {
+        assert_eq!(&#34;&#34;.parse::&lt;Person&gt;(), Err(ParsePersonError::Empty));
+    }
+    #[test]
+    fn good_input() {
+        let p = &#34;John,32&#34;.parse::&lt;Person&gt;();
+        assert!(p.is_ok());
+        let p = p.unwrap();
+        assert_eq!(p.name, &#34;John&#34;);
+        assert_eq!(p.age, 32);
+    }
+    #[test]
+    fn missing_age() {
+        assert!(matches!(
+            &#34;John,&#34;.parse::&lt;Person&gt;(),
+            Err(ParsePersonError::ParseInt(_))
+        ));
+    }
+
+    #[test]
+    fn invalid_age() {
+        assert!(matches!(
+            &#34;John,twenty&#34;.parse::&lt;Person&gt;(),
+            Err(ParsePersonError::ParseInt(_))
+        ));
+    }
+
+    #[test]
+    fn missing_comma_and_age() {
+        assert_eq!(&#34;John&#34;.parse::&lt;Person&gt;(), Err(ParsePersonError::BadLen));
+    }
+
+    #[test]
+    fn missing_name() {
+        assert_eq!(&#34;,1&#34;.parse::&lt;Person&gt;(), Err(ParsePersonError::NoName));
+    }
+
+    #[test]
+    fn missing_name_and_age() {
+        assert!(matches!(
+            &#34;,&#34;.parse::&lt;Person&gt;(),
+            Err(ParsePersonError::NoName | ParsePersonError::ParseInt(_))
+        ));
+    }
+
+    #[test]
+    fn missing_name_and_invalid_age() {
+        assert!(matches!(
+            &#34;,one&#34;.parse::&lt;Person&gt;(),
+            Err(ParsePersonError::NoName | ParsePersonError::ParseInt(_))
+        ));
+    }
+
+    #[test]
+    fn trailing_comma() {
+        assert_eq!(&#34;John,32,&#34;.parse::&lt;Person&gt;(), Err(ParsePersonError::BadLen));
+    }
+
+    #[test]
+    fn trailing_comma_and_some_string() {
+        assert_eq!(
+            &#34;John,32,man&#34;.parse::&lt;Person&gt;(),
+            Err(ParsePersonError::BadLen)
+        );
+    }
+}
+</code></pre><h2 id="try_from_into">try_from_into</h2>
+<p>资料:https://doc.rust-lang.org/std/convert/trait.TryFrom.html
+<a href="https://doc.rust-lang.org/stable/rust-by-example/error/multiple_error_types/reenter_question_mark.html">https://doc.rust-lang.org/stable/rust-by-example/error/multiple_error_types/reenter_question_mark.html</a></p>
+<pre tabindex="0"><code>// try_from_into.rs
+// TryFrom is a simple and safe type conversion that may fail in a controlled way under some circumstances.
+// Basically, this is the same as From. The main difference is that this should return a Result type
+// instead of the target type itself.
+// You can read more about it at https://doc.rust-lang.org/std/convert/trait.TryFrom.html
+use std::convert::{TryFrom, TryInto};
+
+#[derive(Debug, PartialEq)]
+struct Color {
+    red: u8,
+    green: u8,
+    blue: u8,
+}
+
+// We will use this error type for these `TryFrom` conversions.
+#[derive(Debug, PartialEq)]
+enum IntoColorError {
+    // Incorrect length of slice
+    BadLen,
+    // Integer conversion error
+    IntConversion,
+}
+
+
+// Your task is to complete this implementation
+// and return an Ok result of inner type Color.
+// You need to create an implementation for a tuple of three integers,
+// an array of three integers, and a slice of integers.
+//
+// Note that the implementation for tuple and array will be checked at compile time,
+// but the slice implementation needs to check the slice length!
+// Also note that correct RGB color values must be integers in the 0..=255 range.
+
+// Tuple implementation
+impl TryFrom&lt;(i16, i16, i16)&gt; for Color {
+    type Error = IntoColorError;
+    fn try_from(tuple: (i16, i16, i16)) -&gt; Result&lt;Self, Self::Error&gt; {
+        let (r,g,b) = tuple;
+
+        for color in [r,g,b] {
+            if !(0..255).contains(&amp;color) {
+                return Err(IntoColorError::IntConversion);
+            }
+        }
+        Ok(Self{
+            red:tuple.0 as u8,
+            green:tuple.1 as u8,
+            blue: tuple.2 as u8,
+        })
+    }
+}
+
+// Array implementation
+impl TryFrom&lt;[i16; 3]&gt; for Color {
+    type Error = IntoColorError;
+    fn try_from(arr: [i16; 3]) -&gt; Result&lt;Self, Self::Error&gt; {
+        for color in arr {
+            if !(0..255).contains(&amp;color) {
+                return Err(IntoColorError::IntConversion);
+            }
+        }
+        Ok(Self {
+            red:arr[0] as u8,
+            green:arr[1] as u8,
+            blue: arr[2] as u8,
+        })
+    }
+}
+
+// Slice implementation
+impl TryFrom&lt;&amp;[i16]&gt; for Color {
+    type Error = IntoColorError;
+    fn try_from(slice: &amp;[i16]) -&gt; Result&lt;Self, Self::Error&gt; {
+        if slice.len() != 3 {
+            return Err(IntoColorError::BadLen);
+        }
+        for color in slice {
+            if !(0..255).contains(color) {
+                return Err(IntoColorError::IntConversion);
+            }
+        }
+        Ok(Self{
+            red:slice[0] as u8,
+            green:slice[1] as u8,
+            blue: slice[2] as u8,
+        })
+
+
+    }
+}
+
+fn main() {
+    // Use the `from` function
+    let c1 = Color::try_from((183, 65, 14));
+    println!(&#34;{:?}&#34;, c1);
+
+    // Since TryFrom is implemented for Color, we should be able to use TryInto
+    let c2: Result&lt;Color, _&gt; = [183, 65, 14].try_into();
+    println!(&#34;{:?}&#34;, c2);
+
+    let v = vec![183, 65, 14];
+    // With slice we should use `try_from` function
+    let c3 = Color::try_from(&amp;v[..]);
+    println!(&#34;{:?}&#34;, c3);
+    // or take slice within round brackets and use TryInto
+    let c4: Result&lt;Color, _&gt; = (&amp;v[..]).try_into();
+    println!(&#34;{:?}&#34;, c4);
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn test_tuple_out_of_range_positive() {
+        assert_eq!(
+            Color::try_from((256, 1000, 10000)),
+            Err(IntoColorError::IntConversion)
+        );
+    }
+    #[test]
+    fn test_tuple_out_of_range_negative() {
+        assert_eq!(
+            Color::try_from((-1, -10, -256)),
+            Err(IntoColorError::IntConversion)
+        );
+    }
+    #[test]
+    fn test_tuple_sum() {
+        assert_eq!(
+            Color::try_from((-1, 255, 255)),
+            Err(IntoColorError::IntConversion)
+        );
+    }
+    #[test]
+    fn test_tuple_correct() {
+        let c: Result&lt;Color, _&gt; = (183, 65, 14).try_into();
+        assert!(c.is_ok());
+        assert_eq!(
+            c.unwrap(),
+            Color {
+                red: 183,
+                green: 65,
+                blue: 14
+            }
+        );
+    }
+    #[test]
+    fn test_array_out_of_range_positive() {
+        let c: Result&lt;Color, _&gt; = [1000, 10000, 256].try_into();
+        assert_eq!(c, Err(IntoColorError::IntConversion));
+    }
+    #[test]
+    fn test_array_out_of_range_negative() {
+        let c: Result&lt;Color, _&gt; = [-10, -256, -1].try_into();
+        assert_eq!(c, Err(IntoColorError::IntConversion));
+    }
+    #[test]
+    fn test_array_sum() {
+        let c: Result&lt;Color, _&gt; = [-1, 255, 255].try_into();
+        assert_eq!(c, Err(IntoColorError::IntConversion));
+    }
+    #[test]
+    fn test_array_correct() {
+        let c: Result&lt;Color, _&gt; = [183, 65, 14].try_into();
+        assert!(c.is_ok());
+        assert_eq!(
+            c.unwrap(),
+            Color {
+                red: 183,
+                green: 65,
+                blue: 14
+            }
+        );
+    }
+    #[test]
+    fn test_slice_out_of_range_positive() {
+        let arr = [10000, 256, 1000];
+        assert_eq!(
+            Color::try_from(&amp;arr[..]),
+            Err(IntoColorError::IntConversion)
+        );
+    }
+    #[test]
+    fn test_slice_out_of_range_negative() {
+        let arr = [-256, -1, -10];
+        assert_eq!(
+            Color::try_from(&amp;arr[..]),
+            Err(IntoColorError::IntConversion)
+        );
+    }
+    #[test]
+    fn test_slice_sum() {
+        let arr = [-1, 255, 255];
+        assert_eq!(
+            Color::try_from(&amp;arr[..]),
+            Err(IntoColorError::IntConversion)
+        );
+    }
+    #[test]
+    fn test_slice_correct() {
+        let v = vec![183, 65, 14];
+        let c: Result&lt;Color, _&gt; = Color::try_from(&amp;v[..]);
+        assert!(c.is_ok());
+        assert_eq!(
+            c.unwrap(),
+            Color {
+                red: 183,
+                green: 65,
+                blue: 14
+            }
+        );
+    }
+    #[test]
+    fn test_slice_excess_length() {
+        let v = vec![0, 0, 0, 0];
+        assert_eq!(Color::try_from(&amp;v[..]), Err(IntoColorError::BadLen));
+    }
+    #[test]
+    fn test_slice_insufficient_length() {
+        let v = vec![0, 0];
+        assert_eq!(Color::try_from(&amp;v[..]), Err(IntoColorError::BadLen));
+    }
+}
+</code></pre><h2 id="as_ref_mut">as_ref_mut</h2>
+<p><a href="https://doc.rust-lang.org/std/convert/trait.AsRef.html">https://doc.rust-lang.org/std/convert/trait.AsRef.html</a></p>
+<pre tabindex="0"><code>// AsRef and AsMut allow for cheap reference-to-reference conversions.
+// Read more about them at https://doc.rust-lang.org/std/convert/trait.AsRef.html
+// and https://doc.rust-lang.org/std/convert/trait.AsMut.html, respectively.
+
+// I AM NOT DONE
+
+// Obtain the number of bytes (not characters) in the given argument
+// Add the AsRef trait appropriately as a trait bound
+fn byte_counter&lt;T:AsRef&lt;str&gt;&gt;(arg: T) -&gt; usize {
+    arg.as_ref().as_bytes().len()
+}
+
+// Obtain the number of characters (not bytes) in the given argument
+// Add the AsRef trait appropriately as a trait bound
+
+fn char_counter&lt;T:AsRef&lt;str&gt;&gt;(arg: T) -&gt; usize {
+    arg.as_ref().chars().count()
+}
+
+fn main() {
+    let s = &#34;Café au lait&#34;;
+    println!(&#34;{}&#34;, char_counter(s));
+    println!(&#34;{}&#34;, byte_counter(s));
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn different_counts() {
+        let s = &#34;Café au lait&#34;;
+        assert_ne!(char_counter(s), byte_counter(s));
+    }
+
+    #[test]
+    fn same_counts() {
+        let s = &#34;Cafe au lait&#34;;
+        assert_eq!(char_counter(s), byte_counter(s));
+    }
+
+    #[test]
+    fn different_counts_using_string() {
+        let s = String::from(&#34;Café au lait&#34;);
+        assert_ne!(char_counter(s.clone()), byte_counter(s));
+    }
+
+    #[test]
+    fn same_counts_using_string() {
+        let s = String::from(&#34;Cafe au lait&#34;);
+        assert_eq!(char_counter(s.clone()), byte_counter(s));
+    }
+}
+</code></pre><h2 id="advanced_errs1">advanced_errs1</h2>
+<pre tabindex="0"><code>// advanced_errs1.rs
+
+// Remember back in errors6, we had multiple mapping functions so that we
+// could translate lower-level errors into our custom error type using
+// `map_err()`? What if we could use the `?` operator directly instead?
+
+// Make this code compile! Execute `rustlings hint advanced_errs1` for
+// hints :)
+
+
+use std::num::ParseIntError;
+use std::str::FromStr;
+
+// This is a custom error type that we will be using in the `FromStr`
+// implementation.
+#[derive(PartialEq, Debug)]
+enum ParsePosNonzeroError {
+    Creation(CreationError),
+    ParseInt(ParseIntError),
+}
+
+impl From&lt;CreationError&gt; for ParsePosNonzeroError {
+    fn from(e: CreationError) -&gt; Self {
+        // TODO: complete this implementation so that the `?` operator will
+        // work for `CreationError`
+        Self::Creation(e)
+    }
+}
+
+// TODO: implement another instance of the `From` trait here so that the
+// `?` operator will work in the other place in the `FromStr`
+// implementation below.
+impl From&lt;ParseIntError&gt; for ParsePosNonzeroError{
+    fn from(e: ParseIntError) -&gt; Self {
+        Self::ParseInt(e)
+    }
+}
+
+// Don&#39;t change anything below this line.
+
+impl FromStr for PositiveNonzeroInteger {
+    type Err = ParsePosNonzeroError;
+    fn from_str(s: &amp;str) -&gt; Result&lt;PositiveNonzeroInteger, Self::Err&gt; {
+        let x: i64 = s.parse()?;
+        Ok(PositiveNonzeroInteger::new(x)?)
+    }
+}
+
+#[derive(PartialEq, Debug)]
+struct PositiveNonzeroInteger(u64);
+
+#[derive(PartialEq, Debug)]
+enum CreationError {
+    Negative,
+    Zero,
+}
+
+impl PositiveNonzeroInteger {
+    fn new(value: i64) -&gt; Result&lt;PositiveNonzeroInteger, CreationError&gt; {
+        match value {
+            x if x &lt; 0 =&gt; Err(CreationError::Negative),
+            x if x == 0 =&gt; Err(CreationError::Zero),
+            x =&gt; Ok(PositiveNonzeroInteger(x as u64)),
+        }
+    }
+}
+
+#[cfg(test)]
+mod test {
+    use super::*;
+
+    #[test]
+    fn test_parse_error() {
+        // We can&#39;t construct a ParseIntError, so we have to pattern match.
+        assert!(matches!(
+            PositiveNonzeroInteger::from_str(&#34;not a number&#34;),
+            Err(ParsePosNonzeroError::ParseInt(_))
+        ));
+    }
+
+    #[test]
+    fn test_negative() {
+        assert_eq!(
+            PositiveNonzeroInteger::from_str(&#34;-555&#34;),
+            Err(ParsePosNonzeroError::Creation(CreationError::Negative))
+        );
+    }
+
+    #[test]
+    fn test_zero() {
+        assert_eq!(
+            PositiveNonzeroInteger::from_str(&#34;0&#34;),
+            Err(ParsePosNonzeroError::Creation(CreationError::Zero))
+        );
+    }
+
+    #[test]
+    fn test_positive() {
+        let x = PositiveNonzeroInteger::new(42);
+        assert!(x.is_ok());
+        assert_eq!(PositiveNonzeroInteger::from_str(&#34;42&#34;), Ok(x.unwrap()));
+    }
+}
+</code></pre>
+              
+
+
+            </div>
+          </div>
+          <div id="post-footer" class="post-footer main-content-wrap">
+            
+              
+                
+                
+                  <div class="post-footer-tags">
+                    <span class="text-color-light text-small">TAGGED IN</span><br/>
+                    
+  <a class="tag tag--primary tag--small" href="https://yeahai.github.io/tags/rustlings/">rustlings</a>
+
+  <a class="tag tag--primary tag--small" href="https://yeahai.github.io/tags/rust/">rust</a>
+
+                  </div>
+                
+              
+            
+            
+<div class="post-actions-wrap">
+  <nav >
+    <ul class="post-actions post-action-nav">
+      
+        <li class="post-action">
+          
+            <a class="post-action-btn btn btn--disabled">
+          
+              <i class="fa fa-angle-left"></i>
+              <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
+            </a>
+        </li>
+        <li class="post-action">
+          
+            <a class="post-action-btn btn btn--default tooltip--top" href="https://yeahai.github.io/post/rs_go_install_problem/" data-tooltip="Rust、Go、Git国内下载慢的Problem" aria-label="PREVIOUS: Rust、Go、Git国内下载慢的Problem">
+          
+              <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
+              <i class="fa fa-angle-right"></i>
+            </a>
+        </li>
+      
+    </ul>
+  </nav>
+<ul class="post-actions post-action-share" >
+  
+    <li class="post-action hide-lg hide-md hide-sm">
+      <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions" aria-label="Share this post">
+        <i class="fa fa-share-alt" aria-hidden="true"></i>
+      </a>
+    </li>
+    
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://yeahai.github.io/post/rustlings_for_yeahai/" title="Share on Facebook" aria-label="Share on Facebook">
+          <i class="fab fa-facebook-square" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://yeahai.github.io/post/rustlings_for_yeahai/" title="Share on Twitter" aria-label="Share on Twitter">
+          <i class="fab fa-twitter" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://www.linkedin.com/sharing/share-offsite/?url=https://yeahai.github.io/post/rustlings_for_yeahai/" title="Share on Linkedin" aria-label="Share on Linkedin">
+          <i class="fab fa-linkedin" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+  
+  
+    <li class="post-action">
+      <a class="post-action-btn btn btn--default" href="#disqus_thread" aria-label="Leave a comment">
+        <i class="far fa-comment"></i>
+      </a>
+    </li>
+  
+  <li class="post-action">
+    
+      <a class="post-action-btn btn btn--default" href="#top" aria-label="Back to top">
+      <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    
+    </a>
+  </li>
+</ul>
+</div>
+
+
+            
+  
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </div>
+    <script type="text/javascript">
+      var disqus_config = function() {
+        this.page.url = 'https:\/\/yeahai.github.io\/post\/rustlings_for_yeahai\/';
+        
+          this.page.identifier = '\/post\/rustlings_for_yeahai\/'
+        
+      };
+      (function() {
+        
+        
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+          document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+          return;
+        }
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        var disqus_shortname = 'hugo-tranquilpeak-theme';
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+    </script>
+  
+
+
+          </div>
+        </article>
+        <footer id="footer" class="main-content-wrap">
+  <span class="copyrights">
+    &copy; 2022 Yeahii. All Rights Reserved
+  </span>
+</footer>
+
+      </div>
+      <div id="bottom-bar" class="post-bottom-bar" data-behavior="4">
+        
+<div class="post-actions-wrap">
+  <nav >
+    <ul class="post-actions post-action-nav">
+      
+        <li class="post-action">
+          
+            <a class="post-action-btn btn btn--disabled">
+          
+              <i class="fa fa-angle-left"></i>
+              <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
+            </a>
+        </li>
+        <li class="post-action">
+          
+            <a class="post-action-btn btn btn--default tooltip--top" href="https://yeahai.github.io/post/rs_go_install_problem/" data-tooltip="Rust、Go、Git国内下载慢的Problem" aria-label="PREVIOUS: Rust、Go、Git国内下载慢的Problem">
+          
+              <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
+              <i class="fa fa-angle-right"></i>
+            </a>
+        </li>
+      
+    </ul>
+  </nav>
+<ul class="post-actions post-action-share" >
+  
+    <li class="post-action hide-lg hide-md hide-sm">
+      <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions" aria-label="Share this post">
+        <i class="fa fa-share-alt" aria-hidden="true"></i>
+      </a>
+    </li>
+    
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://yeahai.github.io/post/rustlings_for_yeahai/" title="Share on Facebook" aria-label="Share on Facebook">
+          <i class="fab fa-facebook-square" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://yeahai.github.io/post/rustlings_for_yeahai/" title="Share on Twitter" aria-label="Share on Twitter">
+          <i class="fab fa-twitter" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://www.linkedin.com/sharing/share-offsite/?url=https://yeahai.github.io/post/rustlings_for_yeahai/" title="Share on Linkedin" aria-label="Share on Linkedin">
+          <i class="fab fa-linkedin" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+  
+  
+    <li class="post-action">
+      <a class="post-action-btn btn btn--default" href="#disqus_thread" aria-label="Leave a comment">
+        <i class="far fa-comment"></i>
+      </a>
+    </li>
+  
+  <li class="post-action">
+    
+      <a class="post-action-btn btn btn--default" href="#top" aria-label="Back to top">
+      <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    
+    </a>
+  </li>
+</ul>
+</div>
+
+
+      </div>
+      
+<div id="share-options-bar" class="share-options-bar" data-behavior="4">
+  <i id="btn-close-shareoptions" class="fa fa-times"></i>
+  <ul class="share-options">
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fyeahai.github.io%2Fpost%2Frustlings_for_yeahai%2F" aria-label="Share on Facebook">
+          <i class="fab fa-facebook-square" aria-hidden="true"></i><span>Share on Facebook</span>
+        </a>
+      </li>
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fyeahai.github.io%2Fpost%2Frustlings_for_yeahai%2F" aria-label="Share on Twitter">
+          <i class="fab fa-twitter" aria-hidden="true"></i><span>Share on Twitter</span>
+        </a>
+      </li>
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fyeahai.github.io%2Fpost%2Frustlings_for_yeahai%2F" aria-label="Share on Linkedin">
+          <i class="fab fa-linkedin" aria-hidden="true"></i><span>Share on Linkedin</span>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+<div id="share-options-mask" class="share-options-mask"></div>
+
+
+    </div>
+    
+    <div id="about">
+  <div id="about-card">
+    <div id="about-btn-close">
+      <i class="fa fa-times"></i>
+    </div>
+    
+      <img id="about-card-picture" src="https://cdn1.iconfinder.com/data/icons/ninja-things-1/1772/ninja-simple-512.png" alt="Author&#39;s picture" />
+    
+    <h4 id="about-card-name">Yeahii</h4>
+    
+      <div id="about-card-bio">I want to learning everything.</div>
+    
+    
+      <div id="about-card-job">
+        <i class="fa fa-briefcase"></i>
+        <br/>
+        Null
+      </div>
+    
+    
+      <div id="about-card-location">
+        <i class="fa fa-map-marker-alt"></i>
+        <br/>
+        China
+      </div>
+    
+  </div>
+</div>
+
+    
+
+    
+  
+    
+      <div id="cover" style="background-image:url('https://yeahai.github.io/images/cover.jpg');"></div>
+    
+  
+
+
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/highlight.min.js" integrity="sha512-z+/WWfyD5tccCukM4VvONpEtLmbAm5LDu7eKiyMQJ9m7OfPEDL7gENyDRL3Yfe8XAuGsS2fS4xSMnl6d30kqGQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+<script src="https://yeahai.github.io/js/script-yqzy9wdlzix4lbbwdnzvwx3egsne77earqmn73v9uno8aupuph8wfguccut.min.js"></script>
+
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-gE8KAQyFIzV1C9+GZ8TKJHZS2s+n7EjNtC+IMRn1l5+WYJTHOODUM6JSjZhFhqXmc7bG8Av6XXpckA4tYhflnw==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/apache.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-EWROca+bote+7Oaaar1F6y74iZj1r1F9rm/ly7o+/FwJopbBaWtsFDmaKoZDd3QiGU2pGacBirHJNivmGLYrow==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/go.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-GDVzAn0wpx1yVtQsRWmFc6PhJiLBPdUic+h4GWgljBh904O3JU10fk9EKNpVyIoPqkFn54rgL2QBG4BmUTMpiQ==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/http.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-UgZlma8NzkrDb/NWgmLIcTrH7i/CSnLLDRFqCSNF5NGPpjKmzyM25qcoXGOup8+cDakKyaiTDd7N4dyH4YT+IA==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/less.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-lot9koe73sfXIrUvIPM/UEhuMciN56RPyBdOyZgfO53P2lkWyyXN7J+njcxIIBRV+nVDQeiWtiXg+bLAJZDTfg==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/nginx.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-Zd3e7XxHP00TD0Imr0PIfeM0fl0v95kMWuhyAS3Wn1UTSXTkz0OhtRgBAr4JlmADRgiXr4x7lpeUdqaGN8xIog==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/puppet.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-qtqDO052iXMSP+5d/aE/jMtL9vIIGvONgTJziC2K/ZIB1yEGa55WVxGE9/08rSQ62EoDifS9SWVGZ7ihSLhzMA==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/scss.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-1NmkjnEDnwwwcu28KoQF8vs3oaPFokQHbmbtwGhFfeDsQZtVFI8zW2aE9O8yMYdpdyKV/5blE4pSWw4Z/Sv97w==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/stylus.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-B2wSfruPjr8EJL6IIzQr1eAuDwrsfIfccNf/LCEdxELCgC/S/ZMt/Uvk80aD79m7IqOqW+Sw8nbkvha20yZpzg==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/swift.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-28oDiQZGKUVN6wQ7PSLPNipOcmkCALXKwOi7bnkyFf8QiMZQxG9EQoy/iiNx6Zxj2cG2SbVa4dXKigQhu7GiFw==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/yaml.min.js"></script>
+  
+
+
+<script>
+$(document).ready(function() {
+  hljs.configure({ classPrefix: '', useBR: false });
+  $('pre.code-highlight > code, pre > code').each(function(i, block) {
+    if (!$(this).hasClass('codeblock')) {
+      $(this).addClass('codeblock');
+    }
+    hljs.highlightBlock(block);
+  });
+});
+</script>
+
+
+
+
+    
+  </body>
+</html>
+
